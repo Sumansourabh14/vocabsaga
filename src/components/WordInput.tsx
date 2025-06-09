@@ -32,9 +32,9 @@ const WordInput = () => {
   };
 
   useEffect(() => {
-    const stored = JSON.parse(localStorage.getItem("words"));
+    const stored = localStorage.getItem("words");
     if (stored) {
-      setWords(stored);
+      setWords(JSON.parse(stored));
     }
   }, []);
 
