@@ -1,9 +1,10 @@
 import "./App.css";
+import WordInput from "./components/WordInput";
 
 function App() {
   return (
     <>
-      <h1>coming soon...</h1>
+      <WordInput />
     </>
   );
 }
