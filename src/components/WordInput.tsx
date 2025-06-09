@@ -1,12 +1,23 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+
+type WordItem = {
+  id: number;
+  word: string;
+};
 
 const WordInput = () => {
   const [word, setWord] = useState("");
-  const [words, setWords] = useState([]);
-  const [updatedWords, setUpdatedWords] = useState([]);
+  const [words, setWords] = useState<WordItem[]>([]);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setError("");
+
+    if (words.some((item) => item.word === word.trim())) {
+      setError("Oops! You have already added this word");
+      return;
+    }
 
     const payload = {
       id: Date.now(),
@@ -17,16 +28,19 @@ const WordInput = () => {
     setWords(finalWords);
 
     localStorage.setItem("words", JSON.stringify(finalWords));
+    setWord("");
   };
 
   useEffect(() => {
-    const storedWords = localStorage.getItem("words");
-    const data = JSON.parse(storedWords);
-    setUpdatedWords(data);
-  }, [words]);
+    const stored = JSON.parse(localStorage.getItem("words"));
+    if (stored) {
+      setWords(stored);
+    }
+  }, []);
 
   return (
     <>
+      {error && <p>{error}</p>}
       <form onSubmit={handleSubmit}>
         <input
           placeholder="Enter a word"
@@ -39,9 +53,9 @@ const WordInput = () => {
       </form>
 
       <div>
-        {updatedWords?.map((word) => (
-          <div key={word.id}>
-            <p>{word.word}</p>
+        {words?.map((item) => (
+          <div key={item.id}>
+            <p>{item.word}</p>
           </div>
         ))}
       </div>
