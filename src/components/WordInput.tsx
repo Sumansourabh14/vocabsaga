@@ -46,8 +46,13 @@ const WordInput = () => {
           placeholder="Enter a word"
           value={word}
           onChange={(e) => setWord(e.target.value)}
+          className="sm:text-3xl lg:text-5xl xl:text-7xl"
         />
-        <button type="submit" disabled={!word.trim()}>
+        <button
+          type="submit"
+          disabled={!word.trim()}
+          className="sm:text-3xl lg:text-5xl xl:text-7xl hover:cursor-pointer border-2 py-1 px-8"
+        >
           Submit
         </button>
       </form>
