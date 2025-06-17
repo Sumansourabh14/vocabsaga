@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
 type WordItem = {
   id: number;
@@ -42,19 +44,14 @@ const WordInput = () => {
     <>
       {error && <p>{error}</p>}
       <form onSubmit={handleSubmit}>
-        <input
+        <Input
           placeholder="Enter a word"
           value={word}
           onChange={(e) => setWord(e.target.value)}
-          className="sm:text-3xl lg:text-5xl xl:text-7xl"
         />
-        <button
-          type="submit"
-          disabled={!word.trim()}
-          className="sm:text-3xl lg:text-5xl xl:text-7xl hover:cursor-pointer border-2 py-1 px-8"
-        >
+        <Button type="submit" disabled={!word.trim()}>
           Submit
-        </button>
+        </Button>
       </form>
 
       <div>
