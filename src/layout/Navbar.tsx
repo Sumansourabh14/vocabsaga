@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Link } from "react-router";
+import { SITE_TITLE } from "@/data/constants";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -16,9 +17,9 @@ export default function Navbar() {
     <header className="w-full border-b bg-white dark:bg-black">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Logo */}
-        <a href="#" className="text-xl font-bold text-black dark:text-white">
-          ShadNavbar
-        </a>
+        <Link to="/" className="text-xl font-bold text-black dark:text-white">
+          {SITE_TITLE}
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden space-x-6 md:flex">

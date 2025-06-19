@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import { Card, CardHeader } from "./ui/card";
 import { Input } from "./ui/input";
 
 type WordItem = {
@@ -54,13 +55,17 @@ const WordInput = () => {
         </Button>
       </form>
 
-      <div>
+      <section className="grid grid-cols-5 gap-4 py-8">
         {words?.map((item) => (
-          <div key={item.id}>
-            <p>{item.word}</p>
-          </div>
+          <Card key={item.id}>
+            <CardHeader>
+              <p className="truncate font-bold" title={item.word}>
+                {item.word}
+              </p>
+            </CardHeader>
+          </Card>
         ))}
-      </div>
+      </section>
     </>
   );
 };
