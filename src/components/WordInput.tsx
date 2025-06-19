@@ -1,9 +1,9 @@
+import { displayFormatedDate } from "@/utils/displayFormatedDate";
+import { isLocallyValidWord } from "@/utils/validateWord";
 import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { Card, CardHeader } from "./ui/card";
 import { Input } from "./ui/input";
-import { displayFormatedDate } from "@/utils/displayFormatedDate";
-import { isLocallyValidWord } from "@/utils/validateWord";
 
 type WordItem = {
   id: number;
