@@ -4,6 +4,7 @@ import WordInput from "./components/WordInput";
 import RootLayout from "./layout/RootLayout";
 import Home from "./pages/Home";
 import NotFound from "./layout/NotFound";
+import { ThemeProvider } from "./context/theme-provider";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  );
 }
 
 export default App;

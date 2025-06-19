@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Link } from "react-router";
 import { SITE_TITLE } from "@/data/constants";
+import { ModeToggle } from "@/components/theme/ModeToggle";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -22,7 +23,8 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden space-x-6 md:flex">
+        <nav className="hidden space-x-6 md:flex md:items-center">
+          <ModeToggle />
           {navItems.map((item) => (
             <Link
               key={item.name}
