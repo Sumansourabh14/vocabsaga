@@ -54,19 +54,33 @@ const WordInput = () => {
 
   return (
     <>
-      {error && <p>{error}</p>}
+      {error && <p className="text-center text-red-400 font-bold">{error}</p>}
       <form onSubmit={handleSubmit}>
-        <Input
-          placeholder="Enter a word"
-          value={word}
-          onChange={(e) => setWord(e.target.value)}
-        />
-        <Button type="submit" disabled={!word.trim()}>
-          Submit
-        </Button>
+        <section className="flex gap-2 max-w-[600px] mx-auto py-8">
+          <Input
+            placeholder="Enter a word that you learned recently..."
+            value={word}
+            onChange={(e) => setWord(e.target.value)}
+          />
+          <Button type="submit" disabled={!word.trim()}>
+            Submit
+          </Button>
+        </section>
       </form>
 
-      <section className="grid grid-cols-5 gap-4 py-8">
+      {words.length > 0 ? (
+        <section>
+          <h3 className="font-bold text-xl">{words.length} Words</h3>
+        </section>
+      ) : (
+        <section className="text-center">
+          <h3 className="font-bold text-xl">No Words</h3>
+        </section>
+      )}
+
+      <hr />
+
+      <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 py-8">
         {words?.map((item) => (
           <Card key={item.id}>
             <CardHeader>
