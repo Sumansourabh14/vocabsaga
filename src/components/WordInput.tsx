@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { Card, CardHeader } from "./ui/card";
 import { Input } from "./ui/input";
+import { displayFormatedDate } from "@/utils/displayFormatedDate";
 
 type WordItem = {
   id: number;
   word: string;
+  addedAt: string;
 };
 
 const WordInput = () => {
@@ -25,6 +27,7 @@ const WordInput = () => {
     const payload = {
       id: Date.now(),
       word,
+      addedAt: new Date().toISOString(),
     };
 
     const finalWords = [...words, payload];
@@ -62,6 +65,9 @@ const WordInput = () => {
               <p className="truncate font-bold" title={item.word}>
                 {item.word}
               </p>
+              {item.addedAt && (
+                <p className="text-sm">{displayFormatedDate(item.addedAt)}</p>
+              )}
             </CardHeader>
           </Card>
         ))}
