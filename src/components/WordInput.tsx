@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { Card, CardHeader } from "./ui/card";
 import { Input } from "./ui/input";
 import { displayFormatedDate } from "@/utils/displayFormatedDate";
+import { isLocallyValidWord } from "@/utils/validateWord";
 
 type WordItem = {
   id: number;
@@ -18,6 +19,13 @@ const WordInput = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError("");
+
+    const { success, message } = isLocallyValidWord(word);
+
+    if (!success) {
+      setError(message || "");
+      return;
+    }
 
     if (words.some((item) => item.word === word.trim())) {
       setError("Oops! You have already added this word");
