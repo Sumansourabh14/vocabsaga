@@ -6,7 +6,15 @@ const Home = () => {
     <>
       <main className="max-w-[1300px] mx-auto">
         <section className="min-h-screen">
-          <h1>{SITE_TITLE}</h1>
+          <section className="px-4 py-16 text-center max-w-2xl mx-auto">
+            <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+              {SITE_TITLE}
+            </h1>
+            <p className="text-base md:text-lg">
+              Build your own vocabulary, one word at a time.
+            </p>
+          </section>
+
           <WordInput />
         </section>
       </main>
