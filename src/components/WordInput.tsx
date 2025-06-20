@@ -1,8 +1,10 @@
 import { displayFormatedDate } from "@/utils/displayFormatedDate";
 import { isLocallyValidWord } from "@/utils/validateWord";
 import React, { useEffect, useState } from "react";
+import WordPopup from "./popups/WordPopup";
 import { Button } from "./ui/button";
 import { Card, CardHeader } from "./ui/card";
+import { Dialog, DialogTrigger } from "./ui/dialog";
 import { Input } from "./ui/input";
 
 type WordItem = {
@@ -68,30 +70,35 @@ const WordInput = () => {
         </section>
       </form>
 
-      {words.length > 0 ? (
-        <section>
-          <h3 className="font-bold text-xl">{words.length} Words</h3>
-        </section>
-      ) : (
-        <section className="text-center">
-          <h3 className="font-bold text-xl">No Words</h3>
-        </section>
-      )}
+      <section
+        className={`${words.length > 0 ? "text-left" : "text-center"} mb-2`}
+      >
+        <h3 className="font-bold text-xl">
+          {words.length > 0 ? words.length + " Words" : "No Words"}
+        </h3>
+      </section>
 
       <hr />
 
       <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 py-8">
         {words?.map((item) => (
-          <Card key={item.id}>
-            <CardHeader>
-              <p className="truncate font-bold" title={item.word}>
-                {item.word}
-              </p>
-              {item.addedAt && (
-                <p className="text-sm">{displayFormatedDate(item.addedAt)}</p>
-              )}
-            </CardHeader>
-          </Card>
+          <Dialog key={item.id}>
+            <DialogTrigger asChild>
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <p className="truncate font-bold" title={item.word}>
+                    {item.word}
+                  </p>
+                  {item.addedAt && (
+                    <p className="text-sm">
+                      {displayFormatedDate(item.addedAt)}
+                    </p>
+                  )}
+                </CardHeader>
+              </Card>
+            </DialogTrigger>
+            <WordPopup word={item.word} addedAt={item.addedAt} />
+          </Dialog>
         ))}
       </section>
     </>
