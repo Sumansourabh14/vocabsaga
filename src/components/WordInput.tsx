@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { Card, CardHeader } from "./ui/card";
 import { Dialog, DialogTrigger } from "./ui/dialog";
 import { Input } from "./ui/input";
+import DeleteIconButton from "./buttons/iconButtons/DeleteIconButton";
 
 type WordItem = {
   id: number;
@@ -13,10 +14,15 @@ type WordItem = {
   addedAt: string;
 };
 
-const WordInput = () => {
+const WordInput = ({ isOnPage = false }) => {
   const [word, setWord] = useState("");
   const [words, setWords] = useState<WordItem[]>([]);
   const [error, setError] = useState("");
+
+  const updateWords = (updatedWords: WordItem[]) => {
+    setWords(updatedWords);
+    localStorage.setItem("words", JSON.stringify(updatedWords));
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -41,16 +47,18 @@ const WordInput = () => {
     };
 
     const finalWords = [...words, payload];
-    setWords(finalWords);
-
-    localStorage.setItem("words", JSON.stringify(finalWords));
+    updateWords(finalWords);
     setWord("");
   };
 
   const removeItem = (id: number) => {
     const filteredWords = words.filter((item) => item.id !== id);
-    setWords(filteredWords);
-    localStorage.setItem("words", JSON.stringify(filteredWords));
+    updateWords(filteredWords);
+  };
+
+  const removeAllItems = () => {
+    const filteredWords = words.filter(() => false);
+    updateWords(filteredWords);
   };
 
   useEffect(() => {
@@ -61,7 +69,7 @@ const WordInput = () => {
   }, []);
 
   return (
-    <>
+    <main className="max-w-[1300px] mx-auto">
       {error && <p className="text-center text-red-400 font-bold">{error}</p>}
       <form onSubmit={handleSubmit}>
         <section className="flex gap-2 max-w-[600px] mx-auto py-8">
@@ -77,11 +85,16 @@ const WordInput = () => {
       </form>
 
       <section
-        className={`${words.length > 0 ? "text-left" : "text-center"} mb-2`}
+        className={`${
+          words.length > 0 ? "text-left" : "text-center"
+        } mb-2 flex justify-between`}
       >
         <h3 className="font-bold text-xl">
           {words.length > 0 ? words.length + " Words" : "No Words"}
         </h3>
+        {isOnPage && words.length > 0 && (
+          <DeleteIconButton handleDelete={removeAllItems} />
+        )}
       </section>
 
       <hr />
@@ -112,7 +125,7 @@ const WordInput = () => {
           </Dialog>
         ))}
       </section>
-    </>
+    </main>
   );
 };
 

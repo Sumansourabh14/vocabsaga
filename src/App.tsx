@@ -17,7 +17,7 @@ const router = createBrowserRouter([
       },
       {
         path: "input",
-        element: <WordInput />,
+        element: <WordInput isOnPage={true} />,
       },
       {
         path: "*",
