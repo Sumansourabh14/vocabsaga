@@ -47,6 +47,12 @@ const WordInput = () => {
     setWord("");
   };
 
+  const removeItem = (id: number) => {
+    const filteredWords = words.filter((item) => item.id !== id);
+    setWords(filteredWords);
+    localStorage.setItem("words", JSON.stringify(filteredWords));
+  };
+
   useEffect(() => {
     const stored = localStorage.getItem("words");
     if (stored) {
@@ -97,7 +103,12 @@ const WordInput = () => {
                 </CardHeader>
               </Card>
             </DialogTrigger>
-            <WordPopup word={item.word} addedAt={item.addedAt} />
+            <WordPopup
+              word={item.word}
+              addedAt={item.addedAt}
+              handleDelete={removeItem}
+              id={item.id}
+            />
           </Dialog>
         ))}
       </section>
