@@ -7,6 +7,9 @@ import {
   DialogTitle,
 } from "../ui/dialog";
 import DeleteIconButton from "../buttons/iconButtons/DeleteIconButton";
+import { useQuery } from "@tanstack/react-query";
+import { fetchMeaningOfWord } from "@/services/fetchWords";
+import Meanings from "../utilities/Meanings";
 
 type WordProps = {
   word: string;
@@ -16,13 +19,29 @@ type WordProps = {
 };
 
 const WordPopup = ({ word, addedAt, handleDelete, id }: WordProps) => {
+  const { data, isFetching, error } = useQuery({
+    queryKey: ["word", word],
+    queryFn: () => fetchMeaningOfWord(word),
+  });
+
+  if (error) {
+    console.error({ error });
+  }
+
   return (
     <DialogContent>
       <DialogHeader>
         <DialogTitle>{word}</DialogTitle>
-        <DialogDescription>
-          {addedAt && <p className="text-sm">{displayFormatedDate(addedAt)}</p>}
-        </DialogDescription>
+        <section>
+          {addedAt && (
+            <DialogDescription>
+              {displayFormatedDate(addedAt)}
+            </DialogDescription>
+          )}
+          {isFetching && <p>Loading...</p>}
+          {data &&
+            data.map((word) => <Meanings parentKey={word.word} word={word} />)}
+        </section>
       </DialogHeader>
       <DialogFooter>
         <DeleteIconButton handleDelete={() => handleDelete(id)} />
