@@ -24,6 +24,14 @@ export default function Footer() {
             </a>
           </nav>
         </div>
+        <div className="text-center pb-8">
+          <h2
+            className="font-bold tracking-tighter text-6xl sm:text-9xl lg:text-[11rem] xl:text-[14rem]"
+            style={{ lineHeight: 1 }}
+          >
+            <span className="text-[#1b7a1b]">vocab</span>saga.
+          </h2>
+        </div>
       </div>
     </footer>
   );
