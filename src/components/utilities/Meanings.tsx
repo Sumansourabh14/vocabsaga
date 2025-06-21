@@ -14,10 +14,12 @@ const Meanings = ({ parentKey, word }: MeaningProps) => {
           {item.definitions.map((definition, i) => (
             <div key={i}>
               <p>{definition.definition}</p>
-              <div>
-                <p>Example:</p>
-                <p>{definition.example}</p>
-              </div>
+              {definition.example && (
+                <div>
+                  <p>Example:</p>
+                  <p>{definition.example}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
