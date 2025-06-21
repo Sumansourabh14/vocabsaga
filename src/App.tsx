@@ -5,6 +5,7 @@ import RootLayout from "./layout/RootLayout";
 import Home from "./pages/Home";
 import NotFound from "./layout/NotFound";
 import { ThemeProvider } from "./context/theme-provider";
+import Word from "./pages/Word";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "input",
         element: <WordInput isOnPage={true} />,
+      },
+      {
+        path: "word/:title",
+        element: <Word />,
       },
       {
         path: "*",

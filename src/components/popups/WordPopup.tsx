@@ -10,6 +10,7 @@ import DeleteIconButton from "../buttons/iconButtons/DeleteIconButton";
 import { useQuery } from "@tanstack/react-query";
 import { fetchMeaningOfWord } from "@/services/fetchWords";
 import Meanings from "../utilities/Meanings";
+import { Link } from "react-router";
 
 type WordProps = {
   word: string;
@@ -31,10 +32,12 @@ const WordPopup = ({ word, addedAt, handleDelete, id }: WordProps) => {
   return (
     <DialogContent>
       <DialogHeader>
-        <DialogTitle>{word}</DialogTitle>
+        <DialogTitle className="text-center text-4xl md:text-5xl text-bold">
+          {word}
+        </DialogTitle>
         <section>
           {addedAt && (
-            <DialogDescription>
+            <DialogDescription className="text-left">
               {displayFormatedDate(addedAt)}
             </DialogDescription>
           )}
@@ -44,7 +47,12 @@ const WordPopup = ({ word, addedAt, handleDelete, id }: WordProps) => {
         </section>
       </DialogHeader>
       <DialogFooter>
-        <DeleteIconButton handleDelete={() => handleDelete(id)} />
+        <section className="flex justify-between items-center gap-4 w-full">
+          <Link to={`/word/${word}`} className="underline">
+            See more
+          </Link>
+          <DeleteIconButton handleDelete={() => handleDelete(id)} />
+        </section>
       </DialogFooter>
     </DialogContent>
   );
