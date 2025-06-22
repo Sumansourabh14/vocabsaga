@@ -25,10 +25,6 @@ const WordPopup = ({ word, addedAt, handleDelete, id }: WordProps) => {
     queryFn: () => fetchMeaningOfWord(word),
   });
 
-  if (error) {
-    console.error({ error });
-  }
-
   return (
     <DialogContent>
       <DialogHeader>
@@ -42,15 +38,22 @@ const WordPopup = ({ word, addedAt, handleDelete, id }: WordProps) => {
             </DialogDescription>
           )}
           {isFetching && <p>Loading...</p>}
+          {error && (
+            <p className="text-red-600">
+              Oops! Couldn't find any definition for this word
+            </p>
+          )}
           {data &&
             data.map((word) => <Meanings parentKey={word.word} word={word} />)}
         </section>
       </DialogHeader>
       <DialogFooter>
         <section className="flex justify-between items-center gap-4 w-full">
-          <Link to={`/word/${word}`} className="underline">
-            See more
-          </Link>
+          {!error && (
+            <Link to={`/word/${word}`} className="underline">
+              See more
+            </Link>
+          )}
           <DeleteIconButton handleDelete={() => handleDelete(id)} />
         </section>
       </DialogFooter>
