@@ -26,21 +26,27 @@ const FindWord = () => {
 
   return (
     <main className="max-w-[1300px] mx-auto min-h-80">
-      <form onSubmit={handleSubmit}>
-        <section className="flex gap-2 max-w-[600px] mx-auto py-8">
-          <Input
-            placeholder="Enter a word..."
-            value={searchWord}
-            onChange={(e) => setSearchWord(e.target.value)}
-          />
-          <Button type="submit" disabled={!searchWord.trim()}>
-            Submit
-          </Button>
-        </section>
-      </form>
-      {!!errorMessage && (
-        <p className="text-center text-red-400 font-bold">{errorMessage}</p>
-      )}
+      <section className="py-40">
+        <h1 className="text-center text-3xl sm:text-4xl lg:text-6xl font-bold">
+          Find a word...
+        </h1>
+        <form onSubmit={handleSubmit}>
+          <section className="flex gap-2 max-w-[600px] mx-auto py-8">
+            <Input
+              placeholder="Yes! Type a word..."
+              value={searchWord}
+              onChange={(e) => setSearchWord(e.target.value)}
+              style={{ fontSize: "90%" }}
+            />
+            <Button type="submit" disabled={!searchWord.trim()}>
+              Submit
+            </Button>
+          </section>
+        </form>
+        {!!errorMessage && (
+          <p className="text-center text-red-400 font-bold">{errorMessage}</p>
+        )}
+      </section>
     </main>
   );
 };

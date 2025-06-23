@@ -4,7 +4,8 @@ import { useParams } from "react-router";
 const Word = () => {
   const { title } = useParams();
 
-  const { data } = useFetchWordMeaning(title ?? "");
+  const { data, isFetching } = useFetchWordMeaning(title ?? "");
+  console.log({ data, isFetching });
 
   return (
     <section className="max-w-[1300px] mx-auto">
@@ -12,7 +13,11 @@ const Word = () => {
         {title}
       </h1>
 
-      {data !== undefined &&
+      {isFetching ? (
+        <p className="text-center text-gray-400 text-xl pt-10">
+          Trying to lookup this word...
+        </p>
+      ) : data !== undefined ? (
         data.map((word, index) => (
           <div className="space-y-6 my-6" key={index}>
             {/* Phonetic */}
@@ -61,7 +66,6 @@ const Word = () => {
                           </p>
                         )}
 
-                        {/* Optional synonyms/antonyms display */}
                         {(def.synonyms.length > 0 ||
                           def.antonyms.length > 0) && (
                           <div className="text-sm text-gray-500 mt-1">
@@ -86,7 +90,12 @@ const Word = () => {
               ))}
             </div>
           </div>
-        ))}
+        ))
+      ) : (
+        <p className="text-center text-red-400 text-xl sm:text-2xl lg:text-3xl pt-10">
+          Couldn't find definitions for this word
+        </p>
+      )}
     </section>
   );
 };
