@@ -6,8 +6,8 @@ import { ModeToggle } from "@/components/theme/ModeToggle";
 
 const navItems = [
   { name: "Home", href: "/" },
-  // { name: "Input", href: "/input" },
-  // { name: "Pricing", href: "#" },
+  { name: "Input", href: "/input" },
+  { name: "Find", href: "/find" },
   // { name: "Contact", href: "#" },
 ];
 

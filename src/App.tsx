@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import NotFound from "./layout/NotFound";
 import { ThemeProvider } from "./context/theme-provider";
 import Word from "./pages/Word";
+import FindWord from "./pages/FindWord";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "input",
         element: <WordInput isOnPage={true} />,
+      },
+      {
+        path: "find",
+        element: <FindWord />,
       },
       {
         path: "word/:title",
