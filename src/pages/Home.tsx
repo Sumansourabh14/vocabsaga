@@ -1,3 +1,4 @@
+import WordOfDay from "@/components/sections/WordOfDay";
 import WordInput from "@/components/WordInput";
 import { SITE_TITLE } from "@/data/constants";
 
@@ -14,6 +15,8 @@ const Home = () => {
               Build your own vocabulary, one word at a time.
             </p>
           </section>
+
+          <WordOfDay />
 
           <WordInput />
         </section>
