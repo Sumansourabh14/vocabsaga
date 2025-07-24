@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <main className="max-w-[1300px] mx-auto">
-        <section className="min-h-screen">
+        <section>
           <Hero />
           <WordInput />
 
