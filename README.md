@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
+# 📘 VocabSaga
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Build your own vocabulary — one word at a time.**
 
-Currently, two official plugins are available:
+VocabSaga is a minimal, distraction-free app that helps you remember the words you care about — not the ones an app throws at you.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ What Can You Do?
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🧠 **Add words that matter to you**  
+  Heard a new word in a book or podcast? Add it to your personal list.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- 📆 **Track your vocabulary streak**  
+  Stay consistent and keep learning one word a day.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 🎯 **No distractions, no signups**  
+  Just you and your words. No ads, no accounts, no noise.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🔤 Why VocabSaga?
+
+Unlike other apps, **you control the learning**. Add the words you’re actually encountering. No random flashcards. No artificial difficulty.
+
+It’s your personal dictionary — growing with your life.
+
+---
+
+## 🌿 The Vibe
+
+- Minimalistic  
+- Vintage-inspired  
+- Offline-friendly  
+- Calming to use  
+
+---
+
+## 🚀 Getting Started
+
+1. Open the app.
+2. Type a new word you’ve learned.
+3. See it added to your list instantly.
+4. Come back tomorrow and add another.
+
+That’s it.
+
+---
+
+## 🤍 Made for readers, writers, and lifelong learners.
