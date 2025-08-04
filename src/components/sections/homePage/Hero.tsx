@@ -1,11 +1,12 @@
 const Hero = () => {
   return (
-    <section className="px-4 py-16 text-center max-w-2xl mx-auto">
-      <h1 className="text-3xl md:text-5xl lg:text-7xl 2xl:text-8xl font-bold tracking-tight mb-4">
-        <span className="text-[#1b7a1b]">Vocab</span> Saga
+    <section className="max-w-4xl px-4 py-16 text-center mx-auto">
+      <h1 className="max-w-3xl text-3xl md:text-5xl xl:text-7xl font-bold tracking-tighter mx-auto">
+        Your own <span className="text-[#1b7a1b] underline">vocabulary</span>,
+        one word at a time.
       </h1>
-      <p className="text-base md:text-lg">
-        Build your own vocabulary, one word at a time.
+      <p className="text-xl mt-8">
+        Simply learning a single word won't cut it.
       </p>
     </section>
   );
