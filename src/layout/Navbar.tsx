@@ -15,10 +15,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full border-b bg-white dark:bg-black">
+    <header className="w-full">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Logo */}
-        <Link to="/" className="text-xl font-bold text-black dark:text-white">
+        <Link to="/" className="text-xl font-bold">
           {SITE_TITLE}
         </Link>
 
@@ -29,7 +29,7 @@ export default function Navbar() {
             <Link
               key={item.name}
               to={item.href}
-              className="text-sm font-medium text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white"
+              className="text-sm font-bold text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white"
             >
               {item.name}
             </Link>
