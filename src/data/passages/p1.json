@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "passage": "Despite the rain, she remained resolute and continued marching forward.",
+    "word": "resolute",
+    "word_meaning": "determined and unwavering",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "2",
+    "passage": "He tried to console the crying child with a warm hug and a soft lullaby.",
+    "source_book": "Unknown",
+    "source_author": "Unknown",
+    "word": "console",
+    "word_meaning": "to comfort someone in distress",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "3",
+    "passage": "She walked into the interview with poise, answering each question with calm confidence.",
+    "source_book": "Unknown",
+    "source_author": "Unknown",
+    "word": "poise",
+    "word_meaning": "graceful and confident manner",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "4",
+    "passage": "The teacher commended him for his honesty and integrity.",
+    "source_book": "Unknown",
+    "source_author": "Unknown",
+    "word": "commend",
+    "word_meaning": "to praise formally or officially",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "5",
+    "passage": "Even with limited resources, their community thrived through unity and compassion.",
+    "source_book": "Unknown",
+    "source_author": "Unknown",
+    "word": "thrive",
+    "word_meaning": "to grow or develop successfully",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "6",
+    "passage": "The detective deduced the identity of the culprit from subtle clues left behind.",
+    "source_book": "Unknown",
+    "source_author": "Unknown",
+    "word": "deduce",
+    "word_meaning": "to come to a conclusion using logic or evidence",
+    "difficulty_level": "medium"
+  },
+  {
+    "id": "7",
+    "passage": "Her meticulous notes revealed a level of detail rarely seen in student work.",
+    "source_book": "Unknown",
+    "source_author": "Unknown",
+    "word": "meticulous",
+    "word_meaning": "showing great attention to detail",
+    "difficulty_level": "medium"
+  },
+  {
+    "id": "8",
+    "passage": "He was skeptical of the plan, raising concerns no one else had considered.",
+    "source_book": "Unknown",
+    "source_author": "Unknown",
+    "word": "skeptical",
+    "word_meaning": "having doubts or reservations",
+    "difficulty_level": "medium"
+  },
+  {
+    "id": "9",
+    "passage": "The explanation was so convoluted that even experts struggled to understand it.",
+    "source_book": "Unknown",
+    "source_author": "Unknown",
+    "word": "convoluted",
+    "word_meaning": "extremely complex and difficult to follow",
+    "difficulty_level": "hard"
+  },
+  {
+    "id": "10",
+    "passage": "The CEO’s speech was filled with platitudes and lacked any real substance.",
+    "source_book": "Unknown",
+    "source_author": "Unknown",
+    "word": "platitude",
+    "word_meaning": "a remark that is overused and lacks originality",
+    "difficulty_level": "hard"
+  }
+]

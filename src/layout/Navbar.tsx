@@ -5,10 +5,9 @@ import { SITE_TITLE } from "@/data/constants";
 import { ModeToggle } from "@/components/theme/ModeToggle";
 
 const navItems = [
-  { name: "Home", href: "/" },
+  { name: "Story", href: "/story" },
   { name: "Input", href: "/input" },
   { name: "Find", href: "/find" },
-  // { name: "Contact", href: "#" },
 ];
 
 export default function Navbar() {

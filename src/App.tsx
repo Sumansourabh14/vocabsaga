@@ -7,6 +7,7 @@ import NotFound from "./layout/NotFound";
 import { ThemeProvider } from "./context/theme-provider";
 import Word from "./pages/Word";
 import FindWord from "./pages/FindWord";
+import RandomStory from "./pages/RandomStory";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Home />,
+      },
+      {
+        path: "story",
+        element: <RandomStory />,
       },
       {
         path: "input",
