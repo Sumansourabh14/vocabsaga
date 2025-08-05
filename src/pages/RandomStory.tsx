@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
 import passage from "@/data/passages/p1.json";
 import { useState } from "react";
 
@@ -63,7 +62,7 @@ const RandomStory = () => {
   return (
     <main className="max-w-[1300px] mx-auto min-h-80 px-8">
       <section className="py-20 max-w-4xl mx-auto text-center space-y-4">
-        <Progress value={((current + 1) / passage.length) * 100} />
+        {/* <Progress value={((current + 1) / passage.length) * 100} /> */}
 
         <span
           className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${getBadgeColor(
