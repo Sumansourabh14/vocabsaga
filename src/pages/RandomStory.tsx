@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import passage from "@/data/passages/p1.json";
 import { useState } from "react";
@@ -64,13 +65,11 @@ const RandomStory = () => {
       <section className="py-20 max-w-4xl mx-auto text-center space-y-4">
         {/* <Progress value={((current + 1) / passage.length) * 100} /> */}
 
-        <span
-          className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${getBadgeColor(
-            data.difficulty_level
-          )}`}
+        <Badge
+          className={`px-2 text-sm ${getBadgeColor(data.difficulty_level)}`}
         >
           {data.difficulty_level.toUpperCase()}
-        </span>
+        </Badge>
 
         <h1 className="text-3xl sm:text-4xl lg:text-6xl">
           {highlightWordInPassage(data.passage, data.word)}
