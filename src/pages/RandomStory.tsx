@@ -31,6 +31,21 @@ const RandomStory = () => {
     setShowMeaning(false);
   };
 
+  const highlightWordInPassage = (text: string, word: string) => {
+    const regex = new RegExp(`(${word})`, "i"); // case-insensitive, exact match
+    const parts = text.split(regex);
+
+    return parts.map((part, index) =>
+      regex.test(part) ? (
+        <span key={index} className="text-lime-600 font-bold">
+          {part}
+        </span>
+      ) : (
+        <span key={index}>{part}</span>
+      )
+    );
+  };
+
   return (
     <main className="max-w-[1300px] mx-auto min-h-80 px-8">
       <section className="py-20 max-w-4xl mx-auto text-center space-y-4">
@@ -44,25 +59,18 @@ const RandomStory = () => {
           {data.difficulty_level.toUpperCase()}
         </span>
 
-        <h1 className="text-3xl sm:text-4xl lg:text-6xl">{data.passage}</h1>
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl">
+          {highlightWordInPassage(data.passage, data.word)}
+        </h1>
+
         {(data.source_book || data.source_author) && (
           <p className="text-sm text-gray-400 italic">
             — {data.source_book}
             {data.source_author ? ` by ${data.source_author}` : ""}
           </p>
         )}
-        <div className="space-y-2 pt-6">
-          <p className="text-lg font-semibold">Word: {data.word}</p>
 
-          {showMeaning && (
-            <p className="text-base text-gray-700">
-              <span className="font-semibold">Meaning:</span>{" "}
-              {data.word_meaning}
-            </p>
-          )}
-        </div>
-
-        <section className="flex gap-4 justify-center">
+        <section className="flex gap-4 justify-center mt-8">
           <Button
             variant={"outline"}
             onClick={handlePrevious}
@@ -87,6 +95,14 @@ const RandomStory = () => {
             Next
           </Button>
         </section>
+        <div>
+          {showMeaning && (
+            <p className="text-base text-gray-700">
+              <span className="font-semibold">Meaning:</span>{" "}
+              {data.word_meaning}
+            </p>
+          )}
+        </div>
       </section>
     </main>
   );
