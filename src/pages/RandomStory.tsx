@@ -32,11 +32,25 @@ const RandomStory = () => {
   };
 
   const highlightWordInPassage = (text: string, word: string) => {
-    const regex = new RegExp(`(${word})`, "i"); // case-insensitive, exact match
-    const parts = text.split(regex);
+    const base = word.toLowerCase();
+    const forms = [
+      base,
+      `${base}s`,
+      `${base}es`,
+      `${base}d`,
+      `${base}ed`,
+      `${base}ing`,
+      base.endsWith("e") ? `${base.slice(0, -1)}ing` : "",
+      base.endsWith("e") ? `${base}d` : "",
+    ].filter((form): form is string => !!form); // Type guard to ensure string
 
-    return parts.map((part, index) =>
-      regex.test(part) ? (
+    const escapedForms = forms.map((w) =>
+      w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+    );
+    const regex = new RegExp(`\\b(${escapedForms.join("|")})\\b`, "gi");
+
+    return text.split(regex).map((part, index) =>
+      index % 2 === 1 ? (
         <span key={index} className="text-lime-600 font-bold">
           {part}
         </span>
