@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/drawer";
 import rawPassages from "@/data/passages/p1.json";
 import type { BookmarkWordProps, WordPassage } from "@/types";
+import { Bookmark, Eye, Shuffle } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const passages: WordPassage[] = rawPassages;
@@ -32,13 +33,18 @@ const RandomStory = () => {
   const [current, setCurrent] = useState(0);
   const data = passages[current];
 
-  const handlePrevious = () => {
-    setCurrent((prev) => (prev === 0 ? passages.length - 1 : prev - 1));
+  const handleRandom = () => {
+    const randomIndex = Math.floor(Math.random() * passages.length);
+    setCurrent(randomIndex);
   };
 
-  const handleNext = () => {
-    setCurrent((prev) => (prev === passages.length - 1 ? 0 : prev + 1));
-  };
+  // const handlePrevious = () => {
+  //   setCurrent((prev) => (prev === 0 ? passages.length - 1 : prev - 1));
+  // };
+
+  // const handleNext = () => {
+  //   setCurrent((prev) => (prev === passages.length - 1 ? 0 : prev + 1));
+  // };
 
   useEffect(() => {
     const savedBookmarks = localStorage.getItem("bookmarks");
@@ -117,18 +123,26 @@ const RandomStory = () => {
         )}
 
         <section className="flex gap-4 justify-center mt-8">
-          <Button
+          {/* <Button
             variant={"outline"}
             onClick={handlePrevious}
             className="cursor-pointer"
           >
             Previous
+          </Button> */}
+          <Button
+            variant={"outline"}
+            onClick={handleRandom}
+            className="cursor-pointer"
+            title="Generate random"
+          >
+            <Shuffle />
           </Button>
 
           <Drawer>
             <DrawerTrigger asChild>
               <Button variant="default" className="cursor-pointer">
-                Show Meaning
+                <Eye /> Show Meaning
               </Button>
             </DrawerTrigger>
             <DrawerContent>
@@ -141,21 +155,21 @@ const RandomStory = () => {
             </DrawerContent>
           </Drawer>
 
-          <Button
+          {/* <Button
             variant={"outline"}
             onClick={handleNext}
             className="cursor-pointer"
           >
             Next
-          </Button>
-        </section>
-        <section>
+          </Button> */}
+
           <Button
             variant={"outline"}
             onClick={handleSaveWord}
             className="cursor-pointer"
+            title="Save word"
           >
-            Save
+            <Bookmark />
           </Button>
         </section>
       </section>
