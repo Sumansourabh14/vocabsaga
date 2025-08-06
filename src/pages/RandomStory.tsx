@@ -2,17 +2,15 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
   DrawerDescription,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import rawPassages from "@/data/passages/p1.json";
-import type { WordPassage } from "@/types";
-import { useState } from "react";
+import type { BookmarkWordProps, WordPassage } from "@/types";
+import { useEffect, useState } from "react";
 
 const passages: WordPassage[] = rawPassages;
 
@@ -30,6 +28,7 @@ const getBadgeColor = (level: string) => {
 };
 
 const RandomStory = () => {
+  const [bookmarks, setBookmarks] = useState<BookmarkWordProps[]>([]);
   const [current, setCurrent] = useState(0);
   const data = passages[current];
 
@@ -39,6 +38,31 @@ const RandomStory = () => {
 
   const handleNext = () => {
     setCurrent((prev) => (prev === passages.length - 1 ? 0 : prev + 1));
+  };
+
+  useEffect(() => {
+    const savedBookmarks = localStorage.getItem("bookmarks");
+
+    if (savedBookmarks) {
+      try {
+        setBookmarks(JSON.parse(savedBookmarks));
+      } catch (error) {
+        console.error("Error parsing bookmarks:", error);
+        setBookmarks([]);
+      }
+    }
+  }, []);
+
+  const handleSaveWord = () => {
+    const newBookmarks = [
+      ...bookmarks,
+      {
+        id: Date.now().toString(),
+        word: data.word,
+      },
+    ];
+    localStorage.setItem("bookmarks", JSON.stringify(newBookmarks));
+    setBookmarks(newBookmarks);
   };
 
   const highlightWordInPassage = (text: string, word: string) => {
@@ -114,13 +138,6 @@ const RandomStory = () => {
                   {data.word_meaning}
                 </DrawerDescription>
               </DrawerHeader>
-              <DrawerFooter>
-                <DrawerClose>
-                  <Button variant="outline" className="cursor-pointer">
-                    Got it.
-                  </Button>
-                </DrawerClose>
-              </DrawerFooter>
             </DrawerContent>
           </Drawer>
 
@@ -130,6 +147,15 @@ const RandomStory = () => {
             className="cursor-pointer"
           >
             Next
+          </Button>
+        </section>
+        <section>
+          <Button
+            variant={"outline"}
+            onClick={handleSaveWord}
+            className="cursor-pointer"
+          >
+            Save
           </Button>
         </section>
       </section>

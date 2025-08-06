@@ -7,3 +7,8 @@ export interface WordPassage {
   source_book?: string;
   source_author?: string;
 }
+
+export type BookmarkWordProps = {
+  id: string;
+  word: string;
+};
