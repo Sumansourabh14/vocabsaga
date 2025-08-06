@@ -38,7 +38,7 @@ const Bookmarks = () => {
 
   return (
     <main className="max-w-[1300px] mx-auto min-h-[75vh]">
-      <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-center">
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-center">
         Bookmarks
       </h1>
 

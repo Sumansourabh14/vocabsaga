@@ -69,7 +69,10 @@ const WordInput = ({ isOnPage = false }) => {
   }, []);
 
   return (
-    <main className="max-w-[1300px] mx-auto">
+    <main className="max-w-[1300px] mx-auto min-h-[75vh]">
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-center">
+        What did you learn recently?
+      </h1>
       {error && <p className="text-center text-red-400 font-bold">{error}</p>}
       <form onSubmit={handleSubmit}>
         <section className="flex gap-2 max-w-[600px] mx-auto py-8">
@@ -89,15 +92,27 @@ const WordInput = ({ isOnPage = false }) => {
           words.length > 0 ? "text-left" : "text-center"
         } mb-2 flex justify-between`}
       >
-        <h3 className="font-bold text-xl">
-          {words.length > 0 ? words.length + " Words" : "No Words"}
-        </h3>
+        {words.length > 0 && (
+          <h3 className="font-bold text-xl">{words.length + " Words"}</h3>
+        )}
         {isOnPage && words.length > 0 && (
           <DeleteIconButton handleDelete={removeAllItems} />
         )}
       </section>
 
       <hr />
+
+      {words.length === 0 && (
+        <section className="text-center py-30">
+          <p className="text-xl">No words yet.</p>
+          <a
+            href="/story"
+            className="inline-block px-6 py-3 mt-4 bg-[#1b7a1b] text-white text-lg font-semibold rounded-lg hover:bg-green-800 transition"
+          >
+            Learn words through stories
+          </a>
+        </section>
+      )}
 
       <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 py-8">
         {words?.map((item) => (

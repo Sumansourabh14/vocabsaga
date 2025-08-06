@@ -25,15 +25,15 @@ const FindWord = () => {
   };
 
   return (
-    <main className="max-w-[1300px] mx-auto min-h-80">
-      <section className="py-40">
-        <h1 className="text-center text-3xl sm:text-4xl lg:text-6xl font-bold">
+    <main className="max-w-[1300px] mx-auto min-h-[75vh]">
+      <section className="py-20">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-center">
           Find a word...
         </h1>
         <form onSubmit={handleSubmit}>
           <section className="flex gap-2 max-w-[600px] mx-auto py-8">
             <Input
-              placeholder="Yes! Type a word..."
+              placeholder="Type a word..."
               value={searchWord}
               onChange={(e) => setSearchWord(e.target.value)}
               style={{ fontSize: "90%" }}
