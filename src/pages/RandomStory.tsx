@@ -10,8 +10,11 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import passage from "@/data/passages/p1.json";
+import rawPassages from "@/data/passages/p1.json";
+import type { WordPassage } from "@/types";
 import { useState } from "react";
+
+const passages: WordPassage[] = rawPassages;
 
 const getBadgeColor = (level: string) => {
   switch (level.toLowerCase()) {
@@ -29,15 +32,15 @@ const getBadgeColor = (level: string) => {
 const RandomStory = () => {
   const [showMeaning, setShowMeaning] = useState(false);
   const [current, setCurrent] = useState(0);
-  const data = passage[current];
+  const data = passages[current];
 
   const handlePrevious = () => {
-    setCurrent((prev) => (prev === 0 ? passage.length - 1 : prev - 1));
+    setCurrent((prev) => (prev === 0 ? passages.length - 1 : prev - 1));
     setShowMeaning(false);
   };
 
   const handleNext = () => {
-    setCurrent((prev) => (prev === passage.length - 1 ? 0 : prev + 1));
+    setCurrent((prev) => (prev === passages.length - 1 ? 0 : prev + 1));
     setShowMeaning(false);
   };
 
