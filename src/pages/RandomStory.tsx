@@ -109,8 +109,8 @@ const RandomStory = () => {
 
   return (
     <FullScreen handle={handle}>
-      <section className="max-w-[1300px] mx-auto px-8">
-        <section className="py-20 lg:py-30 2xl:py-50 max-w-4xl mx-auto text-center space-y-4">
+      <section className="max-w-[1300px] mx-auto px-8 random-story min-h-[85vh] flex items-center justify-center">
+        <section className="max-w-4xl mx-auto text-center space-y-4">
           {/* <Progress value={((current + 1) / passage.length) * 100} /> */}
 
           <Badge
@@ -150,7 +150,7 @@ const RandomStory = () => {
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Suffle</p>
+                <p>Shuffle passage</p>
               </TooltipContent>
             </Tooltip>
 
@@ -189,7 +189,7 @@ const RandomStory = () => {
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Add to bookmark</p>
+                <p>Add word to bookmark</p>
               </TooltipContent>
             </Tooltip>
             <Tooltip>
