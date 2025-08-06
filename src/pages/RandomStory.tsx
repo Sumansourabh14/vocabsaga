@@ -108,8 +108,8 @@ const RandomStory = () => {
   };
 
   return (
-    <FullScreen handle={handle}>
-      <section className="max-w-[1300px] mx-auto px-8 random-story min-h-[85vh] flex items-center justify-center">
+    <FullScreen handle={handle} className="random-story">
+      <section className="max-w-[1300px] mx-auto px-8 min-h-[85vh] flex items-center justify-center">
         <section className="max-w-4xl mx-auto text-center space-y-4">
           {/* <Progress value={((current + 1) / passage.length) * 100} /> */}
 

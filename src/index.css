@@ -118,3 +118,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Normal background */
+.random-story {
+  background-color: #ffffff;
+}
+
+/* Dark mode */
+.dark .random-story {
+  background-color: oklch(12.856% 0.00001 271.152);
+}
+
