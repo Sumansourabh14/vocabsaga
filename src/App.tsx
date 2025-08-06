@@ -8,6 +8,8 @@ import { ThemeProvider } from "./context/theme-provider";
 import Word from "./pages/Word";
 import FindWord from "./pages/FindWord";
 import RandomStory from "./pages/RandomStory";
+import Bookmarks from "./pages/Bookmarks";
+import { Toaster } from "./components/ui/sonner";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
         element: <FindWord />,
       },
       {
+        path: "bookmarks",
+        element: <Bookmarks />,
+      },
+      {
         path: "word/:title",
         element: <Word />,
       },
@@ -46,6 +52,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <RouterProvider router={router} />
+      <Toaster />
     </ThemeProvider>
   );
 }

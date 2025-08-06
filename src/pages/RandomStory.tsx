@@ -18,6 +18,7 @@ import type { BookmarkWordProps, WordPassage } from "@/types";
 import { Bookmark, Eye, Maximize, Minimize, Shuffle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import { toast } from "sonner";
 
 const passages: WordPassage[] = rawPassages;
 
@@ -41,6 +42,8 @@ const RandomStory = () => {
   const handle = useFullScreenHandle();
 
   const handleRandom = () => {
+    if (passages.length === 0) return;
+
     const randomIndex = Math.floor(Math.random() * passages.length);
     setCurrent(randomIndex);
   };
@@ -67,15 +70,32 @@ const RandomStory = () => {
   }, []);
 
   const handleSaveWord = () => {
+    const find = bookmarks.find(
+      (item) => item.word.toLowerCase() === data.word.toLowerCase()
+    );
+
+    if (find) {
+      toast.error("Word is already bookmarked.");
+      return;
+    }
+
     const newBookmarks = [
       ...bookmarks,
       {
         id: Date.now().toString(),
         word: data.word,
+        addedAt: new Date().toISOString(),
       },
     ];
-    localStorage.setItem("bookmarks", JSON.stringify(newBookmarks));
-    setBookmarks(newBookmarks);
+
+    try {
+      localStorage.setItem("bookmarks", JSON.stringify(newBookmarks));
+      setBookmarks(newBookmarks);
+      toast.success("Word added to bookmarks.");
+    } catch (error) {
+      console.error("Error saving bookmarks:", error);
+      toast.error("Failed to save bookmark.");
+    }
   };
 
   const highlightWordInPassage = (text: string, word: string) => {

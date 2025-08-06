@@ -1,0 +1,102 @@
+import DeleteIconButton from "@/components/buttons/iconButtons/DeleteIconButton";
+import WordPopup from "@/components/popups/WordPopup";
+import { Card, CardHeader } from "@/components/ui/card";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import { displayFormatedDate } from "@/utils/displayFormatedDate";
+import { useEffect, useState } from "react";
+
+type WordItem = {
+  id: number;
+  word: string;
+  addedAt: string;
+};
+
+const Bookmarks = () => {
+  const [words, setWords] = useState<WordItem[]>([]);
+
+  const updateWords = (updatedWords: WordItem[]) => {
+    setWords(updatedWords);
+    localStorage.setItem("bookmarks", JSON.stringify(updatedWords));
+  };
+
+  const removeItem = (id: number) => {
+    const filteredWords = words.filter((item) => item.id !== id);
+    updateWords(filteredWords);
+  };
+
+  const removeAllItems = () => {
+    const filteredWords = words.filter(() => false);
+    updateWords(filteredWords);
+  };
+
+  useEffect(() => {
+    const stored = localStorage.getItem("bookmarks");
+    if (stored) {
+      setWords(JSON.parse(stored));
+    }
+  }, []);
+
+  return (
+    <main className="max-w-[1300px] mx-auto min-h-[75vh]">
+      <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-center">
+        Bookmarks
+      </h1>
+
+      <section
+        className={`${
+          words.length > 0 ? "text-left" : "text-center"
+        } mb-2 flex justify-between`}
+      >
+        {words.length > 0 && (
+          <h3 className="font-bold text-xl">{words.length + " Words"}</h3>
+        )}
+        {words.length > 0 && <DeleteIconButton handleDelete={removeAllItems} />}
+      </section>
+
+      <hr />
+
+      {words.length === 0 && (
+        <section className="text-center py-30">
+          <p className="text-xl">No words yet.</p>
+          <a
+            href="/story"
+            className="inline-block px-6 py-3 mt-4 bg-[#1b7a1b] text-white text-lg font-semibold rounded-lg hover:bg-green-800 transition"
+          >
+            Learn words through stories
+          </a>
+        </section>
+      )}
+
+      {words.length > 0 && (
+        <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 py-8">
+          {words?.map((item) => (
+            <Dialog key={item.id}>
+              <DialogTrigger asChild>
+                <Card className="cursor-pointer">
+                  <CardHeader>
+                    <p className="truncate font-bold" title={item.word}>
+                      {item.word}
+                    </p>
+                    {item.addedAt && (
+                      <p className="text-sm">
+                        {displayFormatedDate(item.addedAt)}
+                      </p>
+                    )}
+                  </CardHeader>
+                </Card>
+              </DialogTrigger>
+              <WordPopup
+                word={item.word}
+                addedAt={item.addedAt}
+                handleDelete={removeItem}
+                id={item.id}
+              />
+            </Dialog>
+          ))}
+        </section>
+      )}
+    </main>
+  );
+};
+
+export default Bookmarks;

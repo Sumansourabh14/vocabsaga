@@ -11,4 +11,5 @@ export interface WordPassage {
 export type BookmarkWordProps = {
   id: string;
   word: string;
+  addedAt: string;
 };
