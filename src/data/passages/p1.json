@@ -1,72 +1,212 @@
 [
   {
-    "id": "1",
-    "passage": "Despite the rain, she remained resolute and kept moving.",
-    "word": "resolute",
-    "word_meaning": "determined and unwavering",
+    "id": "11",
+    "passage": "He was so eager to help that he arrived an hour early.",
+    "word": "eager",
+    "word_meaning": "wanting to do or have something very much",
     "difficulty_level": "easy"
   },
   {
-    "id": "2",
-    "passage": "He tried to console the crying child with a warm hug.",
-    "word": "console",
-    "word_meaning": "to comfort someone in distress",
+    "id": "12",
+    "passage": "They wandered through the quiet forest, enjoying the serenity.",
+    "word": "serenity",
+    "word_meaning": "the state of being calm and peaceful",
     "difficulty_level": "easy"
   },
   {
-    "id": "3",
-    "passage": "She walked into the room with poise and answered calmly.",
-    "word": "poise",
-    "word_meaning": "graceful and confident manner",
+    "id": "13",
+    "passage": "She smiled, grateful for the unexpected kindness.",
+    "word": "grateful",
+    "word_meaning": "feeling or showing thanks",
     "difficulty_level": "easy"
   },
   {
-    "id": "4",
-    "passage": "The teacher commended him for his honesty and integrity.",
-    "word": "commend",
-    "word_meaning": "to praise formally or officially",
+    "id": "14",
+    "passage": "The puppy's playful antics made everyone laugh.",
+    "word": "antics",
+    "word_meaning": "funny or silly behavior",
     "difficulty_level": "easy"
   },
   {
-    "id": "5",
-    "passage": "The detective deduced the thief's identity from subtle clues.",
-    "word": "deduce",
-    "word_meaning": "to come to a conclusion using logic or evidence",
+    "id": "15",
+    "passage": "He admired the vast ocean stretching endlessly before him.",
+    "word": "vast",
+    "word_meaning": "very large in size or amount",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "16",
+    "passage": "Her voice trembled as she faced the crowd.",
+    "word": "tremble",
+    "word_meaning": "to shake slightly from fear or cold",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "17",
+    "passage": "They shared a hearty meal after the long hike.",
+    "word": "hearty",
+    "word_meaning": "large and satisfying; warm and friendly",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "18",
+    "passage": "He cleaned the mess with swift, efficient movements.",
+    "word": "efficient",
+    "word_meaning": "doing something well without wasting time or resources",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "19",
+    "passage": "She waved goodbye with a cheerful smile.",
+    "word": "cheerful",
+    "word_meaning": "noticeably happy and optimistic",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "20",
+    "passage": "The cat leapt gracefully onto the window sill.",
+    "word": "gracefully",
+    "word_meaning": "in an elegant and smooth way",
+    "difficulty_level": "easy"
+  },
+  {
+    "id": "21",
+    "passage": "The architect devised a clever plan to maximize space.",
+    "word": "devise",
+    "word_meaning": "to invent or plan something carefully",
     "difficulty_level": "medium"
   },
   {
-    "id": "6",
-    "passage": "Her meticulous notes revealed an impressive attention to detail.",
-    "word": "meticulous",
-    "word_meaning": "showing great attention to detail",
+    "id": "22",
+    "passage": "She tried to placate her angry friend with a sincere apology.",
+    "word": "placate",
+    "word_meaning": "to make someone less angry or hostile",
     "difficulty_level": "medium"
   },
   {
-    "id": "7",
-    "passage": "He was skeptical, questioning every detail of the proposed plan.",
-    "word": "skeptical",
-    "word_meaning": "having doubts or reservations",
+    "id": "23",
+    "passage": "The stranger's cryptic message left them puzzled.",
+    "word": "cryptic",
+    "word_meaning": "having a mysterious or obscure meaning",
     "difficulty_level": "medium"
   },
   {
-    "id": "8",
-    "passage": "The explanation was so convoluted, even experts looked confused.",
-    "word": "convoluted",
-    "word_meaning": "extremely complex and difficult to follow",
+    "id": "24",
+    "passage": "His altruistic nature led him to volunteer every weekend.",
+    "word": "altruistic",
+    "word_meaning": "selflessly concerned for others’ well-being",
+    "difficulty_level": "medium"
+  },
+  {
+    "id": "25",
+    "passage": "They scrutinized every detail of the document before signing.",
+    "word": "scrutinize",
+    "word_meaning": "to examine something very carefully",
+    "difficulty_level": "medium"
+  },
+  {
+    "id": "26",
+    "passage": "She felt a sense of euphoria after receiving the award.",
+    "word": "euphoria",
+    "word_meaning": "a feeling of great happiness or excitement",
+    "difficulty_level": "medium"
+  },
+  {
+    "id": "27",
+    "passage": "The magician’s illusion deceived the entire audience.",
+    "word": "illusion",
+    "word_meaning": "a false idea or appearance",
+    "difficulty_level": "medium"
+  },
+  {
+    "id": "28",
+    "passage": "Their relentless efforts finally bore fruit.",
+    "word": "relentless",
+    "word_meaning": "continuous and intense; not giving up",
+    "difficulty_level": "medium"
+  },
+  {
+    "id": "29",
+    "passage": "He was adamant about his decision despite criticism.",
+    "word": "adamant",
+    "word_meaning": "refusing to be persuaded; firm in opinion",
+    "difficulty_level": "medium"
+  },
+  {
+    "id": "30",
+    "passage": "She spoke in an articulate and persuasive manner.",
+    "word": "articulate",
+    "word_meaning": "able to express ideas clearly and effectively",
+    "difficulty_level": "medium"
+  },
+  {
+    "id": "31",
+    "passage": "His behavior was so egregious that even his allies distanced themselves.",
+    "word": "egregious",
+    "word_meaning": "outstandingly bad or shocking",
     "difficulty_level": "hard"
   },
   {
-    "id": "9",
-    "passage": "His platitude-filled speech lacked originality or meaningful insight.",
-    "word": "platitude",
-    "word_meaning": "a remark that is overused and lacks originality",
+    "id": "32",
+    "passage": "The philosopher’s treatise was filled with esoteric concepts.",
+    "word": "esoteric",
+    "word_meaning": "intended for or understood by a small, specialized group",
     "difficulty_level": "hard"
   },
   {
-    "id": "10",
-    "passage": "She navigated the labyrinthine corridors without hesitation or confusion.",
-    "word": "labyrinthine",
-    "word_meaning": "like a labyrinth; intricate and confusing",
+    "id": "33",
+    "passage": "The politician's rhetoric was full of obfuscation.",
+    "word": "obfuscation",
+    "word_meaning": "the act of making something unclear or confusing",
+    "difficulty_level": "hard"
+  },
+  {
+    "id": "34",
+    "passage": "The artist's interpretation was too abstruse for most critics.",
+    "word": "abstruse",
+    "word_meaning": "difficult to understand; obscure",
+    "difficulty_level": "hard"
+  },
+  {
+    "id": "35",
+    "passage": "His vindictive nature made it hard for him to forgive.",
+    "word": "vindictive",
+    "word_meaning": "having a strong desire for revenge",
+    "difficulty_level": "hard"
+  },
+  {
+    "id": "36",
+    "passage": "The scholar's dissertation was both profound and recondite.",
+    "word": "recondite",
+    "word_meaning": "little known or obscure (especially knowledge)",
+    "difficulty_level": "hard"
+  },
+  {
+    "id": "37",
+    "passage": "Their clandestine meetings were known only to a select few.",
+    "word": "clandestine",
+    "word_meaning": "kept secret or done secretly",
+    "difficulty_level": "hard"
+  },
+  {
+    "id": "38",
+    "passage": "The leader's autocratic style stifled all dissent.",
+    "word": "autocratic",
+    "word_meaning": "ruling with absolute power and no input from others",
+    "difficulty_level": "hard"
+  },
+  {
+    "id": "39",
+    "passage": "The director’s avant-garde film polarized critics and audiences.",
+    "word": "avant-garde",
+    "word_meaning": "new and experimental ideas in art or culture",
+    "difficulty_level": "hard"
+  },
+  {
+    "id": "40",
+    "passage": "His demeanor was imperturbable even in chaos.",
+    "word": "imperturbable",
+    "word_meaning": "unable to be upset or excited; calm",
     "difficulty_level": "hard"
   }
 ]

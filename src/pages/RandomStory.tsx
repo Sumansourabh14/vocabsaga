@@ -84,7 +84,7 @@ const RandomStory = () => {
           {data.difficulty_level.toUpperCase()}
         </Badge>
 
-        <h1 className="text-3xl sm:text-4xl lg:text-6xl">
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl eb-garamond-normal">
           {highlightWordInPassage(data.passage, data.word)}
         </h1>
 
@@ -113,15 +113,14 @@ const RandomStory = () => {
             <DrawerContent>
               <DrawerHeader>
                 <DrawerTitle className="text-3xl">{data.word}</DrawerTitle>
-                <DrawerDescription>
-                  <span className="font-semibold">Meaning:</span>{" "}
+                <DrawerDescription className="text-xl">
                   {data.word_meaning}
                 </DrawerDescription>
               </DrawerHeader>
               <DrawerFooter>
                 <DrawerClose>
                   <Button variant="outline" className="cursor-pointer">
-                    Cool.
+                    Got it.
                   </Button>
                 </DrawerClose>
               </DrawerFooter>
