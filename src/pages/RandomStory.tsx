@@ -8,6 +8,11 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import rawPassages from "@/data/passages/p1.json";
 import type { BookmarkWordProps, WordPassage } from "@/types";
 import { Bookmark, Eye, Shuffle } from "lucide-react";
@@ -101,7 +106,7 @@ const RandomStory = () => {
   };
 
   return (
-    <main className="max-w-[1300px] mx-auto px-8">
+    <section className="max-w-[1300px] mx-auto px-8">
       <section className="py-20 lg:py-30 2xl:py-50 max-w-4xl mx-auto text-center space-y-4">
         {/* <Progress value={((current + 1) / passage.length) * 100} /> */}
 
@@ -130,14 +135,21 @@ const RandomStory = () => {
           >
             Previous
           </Button> */}
-          <Button
-            variant={"outline"}
-            onClick={handleRandom}
-            className="cursor-pointer"
-            title="Generate random"
-          >
-            <Shuffle />
-          </Button>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant={"outline"}
+                onClick={handleRandom}
+                className="cursor-pointer"
+              >
+                <Shuffle />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Suffle</p>
+            </TooltipContent>
+          </Tooltip>
 
           <Drawer>
             <DrawerTrigger asChild>
@@ -163,17 +175,23 @@ const RandomStory = () => {
             Next
           </Button> */}
 
-          <Button
-            variant={"outline"}
-            onClick={handleSaveWord}
-            className="cursor-pointer"
-            title="Save word"
-          >
-            <Bookmark />
-          </Button>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant={"outline"}
+                onClick={handleSaveWord}
+                className="cursor-pointer"
+              >
+                <Bookmark />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Add to bookmark</p>
+            </TooltipContent>
+          </Tooltip>
         </section>
       </section>
-    </main>
+    </section>
   );
 };
 
