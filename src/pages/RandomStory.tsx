@@ -1,5 +1,15 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 import passage from "@/data/passages/p1.json";
 import { useState } from "react";
 
@@ -91,13 +101,29 @@ const RandomStory = () => {
             Previous
           </Button>
 
-          <Button
-            variant={"default"}
-            onClick={() => setShowMeaning(!showMeaning)}
-            className="cursor-pointer"
-          >
-            {showMeaning ? "Hide Meaning" : "Show meaning"}
-          </Button>
+          <Drawer>
+            <DrawerTrigger asChild>
+              <Button variant="default" className="cursor-pointer">
+                Show Meaning
+              </Button>
+            </DrawerTrigger>
+            <DrawerContent>
+              <DrawerHeader>
+                <DrawerTitle className="text-3xl">{data.word}</DrawerTitle>
+                <DrawerDescription>
+                  <span className="font-semibold">Meaning:</span>{" "}
+                  {data.word_meaning}
+                </DrawerDescription>
+              </DrawerHeader>
+              <DrawerFooter>
+                <DrawerClose>
+                  <Button variant="outline" className="cursor-pointer">
+                    Cool.
+                  </Button>
+                </DrawerClose>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
 
           <Button
             variant={"outline"}
