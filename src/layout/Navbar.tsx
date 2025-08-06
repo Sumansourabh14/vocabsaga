@@ -1,8 +1,21 @@
-import { useState } from "react";
+import { ModeToggle } from "@/components/theme/ModeToggle";
+import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { SITE_TITLE } from "@/data/constants";
 import { Menu } from "lucide-react";
 import { Link } from "react-router";
-import { SITE_TITLE } from "@/data/constants";
-import { ModeToggle } from "@/components/theme/ModeToggle";
 
 const navItems = [
   { name: "Story", href: "/story" },
@@ -11,8 +24,6 @@ const navItems = [
 ];
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <header className="w-full">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
@@ -22,44 +33,51 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden space-x-6 md:flex md:items-center">
+        <NavigationMenu className="hidden space-x-6 md:flex md:items-center">
           <ModeToggle />
-          {navItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className="text-sm font-bold text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white"
-            >
-              {item.name}
-            </Link>
-          ))}
-        </nav>
-
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-800 dark:text-white"
-        >
-          <Menu className="h-6 w-6" />
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white dark:bg-black px-4 py-4">
-          <nav className="flex flex-col gap-4">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-sm font-medium text-gray-700 hover:text-black dark:text-gray-200 dark:hover:text-white"
-              >
-                {item.name}
-              </a>
+          <NavigationMenuList>
+            {navItems.map((link, index) => (
+              <NavigationMenuItem key={index}>
+                <NavigationMenuLink asChild>
+                  <Link
+                    to={link.href}
+                    className="text-sm font-bold text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white"
+                  >
+                    {link.name}
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
             ))}
-          </nav>
-        </div>
-      )}
+          </NavigationMenuList>
+        </NavigationMenu>
+
+        {/* Mobile Menu */}
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button size="icon" variant="ghost" className="md:hidden">
+              <Menu />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="px-8">
+            <SheetHeader>
+              <SheetTitle>Vocabsaga</SheetTitle>
+            </SheetHeader>
+            <nav className="flex flex-col gap-4 mt-4">
+              <ModeToggle />
+              {navItems.map((link) => (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-sm font-bold text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white"
+                >
+                  {link.name}
+                </Link>
+              ))}
+              {/* <Button className="mt-2 w-full">Login</Button> */}
+            </nav>
+          </SheetContent>
+        </Sheet>
+      </div>
     </header>
   );
 }
