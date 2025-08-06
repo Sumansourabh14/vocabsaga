@@ -30,18 +30,15 @@ const getBadgeColor = (level: string) => {
 };
 
 const RandomStory = () => {
-  const [showMeaning, setShowMeaning] = useState(false);
   const [current, setCurrent] = useState(0);
   const data = passages[current];
 
   const handlePrevious = () => {
     setCurrent((prev) => (prev === 0 ? passages.length - 1 : prev - 1));
-    setShowMeaning(false);
   };
 
   const handleNext = () => {
     setCurrent((prev) => (prev === passages.length - 1 ? 0 : prev + 1));
-    setShowMeaning(false);
   };
 
   const highlightWordInPassage = (text: string, word: string) => {
@@ -135,14 +132,6 @@ const RandomStory = () => {
             Next
           </Button>
         </section>
-        <div>
-          {showMeaning && (
-            <p className="text-base text-gray-700">
-              <span className="font-semibold">Meaning:</span>{" "}
-              {data.word_meaning}
-            </p>
-          )}
-        </div>
       </section>
     </main>
   );
