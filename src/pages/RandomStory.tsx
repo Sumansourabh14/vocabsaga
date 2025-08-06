@@ -61,8 +61,8 @@ const RandomStory = () => {
   };
 
   return (
-    <main className="max-w-[1300px] mx-auto min-h-80 px-8">
-      <section className="py-20 max-w-4xl mx-auto text-center space-y-4">
+    <main className="max-w-[1300px] mx-auto px-8">
+      <section className="py-20 lg:py-30 2xl:py-50 max-w-4xl mx-auto text-center space-y-4">
         {/* <Progress value={((current + 1) / passage.length) * 100} /> */}
 
         <Badge
