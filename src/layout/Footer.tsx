@@ -1,3 +1,4 @@
+import SiteTitleText from "@/components/text/SiteTitleText";
 import { Separator } from "@/components/ui/separator";
 import { SITE_TITLE } from "@/data/constants";
 import { Link } from "react-router";
@@ -14,9 +15,7 @@ export default function Footer() {
     <footer className="border-t bg-zinc-100 dark:bg-black text-gray-600 dark:text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-10">
         <div className="flex flex-row justify-between items-center mb-2">
-          <Link to="/" className="text-xl font-bold">
-            {SITE_TITLE}
-          </Link>
+          <SiteTitleText />
           {/* Links */}
           <nav className="flex space-x-6 text-sm">
             {navItems.map((link, index) => (
@@ -38,7 +37,7 @@ export default function Footer() {
         </section>
         <div className="text-center pb-8">
           <p
-            className="font-bold tracking-tighter text-7xl sm:text-9xl lg:text-[11rem] xl:text-[14rem]"
+            className="playfair-display-bold font-bold tracking-tighter text-7xl sm:text-9xl lg:text-[11rem] xl:text-[14rem]"
             style={{ lineHeight: 1 }}
           >
             <span className="text-[#1b7a1b]">vocab</span>saga.

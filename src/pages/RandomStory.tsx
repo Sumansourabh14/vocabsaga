@@ -139,7 +139,7 @@ const RandomStory = () => {
             {data.difficulty_level.toUpperCase()}
           </Badge>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl eb-garamond-normal">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl playfair-display-normal">
             {highlightWordInPassage(data.passage, data.word)}
           </h1>
 
