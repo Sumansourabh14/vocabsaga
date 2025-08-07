@@ -44,7 +44,9 @@ const WordPopup = ({ word, addedAt, handleDelete, id }: WordProps) => {
             </p>
           )}
           {data &&
-            data.map((word) => <Meanings parentKey={word.word} word={word} />)}
+            data.map((word) => (
+              <Meanings parentKey={word.word} word={word} key={word.word} />
+            ))}
         </section>
       </DialogHeader>
       <DialogFooter>
