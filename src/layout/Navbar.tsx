@@ -27,7 +27,7 @@ const navItems = [
 export default function Navbar() {
   return (
     <header className="w-full">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
+      <div className="mx-auto flex h-16 max-w-[1330px] items-center justify-between px-4">
         {/* Logo */}
         <SiteTitleText />
 

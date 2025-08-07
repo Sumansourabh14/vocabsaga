@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { SITE_TITLE } from "@/data/constants";
 import usePageTitle from "@/hooks/usePageTitle";
 import { isLocallyValidWord } from "@/utils/validateWord";
+import { Search } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -41,8 +42,13 @@ const FindWord = () => {
               onChange={(e) => setSearchWord(e.target.value)}
               style={{ fontSize: "90%" }}
             />
-            <Button type="submit" disabled={!searchWord.trim()}>
-              Submit
+            <Button
+              type="submit"
+              disabled={!searchWord.trim()}
+              title="Search word"
+              className="cursor-pointer"
+            >
+              <Search />
             </Button>
           </section>
         </form>

@@ -51,7 +51,9 @@ const Bookmarks = () => {
         } mb-2 flex justify-between`}
       >
         {words.length > 0 && (
-          <h3 className="font-bold text-xl">{words.length + " Words"}</h3>
+          <p className="font-bold text-xl">
+            {words.length} {words.length > 1 ? "words" : "word"}
+          </p>
         )}
         {words.length > 0 && <DeleteIconButton handleDelete={removeAllItems} />}
       </section>
