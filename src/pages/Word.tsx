@@ -1,6 +1,7 @@
 import WordDataLoading from "@/components/loading/WordDataLoading";
 import MeaningNotFound from "@/components/text/MeaningNotFound";
 import WordDeepMeanings from "@/components/words/WordDeepMeanings";
+import { SITE_TITLE } from "@/data/constants";
 import useFetchWordMeaning from "@/hooks/useFetchWordMeaning";
 import usePageTitle from "@/hooks/usePageTitle";
 import { useParams } from "react-router";
@@ -8,6 +9,8 @@ import { useParams } from "react-router";
 const Word = () => {
   const { title } = useParams();
   usePageTitle(title ?? "");
+
+  usePageTitle(`${title} | ${SITE_TITLE}`);
 
   const { data, isFetching } = useFetchWordMeaning(title ?? "");
 

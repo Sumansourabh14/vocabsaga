@@ -2,6 +2,8 @@ import DeleteIconButton from "@/components/buttons/iconButtons/DeleteIconButton"
 import WordPopup from "@/components/popups/WordPopup";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import { SITE_TITLE } from "@/data/constants";
+import usePageTitle from "@/hooks/usePageTitle";
 import { displayFormatedDate } from "@/utils/displayFormatedDate";
 import { useEffect, useState } from "react";
 
@@ -13,6 +15,7 @@ type WordItem = {
 
 const Bookmarks = () => {
   const [words, setWords] = useState<WordItem[]>([]);
+  usePageTitle(`Bookmarks | ${SITE_TITLE}`);
 
   const updateWords = (updatedWords: WordItem[]) => {
     setWords(updatedWords);

@@ -13,7 +13,9 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { SITE_TITLE } from "@/data/constants";
 import rawPassages from "@/data/passages/p1.json";
+import usePageTitle from "@/hooks/usePageTitle";
 import type { BookmarkWordProps, WordPassage } from "@/types";
 import { Bookmark, Eye, Maximize, Minimize, Shuffle } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -40,6 +42,7 @@ const RandomStory = () => {
   const [current, setCurrent] = useState(0);
   const data = passages[current];
   const handle = useFullScreenHandle();
+  usePageTitle(`Story | ${SITE_TITLE}`);
 
   const handleRandom = () => {
     if (passages.length === 0) return;

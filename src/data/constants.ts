@@ -1,4 +1,4 @@
-export const SITE_TITLE = "Vocab Saga";
+export const SITE_TITLE = "Vocabsaga";
 
 export const WORDS_API_URL = "https://api.dictionaryapi.dev/api/v2/entries/en";
 

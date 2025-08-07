@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { SITE_TITLE } from "@/data/constants";
+import usePageTitle from "@/hooks/usePageTitle";
 import { isLocallyValidWord } from "@/utils/validateWord";
 import { useState } from "react";
 import { useNavigate } from "react-router";
@@ -8,6 +10,7 @@ const FindWord = () => {
   const [searchWord, setSearchWord] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
+  usePageTitle(`Find a word | ${SITE_TITLE}`);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
