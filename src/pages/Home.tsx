@@ -2,12 +2,9 @@ import { MagicCard } from "@/components/magicui/magic-card";
 import { Features } from "@/components/sections/homePage/Features";
 import Hero from "@/components/sections/homePage/Hero";
 import Why from "@/components/sections/homePage/Why";
-import usePageTitle from "@/hooks/usePageTitle";
 import { Link } from "react-router";
 
 const Home = () => {
-  usePageTitle("VocabSaga | Learn words through stories.");
-
   return (
     <>
       <main className="max-w-[1300px] mx-auto">
