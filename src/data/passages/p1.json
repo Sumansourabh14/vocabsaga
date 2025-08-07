@@ -698,5 +698,405 @@
       "10": "Her perspicuous explanation clarified the topic.",
       "25": "Her perspicuous explanation, clear and concise, made the complex topic easy to understand."
     }
+  },
+  {
+    "id": "81",
+    "word": "whimsical",
+    "word_meaning": "playfully quaint or fanciful",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The whimsical garden was full of surprises.",
+      "25": "The whimsical garden, with its fanciful sculptures, delighted visitors with playful surprises around every corner."
+    }
+  },
+  {
+    "id": "82",
+    "word": "sparkling",
+    "word_meaning": "shining brightly with flashes of light",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The sparkling stream caught the sunlight.",
+      "25": "The sparkling stream caught the sunlight, casting bright flashes across the peaceful meadow."
+    }
+  },
+  {
+    "id": "83",
+    "word": "playful",
+    "word_meaning": "full of fun and high spirits",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The playful kitten chased the yarn.",
+      "25": "The playful kitten chased the yarn, tumbling with high spirits across the sunny room."
+    }
+  },
+  {
+    "id": "84",
+    "word": "soothing",
+    "word_meaning": "having a calming or comforting effect",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "Her soothing voice eased their worries.",
+      "25": "Her soothing voice, soft and calm, eased their worries during the tense moment."
+    }
+  },
+  {
+    "id": "85",
+    "word": "breezy",
+    "word_meaning": "pleasantly windy; lively and carefree",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The breezy afternoon was perfect for kites.",
+      "25": "The breezy afternoon, lively and carefree, was perfect for flying kites in the park."
+    }
+  },
+  {
+    "id": "86",
+    "word": "cheery",
+    "word_meaning": "bright and cheerful",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The cheery flowers brightened the room.",
+      "25": "The cheery flowers, vibrant and bright, brought a cheerful glow to the cozy room."
+    }
+  },
+  {
+    "id": "87",
+    "word": "dainty",
+    "word_meaning": "delicately small and pretty",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "She wore a dainty necklace.",
+      "25": "She wore a dainty necklace, its delicate charm adding a pretty touch to her outfit."
+    }
+  },
+  {
+    "id": "88",
+    "word": "spry",
+    "word_meaning": "active and lively, especially for an older person",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The spry elder danced with joy.",
+      "25": "The spry elder danced with joy, moving lively despite her age at the celebration."
+    }
+  },
+  {
+    "id": "89",
+    "word": "sunny",
+    "word_meaning": "bright with sunlight; cheerful",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "Her sunny smile warmed the crowd.",
+      "25": "Her sunny smile, bright and cheerful, warmed the crowd on the chilly morning."
+    }
+  },
+  {
+    "id": "90",
+    "word": "twinkling",
+    "word_meaning": "shining with a flickering light",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The twinkling lights decorated the tree.",
+      "25": "The twinkling lights, flickering softly, decorated the tree with a magical glow."
+    }
+  },
+  {
+    "id": "91",
+    "word": "shrewd",
+    "word_meaning": "having sharp judgment; astute",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His shrewd decision saved the company.",
+      "25": "His shrewd decision, based on sharp judgment, saved the company from financial trouble."
+    }
+  },
+  {
+    "id": "92",
+    "word": "vigilant",
+    "word_meaning": "keeping careful watch for dangers",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "The vigilant guard protected the gate.",
+      "25": "The vigilant guard, always watchful, protected the gate from any potential dangers."
+    }
+  },
+  {
+    "id": "93",
+    "word": "poised",
+    "word_meaning": "having a composed and self-assured manner",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "She remained poised during the interview.",
+      "25": "She remained poised, her self-assured manner shining through during the tough interview."
+    }
+  },
+  {
+    "id": "94",
+    "word": "lucid",
+    "word_meaning": "expressed clearly; easy to understand",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His lucid explanation clarified the concept.",
+      "25": "His lucid explanation, clear and concise, made the complex concept easy to grasp."
+    }
+  },
+  {
+    "id": "95",
+    "word": "staunch",
+    "word_meaning": "loyal and committed in attitude",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her staunch support never wavered.",
+      "25": "Her staunch support, loyal and unwavering, gave the team strength during challenges."
+    }
+  },
+  {
+    "id": "96",
+    "word": "deft",
+    "word_meaning": "neatly skillful and quick",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His deft hands crafted the sculpture.",
+      "25": "His deft hands, skillful and quick, crafted the intricate sculpture with precision."
+    }
+  },
+  {
+    "id": "97",
+    "word": "fervent",
+    "word_meaning": "having or showing great enthusiasm",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her fervent speech inspired the crowd.",
+      "25": "Her fervent speech, filled with enthusiasm, inspired the crowd to take bold action."
+    }
+  },
+  {
+    "id": "98",
+    "word": "nebulous",
+    "word_meaning": "vague or ill-defined",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The nebulous plan confused everyone.",
+      "25": "The nebulous plan, vague and ill-defined, left the team confused and uncertain."
+    }
+  },
+  {
+    "id": "99",
+    "word": "sagacious",
+    "word_meaning": "having or showing keen mental discernment",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her sagacious advice guided the project.",
+      "25": "Her sagacious advice, full of keen discernment, guided the project to success."
+    }
+  },
+  {
+    "id": "100",
+    "word": "recalcitrant",
+    "word_meaning": "stubbornly resistant to authority",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The recalcitrant child refused to listen.",
+      "25": "The recalcitrant child, stubbornly resistant, refused to listen to any authority figures."
+    }
+  },
+  {
+    "id": "101",
+    "word": "jocular",
+    "word_meaning": "fond of or characterized by joking",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "His jocular remarks lightened the mood.",
+      "25": "His jocular remarks, filled with wit, lightened the mood during the tense meeting."
+    }
+  },
+  {
+    "id": "102",
+    "word": "luminous",
+    "word_meaning": "bright or radiant, especially in the dark",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The luminous stars guided the travelers.",
+      "25": "The luminous stars, radiant in the night, guided the travelers through the dark forest."
+    }
+  },
+  {
+    "id": "103",
+    "word": "mirthful",
+    "word_meaning": "full of or causing merriment",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "Her mirthful laughter echoed through the hall.",
+      "25": "Her mirthful laughter, infectious and joyful, echoed through the hall, spreading merriment."
+    }
+  },
+  {
+    "id": "104",
+    "word": "erudite",
+    "word_meaning": "having or showing great knowledge",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His erudite lecture impressed the scholars.",
+      "25": "His erudite lecture, rich with knowledge, impressed the scholars at the conference."
+    }
+  },
+  {
+    "id": "105",
+    "word": "intrepid",
+    "word_meaning": "fearless and adventurous",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "The intrepid explorer scaled the mountain.",
+      "25": "The intrepid explorer, fearless and bold, scaled the mountain despite harsh conditions."
+    }
+  },
+  {
+    "id": "106",
+    "word": "scrupulous",
+    "word_meaning": "very careful and precise; principled",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her scrupulous work ensured accuracy.",
+      "25": "Her scrupulous work, precise and principled, ensured the report’s flawless accuracy."
+    }
+  },
+  {
+    "id": "107",
+    "word": "canny",
+    "word_meaning": "having or showing shrewdness and good judgment",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His canny strategy won the game.",
+      "25": "His canny strategy, marked by shrewd judgment, secured victory in the challenging game."
+    }
+  },
+  {
+    "id": "108",
+    "word": "judicious",
+    "word_meaning": "having or showing good judgment",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her judicious choice resolved the dispute.",
+      "25": "Her judicious choice, guided by good judgment, resolved the dispute amicably."
+    }
+  },
+  {
+    "id": "109",
+    "word": "incisive",
+    "word_meaning": "intelligently analytical and clear-thinking",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His incisive critique improved the draft.",
+      "25": "His incisive critique, sharp and analytical, greatly improved the draft’s clarity."
+    }
+  },
+  {
+    "id": "110",
+    "word": "pensive",
+    "word_meaning": "engaged in deep or serious thought",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "She sat in pensive silence.",
+      "25": "She sat in pensive silence, lost in deep thought about her future."
+    }
+  },
+  {
+    "id": "111",
+    "word": "propinquity",
+    "word_meaning": "proximity or nearness; kinship",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Their propinquity fostered a strong bond.",
+      "25": "Their propinquity, living in close proximity, fostered a strong familial bond over time."
+    }
+  },
+  {
+    "id": "112",
+    "word": "taciturn",
+    "word_meaning": "reserved or uncommunicative in speech",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The taciturn poet rarely spoke.",
+      "25": "The taciturn poet, reserved in speech, let his verses speak volumes instead."
+    }
+  },
+  {
+    "id": "113",
+    "word": "obstreperous",
+    "word_meaning": "noisy and difficult to control",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The obstreperous crowd disrupted the event.",
+      "25": "The obstreperous crowd, noisy and unruly, disrupted the event despite efforts to calm them."
+    }
+  },
+  {
+    "id": "114",
+    "word": "pulchritudinous",
+    "word_meaning": "physically beautiful",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The pulchritudinous statue awed visitors.",
+      "25": "The pulchritudinous statue, exquisitely beautiful, awed visitors with its intricate craftsmanship."
+    }
+  },
+  {
+    "id": "115",
+    "word": "sesquipedalian",
+    "word_meaning": "characterized by long words",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His sesquipedalian speech confused listeners.",
+      "25": "His sesquipedalian speech, filled with long words, confused listeners unfamiliar with such vocabulary."
+    }
+  },
+  {
+    "id": "116",
+    "word": "perfidious",
+    "word_meaning": "deceitful and untrustworthy",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The perfidious ally betrayed their trust.",
+      "25": "The perfidious ally, deceitful and untrustworthy, betrayed their trust at a critical moment."
+    }
+  },
+  {
+    "id": "117",
+    "word": "antediluvian",
+    "word_meaning": "extremely old or outdated",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Their antediluvian methods slowed progress.",
+      "25": "Their antediluvian methods, outdated and obsolete, slowed the team’s progress significantly."
+    }
+  },
+  {
+    "id": "118",
+    "word": "supercilious",
+    "word_meaning": "arrogantly superior and disdainful",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her supercilious attitude alienated colleagues.",
+      "25": "Her supercilious attitude, arrogantly disdainful, alienated colleagues during the collaborative project."
+    }
+  },
+  {
+    "id": "119",
+    "word": "perspicacious",
+    "word_meaning": "having keen insight or understanding",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His perspicacious analysis solved the problem.",
+      "25": "His perspicacious analysis, with keen insight, solved the complex problem efficiently."
+    }
+  },
+  {
+    "id": "120",
+    "word": "prolix",
+    "word_meaning": "using too many words; tediously lengthy",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The prolix report bored the readers.",
+      "25": "The prolix report, tediously lengthy with excessive words, bored the readers quickly."
+    }
   }
 ]
