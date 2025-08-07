@@ -8,6 +8,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import {
   Tooltip,
   TooltipContent,
@@ -40,6 +41,7 @@ const getBadgeColor = (level: string) => {
 const RandomStory = () => {
   const [bookmarks, setBookmarks] = useState<BookmarkWordProps[]>([]);
   const [current, setCurrent] = useState(0);
+  const [wordLimit, setWordLimit] = useState("10");
   const data = passages[current];
   const handle = useFullScreenHandle();
   usePageTitle(`Story | ${SITE_TITLE}`);
@@ -133,7 +135,7 @@ const RandomStory = () => {
   return (
     <FullScreen handle={handle} className="random-story">
       <section className="max-w-[1300px] mx-auto px-8 min-h-[85vh] flex items-center justify-center">
-        <section className="max-w-4xl mx-auto text-center space-y-4">
+        <section className="max-w-5xl mx-auto text-center space-y-4">
           {/* <Progress value={((current + 1) / passage.length) * 100} /> */}
 
           <Badge
@@ -143,7 +145,7 @@ const RandomStory = () => {
           </Badge>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl playfair-display-normal">
-            {highlightWordInPassage(data.passage, data.word)}
+            {highlightWordInPassage(data.passages[wordLimit], data.word)}
           </h1>
 
           {(data.source_book || data.source_author) && (
@@ -229,6 +231,28 @@ const RandomStory = () => {
                 {handle.active ? "Exit fullscreen" : "Enter fullscreen"}
               </TooltipContent>
             </Tooltip>
+            <ToggleGroup
+              type="single"
+              value={wordLimit}
+              onValueChange={(value) => {
+                if (value) setWordLimit(value);
+              }}
+            >
+              <ToggleGroupItem
+                value={"10"}
+                aria-label="Toggle 10"
+                className="cursor-pointer"
+              >
+                10
+              </ToggleGroupItem>
+              <ToggleGroupItem
+                value={"25"}
+                aria-label="Toggle 25"
+                className="cursor-pointer"
+              >
+                25
+              </ToggleGroupItem>
+            </ToggleGroup>
           </section>
         </section>
       </section>

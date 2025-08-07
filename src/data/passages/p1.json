@@ -1,212 +1,702 @@
 [
   {
     "id": "11",
-    "passage": "He was so eager to help that he arrived an hour early.",
     "word": "eager",
     "word_meaning": "wanting to do or have something very much",
-    "difficulty_level": "easy"
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "He was so eager to help that he arrived an hour early.",
+      "25": "Eager to assist his colleagues, he arrived an hour early and prepared the meeting room with enthusiasm."
+    }
   },
   {
     "id": "12",
-    "passage": "They wandered through the quiet forest, enjoying the serenity.",
     "word": "serenity",
     "word_meaning": "the state of being calm and peaceful",
-    "difficulty_level": "easy"
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "They wandered through the quiet forest, enjoying the serenity.",
+      "25": "The serenity of the quiet forest enveloped them as they wandered, feeling a deep sense of calm and peace."
+    }
   },
   {
     "id": "13",
-    "passage": "She smiled, grateful for the unexpected kindness.",
     "word": "grateful",
     "word_meaning": "feeling or showing thanks",
-    "difficulty_level": "easy"
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "She smiled, grateful for the unexpected kindness.",
+      "25": "Grateful for the unexpected kindness, she smiled warmly and wrote a heartfelt thank-you note to express her appreciation."
+    }
   },
   {
     "id": "14",
-    "passage": "The puppy's playful antics made everyone laugh.",
     "word": "antics",
     "word_meaning": "funny or silly behavior",
-    "difficulty_level": "easy"
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The puppy's playful antics made everyone laugh.",
+      "25": "The puppy's playful antics, including chasing its tail and tumbling over, brought laughter to everyone in the room."
+    }
   },
   {
     "id": "15",
-    "passage": "He admired the vast ocean stretching endlessly before him.",
     "word": "vast",
     "word_meaning": "very large in size or amount",
-    "difficulty_level": "easy"
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "He admired the vast ocean stretching endlessly before him.",
+      "25": "Standing on the cliff, he admired the vast ocean, its endless expanse shimmering under the sunlight."
+    }
   },
   {
     "id": "16",
-    "passage": "Her voice trembled as she faced the crowd.",
     "word": "tremble",
     "word_meaning": "to shake slightly from fear or cold",
-    "difficulty_level": "easy"
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "Her voice trembled as she faced the crowd.",
+      "25": "Her voice trembled with nervousness as she stood before the large crowd, yet she spoke with determination."
+    }
   },
   {
     "id": "17",
-    "passage": "They shared a hearty meal after the long hike.",
     "word": "hearty",
     "word_meaning": "large and satisfying; warm and friendly",
-    "difficulty_level": "easy"
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "They shared a hearty meal after the long hike.",
+      "25": "After the long hike, they gathered around a hearty meal, sharing warm and friendly laughter."
+    }
   },
   {
     "id": "18",
-    "passage": "He cleaned the mess with swift, efficient movements.",
     "word": "efficient",
     "word_meaning": "doing something well without wasting time or resources",
-    "difficulty_level": "easy"
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "He cleaned the mess with swift, efficient movements.",
+      "25": "With swift and efficient movements, he cleaned the mess, organizing everything neatly in record time."
+    }
   },
   {
     "id": "19",
-    "passage": "She waved goodbye with a cheerful smile.",
     "word": "cheerful",
     "word_meaning": "noticeably happy and optimistic",
-    "difficulty_level": "easy"
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "She waved goodbye with a cheerful smile.",
+      "25": "With a cheerful smile, she waved goodbye, spreading positivity to everyone around her."
+    }
   },
   {
     "id": "20",
-    "passage": "The cat leapt gracefully onto the window sill.",
     "word": "gracefully",
     "word_meaning": "in an elegant and smooth way",
-    "difficulty_level": "easy"
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The cat leapt gracefully onto the window sill.",
+      "25": "The cat leapt gracefully onto the window sill, moving with elegant ease that captivated onlookers."
+    }
   },
   {
     "id": "21",
-    "passage": "The architect devised a clever plan to maximize space.",
     "word": "devise",
     "word_meaning": "to invent or plan something carefully",
-    "difficulty_level": "medium"
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "The architect devised a clever plan to maximize space.",
+      "25": "The architect devised a clever plan, carefully designing the building to maximize space and functionality."
+    }
   },
   {
     "id": "22",
-    "passage": "She tried to placate her angry friend with a sincere apology.",
     "word": "placate",
     "word_meaning": "to make someone less angry or hostile",
-    "difficulty_level": "medium"
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "She tried to placate her angry friend with a sincere apology.",
+      "25": "Hoping to placate her angry friend, she offered a sincere apology and promised to make amends."
+    }
   },
   {
     "id": "23",
-    "passage": "The stranger's cryptic message left them puzzled.",
     "word": "cryptic",
     "word_meaning": "having a mysterious or obscure meaning",
-    "difficulty_level": "medium"
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "The stranger's cryptic message left them puzzled.",
+      "25": "The stranger's cryptic message, written in vague terms, left the group puzzled and curious."
+    }
   },
   {
     "id": "24",
-    "passage": "His altruistic nature led him to volunteer every weekend.",
     "word": "altruistic",
     "word_meaning": "selflessly concerned for others’ well-being",
-    "difficulty_level": "medium"
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His altruistic nature led him to volunteer every weekend.",
+      "25": "His altruistic nature shone through as he volunteered every weekend, always prioritizing others’ well-being."
+    }
   },
   {
     "id": "25",
-    "passage": "They scrutinized every detail of the document before signing.",
     "word": "scrutinize",
     "word_meaning": "to examine something very carefully",
-    "difficulty_level": "medium"
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "They scrutinized every detail of the document before signing.",
+      "25": "They scrutinized every detail of the document carefully, ensuring no errors before signing it."
+    }
   },
   {
     "id": "26",
-    "passage": "She felt a sense of euphoria after receiving the award.",
     "word": "euphoria",
     "word_meaning": "a feeling of great happiness or excitement",
-    "difficulty_level": "medium"
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "She felt a sense of euphoria after receiving the award.",
+      "25": "A wave of euphoria washed over her as she received the award, her heart swelling with joy."
+    }
   },
   {
     "id": "27",
-    "passage": "The magician’s illusion deceived the entire audience.",
     "word": "illusion",
     "word_meaning": "a false idea or appearance",
-    "difficulty_level": "medium"
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "The magician’s illusion deceived the entire audience.",
+      "25": "The magician’s clever illusion deceived the audience, making them believe the impossible."
+    }
   },
   {
     "id": "28",
-    "passage": "Their relentless efforts finally bore fruit.",
     "word": "relentless",
     "word_meaning": "continuous and intense; not giving up",
-    "difficulty_level": "medium"
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Their relentless efforts finally bore fruit.",
+      "25": "Their relentless efforts, sustained over months, finally bore fruit with a successful outcome."
+    }
   },
   {
     "id": "29",
-    "passage": "He was adamant about his decision despite criticism.",
     "word": "adamant",
     "word_meaning": "refusing to be persuaded; firm in opinion",
-    "difficulty_level": "medium"
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "He was adamant about his decision despite criticism.",
+      "25": "Despite heavy criticism, he remained adamant about his decision, standing firm in his beliefs."
+    }
   },
   {
     "id": "30",
-    "passage": "She spoke in an articulate and persuasive manner.",
     "word": "articulate",
     "word_meaning": "able to express ideas clearly and effectively",
-    "difficulty_level": "medium"
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "She spoke in an articulate and persuasive manner.",
+      "25": "She spoke in an articulate manner, persuading the audience with clear and compelling arguments."
+    }
   },
   {
     "id": "31",
-    "passage": "His behavior was so egregious that even his allies distanced themselves.",
     "word": "egregious",
     "word_meaning": "outstandingly bad or shocking",
-    "difficulty_level": "hard"
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His egregious behavior shocked his allies.",
+      "25": "His egregious behavior was so shocking that even his closest allies distanced themselves from him."
+    }
   },
   {
     "id": "32",
-    "passage": "The philosopher’s treatise was filled with esoteric concepts.",
     "word": "esoteric",
     "word_meaning": "intended for or understood by a small, specialized group",
-    "difficulty_level": "hard"
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The philosopher’s esoteric concepts confused many.",
+      "25": "The philosopher’s treatise was filled with esoteric concepts, understood only by a small group of scholars."
+    }
   },
   {
     "id": "33",
-    "passage": "The politician's rhetoric was full of obfuscation.",
     "word": "obfuscation",
     "word_meaning": "the act of making something unclear or confusing",
-    "difficulty_level": "hard"
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The politician's rhetoric was full of obfuscation.",
+      "25": "The politician's rhetoric, laden with obfuscation, left the audience confused and uncertain."
+    }
   },
   {
     "id": "34",
-    "passage": "The artist's interpretation was too abstruse for most critics.",
     "word": "abstruse",
     "word_meaning": "difficult to understand; obscure",
-    "difficulty_level": "hard"
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The artist's abstruse work puzzled critics.",
+      "25": "The artist's interpretation was so abstruse that most critics struggled to understand its meaning."
+    }
   },
   {
     "id": "35",
-    "passage": "His vindictive nature made it hard for him to forgive.",
     "word": "vindictive",
     "word_meaning": "having a strong desire for revenge",
-    "difficulty_level": "hard"
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His vindictive nature made forgiveness difficult.",
+      "25": "His vindictive nature prevented him from forgiving, as he sought revenge for every slight."
+    }
   },
   {
     "id": "36",
-    "passage": "The scholar's dissertation was both profound and recondite.",
     "word": "recondite",
     "word_meaning": "little known or obscure (especially knowledge)",
-    "difficulty_level": "hard"
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The scholar's recondite dissertation impressed experts.",
+      "25": "The scholar's dissertation, filled with recondite knowledge, was admired by a select group of experts."
+    }
   },
   {
     "id": "37",
-    "passage": "Their clandestine meetings were known only to a select few.",
     "word": "clandestine",
     "word_meaning": "kept secret or done secretly",
-    "difficulty_level": "hard"
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Their clandestine meetings were secretive.",
+      "25": "Their clandestine meetings, held in secret, were known only to a trusted few."
+    }
   },
   {
     "id": "38",
-    "passage": "The leader's autocratic style stifled all dissent.",
     "word": "autocratic",
     "word_meaning": "ruling with absolute power and no input from others",
-    "difficulty_level": "hard"
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The leader's autocratic style stifled dissent.",
+      "25": "The leader's autocratic style, allowing no input, stifled all forms of dissent among the team."
+    }
   },
   {
     "id": "39",
-    "passage": "The director’s avant-garde film polarized critics and audiences.",
     "word": "avant-garde",
     "word_meaning": "new and experimental ideas in art or culture",
-    "difficulty_level": "hard"
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The director’s avant-garde film divided critics.",
+      "25": "The director’s avant-garde film, with its experimental style, polarized critics and audiences alike."
+    }
   },
   {
     "id": "40",
-    "passage": "His demeanor was imperturbable even in chaos.",
     "word": "imperturbable",
     "word_meaning": "unable to be upset or excited; calm",
-    "difficulty_level": "hard"
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His imperturbable demeanor shone in chaos.",
+      "25": "His imperturbable demeanor remained unshaken, even amidst the chaos of the crisis."
+    }
+  },
+  {
+    "id": "41",
+    "word": "vibrant",
+    "word_meaning": "full of energy and enthusiasm",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The vibrant festival filled the town with color.",
+      "25": "The vibrant festival brought the town to life, with colorful decorations and enthusiastic crowds dancing in the streets."
+    }
+  },
+  {
+    "id": "42",
+    "word": "gentle",
+    "word_meaning": "kind, mild, or soft in manner or effect",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "Her gentle touch calmed the nervous puppy.",
+      "25": "With a gentle touch, she calmed the nervous puppy, soothing it with soft words and a warm smile."
+    }
+  },
+  {
+    "id": "43",
+    "word": "curious",
+    "word_meaning": "eager to know or learn something",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The curious child explored the garden eagerly.",
+      "25": "The curious child wandered through the garden, eagerly inspecting every flower and insect with wide eyes."
+    }
+  },
+  {
+    "id": "44",
+    "word": "radiant",
+    "word_meaning": "shining or glowing brightly",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "Her radiant smile lit up the room.",
+      "25": "Her radiant smile lit up the room, spreading warmth and joy to everyone around her."
+    }
+  },
+  {
+    "id": "45",
+    "word": "cozy",
+    "word_meaning": "comfortable, warm, and snug",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "They sat in the cozy cabin by the fire.",
+      "25": "In the cozy cabin, they sat by the fire, wrapped in blankets and sharing warm drinks."
+    }
+  },
+  {
+    "id": "46",
+    "word": "gleeful",
+    "word_meaning": "exuberantly or joyfully happy",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The gleeful children played in the park.",
+      "25": "The gleeful children ran through the park, laughing and chasing each other with boundless joy."
+    }
+  },
+  {
+    "id": "47",
+    "word": "tranquil",
+    "word_meaning": "peaceful and calm",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The tranquil lake reflected the clear sky.",
+      "25": "The tranquil lake mirrored the clear sky, creating a peaceful scene that soothed all who saw it."
+    }
+  },
+  {
+    "id": "48",
+    "word": "lively",
+    "word_meaning": "full of life and energy",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The lively music energized the crowd.",
+      "25": "The lively music filled the room, energizing the crowd to dance and sing with enthusiasm."
+    }
+  },
+  {
+    "id": "49",
+    "word": "charming",
+    "word_meaning": "pleasant or attractive in a delightful way",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "His charming manners won everyone over.",
+      "25": "His charming manners, paired with a warm smile, won over everyone at the gathering."
+    }
+  },
+  {
+    "id": "50",
+    "word": "vivid",
+    "word_meaning": "producing clear and striking images in the mind",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "She described the sunset with vivid detail.",
+      "25": "She described the sunset with vivid detail, painting a striking picture of colors in the listeners’ minds."
+    }
+  },
+  {
+    "id": "51",
+    "word": "prudent",
+    "word_meaning": "acting with care and thought for the future",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her prudent decision saved the project.",
+      "25": "Her prudent decision to plan carefully saved the project from potential setbacks."
+    }
+  },
+  {
+    "id": "52",
+    "word": "astute",
+    "word_meaning": "having the ability to accurately assess situations",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His astute observation solved the mystery.",
+      "25": "His astute observation of the clues quickly led to solving the complex mystery."
+    }
+  },
+  {
+    "id": "53",
+    "word": "diligent",
+    "word_meaning": "showing careful and persistent effort",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "The diligent student aced the exam.",
+      "25": "The diligent student, with persistent effort, mastered the material and aced the exam."
+    }
+  },
+  {
+    "id": "54",
+    "word": "candid",
+    "word_meaning": "truthful and straightforward",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her candid feedback improved the plan.",
+      "25": "Her candid feedback, though direct, greatly improved the team’s plan for the project."
+    }
+  },
+  {
+    "id": "55",
+    "word": "resilient",
+    "word_meaning": "able to recover quickly from difficulties",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "The resilient team bounced back quickly.",
+      "25": "The resilient team, despite setbacks, bounced back quickly and completed the task."
+    }
+  },
+  {
+    "id": "56",
+    "word": "meticulous",
+    "word_meaning": "showing great attention to detail",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His meticulous work ensured perfection.",
+      "25": "His meticulous work, with keen attention to detail, ensured the project was flawless."
+    }
+  },
+  {
+    "id": "57",
+    "word": "prolific",
+    "word_meaning": "producing many works or results",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "The prolific author published another book.",
+      "25": "The prolific author, known for her many works, published another bestselling book."
+    }
+  },
+  {
+    "id": "58",
+    "word": "ephemeral",
+    "word_meaning": "lasting for a very short time",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The ephemeral beauty of the sunset faded.",
+      "25": "The ephemeral beauty of the sunset faded quickly, leaving only memories of its glow."
+    }
+  },
+  {
+    "id": "59",
+    "word": "ubiquitous",
+    "word_meaning": "present or found everywhere",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Smartphones are now ubiquitous in cities.",
+      "25": "Smartphones, once rare, are now ubiquitous, seen in every hand across bustling cities."
+    }
+  },
+  {
+    "id": "60",
+    "word": "fastidious",
+    "word_meaning": "very attentive to and concerned about detail",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her fastidious nature ensured a spotless home.",
+      "25": "Her fastidious nature, with a focus on every detail, kept her home spotless and organized."
+    }
+  },
+  {
+    "id": "61",
+    "word": "blissful",
+    "word_meaning": "extremely happy; full of joy",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The blissful morning was filled with laughter.",
+      "25": "The blissful morning echoed with laughter, as the family enjoyed a joyful breakfast together."
+    }
+  },
+  {
+    "id": "62",
+    "word": "sprightly",
+    "word_meaning": "lively and full of energy",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The sprightly dance captivated the audience.",
+      "25": "Her sprightly dance, full of energy, captivated the audience with its lively movements."
+    }
+  },
+  {
+    "id": "63",
+    "word": "merry",
+    "word_meaning": "cheerful and lively",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The merry children sang holiday songs.",
+      "25": "The merry children sang holiday songs, spreading cheer throughout the festive gathering."
+    }
+  },
+  {
+    "id": "64",
+    "word": "buoyant",
+    "word_meaning": "cheerful or optimistic; able to float",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "Her buoyant mood lifted everyone’s spirits.",
+      "25": "Her buoyant mood, bright and optimistic, lifted the spirits of everyone around her."
+    }
+  },
+  {
+    "id": "65",
+    "word": "serene",
+    "word_meaning": "calm, peaceful, and untroubled",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The serene meadow invited quiet reflection.",
+      "25": "The serene meadow, with its calm beauty, invited quiet reflection and peaceful thoughts."
+    }
+  },
+  {
+    "id": "66",
+    "word": "jovial",
+    "word_meaning": "cheerful and friendly",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "His jovial greeting warmed the room.",
+      "25": "His jovial greeting, full of cheer, warmed the room and welcomed all guests."
+    }
+  },
+  {
+    "id": "67",
+    "word": "nimble",
+    "word_meaning": "quick and light in movement or action",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The nimble squirrel darted up the tree.",
+      "25": "The nimble squirrel darted up the tree, moving quickly with light, graceful hops."
+    }
+  },
+  {
+    "id": "68",
+    "word": "zesty",
+    "word_meaning": "full of flavor or enthusiasm",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The zesty performance energized the crowd.",
+      "25": "The zesty performance, bursting with enthusiasm, energized the crowd and sparked applause."
+    }
+  },
+  {
+    "id": "69",
+    "word": "gleaming",
+    "word_meaning": "shining brightly",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The gleaming stars lit the night sky.",
+      "25": "The gleaming stars lit the night sky, casting a bright glow over the quiet valley."
+    }
+  },
+  {
+    "id": "70",
+    "word": "placid",
+    "word_meaning": "calm and not easily upset",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The placid lake mirrored the mountains.",
+      "25": "The placid lake, calm and undisturbed, mirrored the majestic mountains under the clear sky."
+    }
+  },
+  {
+    "id": "71",
+    "word": "astounding",
+    "word_meaning": "surprisingly impressive or notable",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her astounding talent amazed the judges.",
+      "25": "Her astounding talent, showcased with skill, left the judges in awe of her performance."
+    }
+  },
+  {
+    "id": "72",
+    "word": "pragmatic",
+    "word_meaning": "dealing with things sensibly and realistically",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His pragmatic approach solved the issue.",
+      "25": "His pragmatic approach, grounded in reality, quickly resolved the complex issue at hand."
+    }
+  },
+  {
+    "id": "73",
+    "word": "tenacious",
+    "word_meaning": "determined to continue despite difficulties",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her tenacious spirit led to success.",
+      "25": "Her tenacious spirit, unwavering despite challenges, ultimately led to her remarkable success."
+    }
+  },
+  {
+    "id": "74",
+    "word": "eloquent",
+    "word_meaning": "fluent or persuasive in speaking or writing",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His eloquent speech inspired the audience.",
+      "25": "His eloquent speech, delivered with passion, inspired the audience to take action."
+    }
+  },
+  {
+    "id": "75",
+    "word": "discerning",
+    "word_meaning": "having or showing good judgment",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her discerning taste impressed the critics.",
+      "25": "Her discerning taste in art impressed the critics, reflecting her excellent judgment."
+    }
+  },
+  {
+    "id": "76",
+    "word": "cogent",
+    "word_meaning": "clear, logical, and convincing",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His cogent argument won the debate.",
+      "25": "His cogent argument, clear and logical, won the debate with its convincing points."
+    }
+  },
+  {
+    "id": "77",
+    "word": "formidable",
+    "word_meaning": "inspiring fear or respect through strength",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "The formidable opponent challenged everyone.",
+      "25": "The formidable opponent, with unmatched strength, challenged everyone in the competition."
+    }
+  },
+  {
+    "id": "78",
+    "word": "epiphany",
+    "word_meaning": "a sudden realization or insight",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her epiphany changed her perspective forever.",
+      "25": "Her epiphany, a sudden insight, transformed her perspective on life forever."
+    }
+  },
+  {
+    "id": "79",
+    "word": "quixotic",
+    "word_meaning": "unrealistically optimistic or impractical",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His quixotic dreams amused his friends.",
+      "25": "His quixotic dreams, though impractical, amused his friends with their boundless optimism."
+    }
+  },
+  {
+    "id": "80",
+    "word": "perspicuous",
+    "word_meaning": "clearly expressed, easy to understand",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her perspicuous explanation clarified the topic.",
+      "25": "Her perspicuous explanation, clear and concise, made the complex topic easy to understand."
+    }
   }
 ]
