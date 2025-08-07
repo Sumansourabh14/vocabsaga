@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({});
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 async function geminiAI(content: string) {
   if (content.length === 0) return;
@@ -16,6 +16,7 @@ async function geminiAI(content: string) {
         "You are an English professor. The response should be related to vocabulary/English. Response should be given automatically",
     },
   });
+  console.log(response.text);
 
   return response.text;
 }

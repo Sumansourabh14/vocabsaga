@@ -18,6 +18,7 @@ import { SITE_TITLE } from "@/data/constants";
 import rawPassages from "@/data/passages/p1.json";
 import usePageTitle from "@/hooks/usePageTitle";
 import type { BookmarkWordProps, WordPassage } from "@/types";
+import geminiAI from "@/utils/gemini";
 import { Bookmark, Eye, Maximize, Minimize, Shuffle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
@@ -61,7 +62,37 @@ const RandomStory = () => {
   //   setCurrent((prev) => (prev === passages.length - 1 ? 0 : prev + 1));
   // };
 
+  const fetchGeminiData = async () => {
+    const content = `Give me a passage in Engligh for vocabulary. It should have a focused word.
+    difficulty_level can be either easy, medium or hard. You decide.
+
+    Give me the data in this format: 
+    {
+      "id",
+      "word",
+      "word_meaning",
+      "difficulty_level",
+      "passages": {
+        "10",
+        "25" 
+      }
+    }
+
+    10 means, limit: 10 words
+    25 means, limit: 25 words
+    Don't bold the word. Keep it normal. Give me the JSON object only. I will parse it with JSON.parse() method. No other text in response, please.
+
+    `;
+
+    const res = (await geminiAI(content)) || "";
+    console.log(res, JSON.parse(res));
+
+    return res;
+  };
+
   useEffect(() => {
+    fetchGeminiData();
+
     const savedBookmarks = localStorage.getItem("bookmarks");
 
     if (savedBookmarks) {
