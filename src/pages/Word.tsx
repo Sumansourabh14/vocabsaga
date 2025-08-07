@@ -6,12 +6,13 @@ import { SITE_TITLE } from "@/data/constants";
 import useFetchWordMeaning from "@/hooks/useFetchWordMeaning";
 import type { BookmarkWordProps } from "@/types";
 import {
+  addBookmarksToLocalStorage,
   handleFailureMessage,
+  handleRemovedSuccessMessage,
   handleSuccessMessage,
 } from "@/utils/bookmarkFunctions";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { toast } from "sonner";
 
 const Word = () => {
   const [bookmarks, setBookmarks] = useState<BookmarkWordProps[]>([]);
@@ -46,6 +47,11 @@ const Word = () => {
     }
   }, []);
 
+  const handleSetLocalStorage = (newBookmarks: BookmarkWordProps[]) => {
+    addBookmarksToLocalStorage(newBookmarks);
+    setBookmarks(newBookmarks);
+  };
+
   const handleBookmarking = () => {
     if (title) {
       const find = bookmarks.find((item) => item.word.toLowerCase() === title);
@@ -53,11 +59,10 @@ const Word = () => {
       if (find) {
         const newBookmarks = bookmarks.filter((item) => item.word !== title);
 
-        localStorage.setItem("bookmarks", JSON.stringify(newBookmarks));
-        setBookmarks(newBookmarks);
+        handleSetLocalStorage(newBookmarks);
         setIsBookmarked(false);
 
-        toast.success("Word is removed from bookmarks.");
+        handleRemovedSuccessMessage();
         return;
       }
 
@@ -71,8 +76,7 @@ const Word = () => {
       ];
 
       try {
-        localStorage.setItem("bookmarks", JSON.stringify(newBookmarks));
-        setBookmarks(newBookmarks);
+        handleSetLocalStorage(newBookmarks);
         setIsBookmarked(true);
         handleSuccessMessage();
       } catch (error) {
