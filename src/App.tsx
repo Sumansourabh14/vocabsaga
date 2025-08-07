@@ -10,6 +10,7 @@ import FindWord from "./pages/FindWord";
 import RandomStory from "./pages/RandomStory";
 import Bookmarks from "./pages/Bookmarks";
 import { Toaster } from "./components/ui/sonner";
+import { Analytics } from "@vercel/analytics/react";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,7 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <RouterProvider router={router} />
       <Toaster />
+      <Analytics />
     </ThemeProvider>
   );
 }
