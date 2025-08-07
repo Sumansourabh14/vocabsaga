@@ -164,8 +164,6 @@ const RandomStory = () => {
     <FullScreen handle={handle} className="random-story">
       <section className="max-w-[1300px] mx-auto px-8 min-h-[85vh] flex items-center justify-center">
         <section className="max-w-5xl mx-auto text-center space-y-4">
-          {/* <Progress value={((current + 1) / passage.length) * 100} /> */}
-
           <section className="flex justify-center gap-4">
             <Badge
               className={`px-2 text-sm ${getBadgeColor(data.difficulty_level)}`}
