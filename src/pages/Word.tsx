@@ -10,8 +10,8 @@ const Word = () => {
   const { data, isFetching } = useFetchWordMeaning(title ?? "");
 
   return (
-    <section className="max-w-[1300px] mx-auto">
-      <h1 className="text-center text-5xl sm:text-8xl lg:text-9xl font-bold">
+    <section className="max-w-[1300px] mx-auto min-h-[70vh]">
+      <h1 className="text-center text-5xl sm:text-8xl lg:text-9xl font-bold break-all">
         {title}
       </h1>
 
