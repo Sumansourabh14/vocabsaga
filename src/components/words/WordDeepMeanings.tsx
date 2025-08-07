@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
+import { Volume2 } from "lucide-react";
 
 type WordDeepMeaningsProps = {
   phonetic?: string;
@@ -41,7 +43,19 @@ const WordDeepMeanings = ({
                 [{p.text}]
               </span>
             )}
-            <audio controls src={p.audio} className="mt-1" />
+            <Button
+              variant="outline"
+              className="h-10 w-10 cursor-pointer"
+              onClick={() => {
+                const audio = new Audio(p.audio);
+                audio
+                  .play()
+                  .catch((err) => console.error("Audio playback error:", err));
+              }}
+              aria-label="Play pronunciation"
+            >
+              <Volume2 className="h-4 w-4" />
+            </Button>
           </div>
         ) : null
       )}
