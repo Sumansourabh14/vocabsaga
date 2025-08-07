@@ -51,9 +51,9 @@ const WordDeepMeanings = ({
       <div className="space-y-4">
         {meanings.map((meaning, index) => (
           <div key={index}>
-            <h3 className="text-lg font-semibold italic">
+            <p className="text-lg font-semibold italic">
               {meaning.partOfSpeech}
-            </h3>
+            </p>
 
             <ol className="list-decimal list-inside space-y-2 mt-1">
               {meaning.definitions.map((def, i) => (

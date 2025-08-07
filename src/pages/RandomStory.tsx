@@ -138,11 +138,51 @@ const RandomStory = () => {
         <section className="max-w-5xl mx-auto text-center space-y-4">
           {/* <Progress value={((current + 1) / passage.length) * 100} /> */}
 
-          <Badge
-            className={`px-2 text-sm ${getBadgeColor(data.difficulty_level)}`}
-          >
-            {data.difficulty_level.toUpperCase()}
-          </Badge>
+          <section className="flex justify-center gap-4">
+            <Badge
+              className={`px-2 text-sm ${getBadgeColor(data.difficulty_level)}`}
+            >
+              {data.difficulty_level.toUpperCase()}
+            </Badge>
+
+            <ToggleGroup
+              type="single"
+              variant="outline"
+              value={wordLimit}
+              onValueChange={(value) => {
+                if (value) setWordLimit(value);
+              }}
+            >
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <ToggleGroupItem
+                    value={"10"}
+                    aria-label="Toggle 10"
+                    className="cursor-pointer"
+                  >
+                    10
+                  </ToggleGroupItem>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Max words: 10</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <ToggleGroupItem
+                    value={"25"}
+                    aria-label="Toggle 25"
+                    className="cursor-pointer"
+                  >
+                    20
+                  </ToggleGroupItem>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Max words: 20</p>
+                </TooltipContent>
+              </Tooltip>
+            </ToggleGroup>
+          </section>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl playfair-display-normal">
             {highlightWordInPassage(data.passages[wordLimit], data.word)}
@@ -231,28 +271,6 @@ const RandomStory = () => {
                 {handle.active ? "Exit fullscreen" : "Enter fullscreen"}
               </TooltipContent>
             </Tooltip>
-            <ToggleGroup
-              type="single"
-              value={wordLimit}
-              onValueChange={(value) => {
-                if (value) setWordLimit(value);
-              }}
-            >
-              <ToggleGroupItem
-                value={"10"}
-                aria-label="Toggle 10"
-                className="cursor-pointer"
-              >
-                10
-              </ToggleGroupItem>
-              <ToggleGroupItem
-                value={"25"}
-                aria-label="Toggle 25"
-                className="cursor-pointer"
-              >
-                25
-              </ToggleGroupItem>
-            </ToggleGroup>
           </section>
         </section>
       </section>
