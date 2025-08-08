@@ -32,7 +32,7 @@ export default function Navbar() {
         <SiteTitleText />
 
         {/* Desktop Nav */}
-        <NavigationMenu className="hidden space-x-6 md:flex md:items-center">
+        <NavigationMenu className="hidden space-x-2 md:flex md:items-center">
           <ModeToggle />
           <NavigationMenuList>
             {navItems.map((link, index) => (
