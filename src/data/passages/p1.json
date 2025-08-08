@@ -1130,16 +1130,6 @@
     }
   },
   {
-    "id": "131",
-    "word": "astute",
-    "word_meaning": "having sharp perception or judgment",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "Her astute analysis uncovered the flaw.",
-      "25": "Her astute analysis, with sharp judgment, uncovered the flaw in the complex proposal."
-    }
-  },
-  {
     "id": "132",
     "word": "pragmatic",
     "word_meaning": "dealing with things sensibly and realistically",
@@ -1937,16 +1927,6 @@
     "passages": {
       "10": "His pliant nature eased negotiations.",
       "25": "His pliant nature, adaptable and open, eased negotiations during the tense meeting."
-    }
-  },
-  {
-    "id": "225",
-    "word": "staunch",
-    "word_meaning": "firmly loyal or supportive",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "Her staunch loyalty inspired trust.",
-      "25": "Her staunch loyalty, unwavering and firm, inspired trust among her closest allies."
     }
   },
   {
@@ -2870,16 +2850,6 @@
     }
   },
   {
-    "id": "321",
-    "word": "sunny",
-    "word_meaning": "bright and cheerful",
-    "difficulty_level": "easy",
-    "passages": {
-      "10": "Her sunny disposition uplifted everyone.",
-      "25": "The sunny meadow, bright with flowers, cheered the weary travelers."
-    }
-  },
-  {
     "id": "322",
     "word": "trim",
     "word_meaning": "neat and orderly in appearance",
@@ -2887,16 +2857,6 @@
     "passages": {
       "10": "The trim lawn looked pristine.",
       "25": "His trim suit, neatly tailored, made a strong impression at the meeting."
-    }
-  },
-  {
-    "id": "323",
-    "word": "vivid",
-    "word_meaning": "bright or intense; clear in the mind",
-    "difficulty_level": "easy",
-    "passages": {
-      "10": "Her vivid dreams inspired creativity.",
-      "25": "The vivid colors of the sunset painted a memorable evening sky."
     }
   },
   {
@@ -2917,16 +2877,6 @@
     "passages": {
       "10": "Her zest energized the team.",
       "25": "His zest for adventure led them through the thrilling jungle trek."
-    }
-  },
-  {
-    "id": "326",
-    "word": "astute",
-    "word_meaning": "shrewd and perceptive in judgment",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "His astute insight solved the problem.",
-      "25": "Her astute analysis of the data uncovered hidden trends quickly."
     }
   },
   {
@@ -2970,16 +2920,6 @@
     }
   },
   {
-    "id": "333",
-    "word": "lithe",
-    "word_meaning": "graceful and flexible in movement",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "The lithe dancer twirled gracefully.",
-      "25": "Her lithe movements captivated the audience at the outdoor festival."
-    }
-  },
-  {
     "id": "334",
     "word": "mettle",
     "word_meaning": "strength or courage in adversity",
@@ -2987,16 +2927,6 @@
     "passages": {
       "10": "Her mettle shone during hardship.",
       "25": "His mettle proved itself in the face of relentless challenges."
-    }
-  },
-  {
-    "id": "335",
-    "word": "poised",
-    "word_meaning": "calm and confident in manner",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "She remained poised under pressure.",
-      "25": "Her poised demeanor calmed the crowd during the tense debate."
     }
   },
   {
@@ -3010,16 +2940,6 @@
     }
   },
   {
-    "id": "337",
-    "word": "staunch",
-    "word_meaning": "firmly loyal or resolute",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "Her staunch support never wavered.",
-      "25": "His staunch loyalty strengthened the team during the tough season."
-    }
-  },
-  {
     "id": "338",
     "word": "supple",
     "word_meaning": "flexible or adaptable",
@@ -3027,26 +2947,6 @@
     "passages": {
       "10": "The supple fabric draped elegantly.",
       "25": "Her supple mind adapted quickly to the changing project demands."
-    }
-  },
-  {
-    "id": "339",
-    "word": "trenchant",
-    "word_meaning": "sharp and incisive in expression",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "His trenchant critique sparked debate.",
-      "25": "Her trenchant analysis exposed flaws in the outdated policy."
-    }
-  },
-  {
-    "id": "340",
-    "word": "verdant",
-    "word_meaning": "green and lush with vegetation",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "The verdant hills bloomed vibrantly.",
-      "25": "The verdant valley, lush with greenery, attracted adventurous hikers."
     }
   },
   {
