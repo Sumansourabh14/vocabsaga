@@ -3868,5 +3868,475 @@
       "10": "Her career reached its zenith.",
       "25": "Her career reached its zenith, celebrated for achievements at the grand ceremony."
     }
+  },
+  {
+    "id": "421",
+    "word": "anachronistic",
+    "word_meaning": "belonging to a period other than that portrayed",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her anachronistic dress startled guests.",
+      "25": "Her anachronistic dress, from another era, startled guests at the modern gala."
+    }
+  },
+  {
+    "id": "422",
+    "word": "antediluvian",
+    "word_meaning": "extremely old-fashioned or primitive",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His antediluvian views shocked peers.",
+      "25": "‘Your antediluvian views are absurd!’ she snapped at the outdated scholar."
+    }
+  },
+  {
+    "id": "423",
+    "word": "apocryphal",
+    "word_meaning": "of doubtful authenticity, though widely circulated",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The apocryphal tale spread rapidly.",
+      "25": "The apocryphal tale about the ghost spread rapidly through the small village."
+    }
+  },
+  {
+    "id": "424",
+    "word": "asperity",
+    "word_meaning": "harshness or sharpness of tone",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His asperity silenced the room.",
+      "25": "‘Mind your asperity!’ she warned, stung by his sharp tone in debate."
+    }
+  },
+  {
+    "id": "425",
+    "word": "atavistic",
+    "word_meaning": "relating to ancient or ancestral traits",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "An atavistic urge gripped him.",
+      "25": "An atavistic urge to hunt gripped him during the forest expedition."
+    }
+  },
+  {
+    "id": "426",
+    "word": "calumny",
+    "word_meaning": "a false and malicious statement",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The calumny ruined her reputation.",
+      "25": "The calumny, spread with malice, ruined her reputation in the tight community."
+    }
+  },
+  {
+    "id": "427",
+    "word": "chicanery",
+    "word_meaning": "the use of deception or trickery",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His chicanery fooled the investors.",
+      "25": "‘Your chicanery won’t go unnoticed!’ she accused the deceitful businessman."
+    }
+  },
+  {
+    "id": "428",
+    "word": "circumlocution",
+    "word_meaning": "the use of unnecessarily wordy language",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her circumlocution frustrated the team.",
+      "25": "Her circumlocution, endlessly verbose, frustrated the team during the urgent meeting."
+    }
+  },
+  {
+    "id": "429",
+    "word": "contumacious",
+    "word_meaning": "stubbornly disobedient or rebellious",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The contumacious child defied orders.",
+      "25": "The contumacious child, boldly defiant, ignored orders from the stern teacher."
+    }
+  },
+  {
+    "id": "430",
+    "word": "denouement",
+    "word_meaning": "the final resolution of a plot",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "The denouement surprised the audience.",
+      "25": "‘What a denouement!’ he gasped, stunned by the play’s final twist."
+    }
+  },
+  {
+    "id": "431",
+    "word": "diaphanous",
+    "word_meaning": "light, delicate, and translucent",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her diaphanous veil fluttered gently.",
+      "25": "Her diaphanous veil, nearly transparent, fluttered gently in the warm breeze."
+    }
+  },
+  {
+    "id": "432",
+    "word": "disquisition",
+    "word_meaning": "a long or elaborate discussion",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His disquisition bored the audience.",
+      "25": "His disquisition on philosophy, overly detailed, bored the audience at the lecture."
+    }
+  },
+  {
+    "id": "433",
+    "word": "effrontery",
+    "word_meaning": "shameless or impudent boldness",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her effrontery shocked the council.",
+      "25": "‘Such effrontery!’ he exclaimed, appalled by her bold demand in court."
+    }
+  },
+  {
+    "id": "434",
+    "word": "ersatz",
+    "word_meaning": "an inferior substitute or imitation",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The ersatz coffee tasted awful.",
+      "25": "The ersatz coffee, a cheap imitation, tasted awful to the discerning guests."
+    }
+  },
+  {
+    "id": "435",
+    "word": "exegesis",
+    "word_meaning": "critical explanation or interpretation of a text",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her exegesis clarified the scripture.",
+      "25": "Her exegesis of the ancient text clarified its meaning for the scholars."
+    }
+  },
+  {
+    "id": "436",
+    "word": "feckless",
+    "word_meaning": "lacking initiative or strength of character",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His feckless attitude annoyed her.",
+      "25": "‘Your feckless attitude is useless!’ she scolded the idle team member."
+    }
+  },
+  {
+    "id": "437",
+    "word": "gasconade",
+    "word_meaning": "extravagant boasting",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His gasconade irritated the crew.",
+      "25": "His gasconade about his skills irritated the crew on the challenging voyage."
+    }
+  },
+  {
+    "id": "438",
+    "word": "imprecation",
+    "word_meaning": "a spoken curse",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her imprecation chilled the air.",
+      "25": "Her imprecation, hissed with venom, chilled the air in the tense room."
+    }
+  },
+  {
+    "id": "439",
+    "word": "inchoate",
+    "word_meaning": "just begun and not fully formed",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The inchoate plan needed work.",
+      "25": "The inchoate plan, barely outlined, needed work before the critical deadline."
+    }
+  },
+  {
+    "id": "440",
+    "word": "jeremiad",
+    "word_meaning": "a prolonged lament or complaint",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His jeremiad exhausted the listeners.",
+      "25": "‘Enough with your jeremiad!’ she groaned, tired of his endless complaints."
+    }
+  },
+  {
+    "id": "441",
+    "word": "limpid",
+    "word_meaning": "clear, transparent, or serene",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her limpid eyes captivated him.",
+      "25": "Her limpid eyes, serene and clear, captivated him during their quiet talk."
+    }
+  },
+  {
+    "id": "442",
+    "word": "maudlin",
+    "word_meaning": "overly sentimental or tearful",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His maudlin speech embarrassed guests.",
+      "25": "His maudlin speech, dripping with tears, embarrassed guests at the formal event."
+    }
+  },
+  {
+    "id": "443",
+    "word": "obstreperous",
+    "word_meaning": "noisy and difficult to control",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The obstreperous crowd disrupted order.",
+      "25": "The obstreperous crowd, shouting wildly, disrupted order at the public rally."
+    }
+  },
+  {
+    "id": "444",
+    "word": "panegyric",
+    "word_meaning": "a public speech of praise",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her panegyric honored the hero.",
+      "25": "Her panegyric, eloquent and grand, honored the hero at the ceremony."
+    }
+  },
+  {
+    "id": "445",
+    "word": "perspicuous",
+    "word_meaning": "clearly expressed and easy to understand",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His perspicuous argument won support.",
+      "25": "His perspicuous argument, clearly stated, won support in the heated discussion."
+    }
+  },
+  {
+    "id": "446",
+    "word": "pusillanimous",
+    "word_meaning": "lacking courage or resolution",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His pusillanimous retreat angered allies.",
+      "25": "‘Your pusillanimous retreat is shameful!’ she yelled at the fleeing leader."
+    }
+  },
+  {
+    "id": "447",
+    "word": "rancorous",
+    "word_meaning": "characterized by bitterness or resentment",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Their rancorous dispute divided friends.",
+      "25": "Their rancorous dispute, fueled by resentment, divided friends at the gathering."
+    }
+  },
+  {
+    "id": "448",
+    "word": "syllogism",
+    "word_meaning": "a form of deductive reasoning",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her syllogism convinced the jury.",
+      "25": "Her syllogism, logically sound, convinced the jury during the intense trial."
+    }
+  },
+  {
+    "id": "449",
+    "word": "truculent",
+    "word_meaning": "fiercely aggressive or belligerent",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His truculent glare intimidated opponents.",
+      "25": "His truculent glare, fiercely hostile, intimidated opponents in the tense standoff."
+    }
+  },
+  {
+    "id": "450",
+    "word": "vitiate",
+    "word_meaning": "to impair the quality or effectiveness of",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Errors vitiated the research findings.",
+      "25": "Errors vitiated the research findings, undermining their credibility in the study."
+    }
+  },
+  {
+    "id": "451",
+    "word": "acrimonious",
+    "word_meaning": "marked by bitterness or sharp anger",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Their acrimonious exchange stunned guests.",
+      "25": "‘Your acrimonious tone is uncalled for!’ she snapped at the hostile critic."
+    }
+  },
+  {
+    "id": "452",
+    "word": "ameliorative",
+    "word_meaning": "intended to improve or make better",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her ameliorative efforts restored peace.",
+      "25": "Her ameliorative efforts, though subtle, restored peace to the fractured community."
+    }
+  },
+  {
+    "id": "454",
+    "word": "castigation",
+    "word_meaning": "severe criticism or verbal punishment",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her castigation silenced the room.",
+      "25": "‘Your castigation is too harsh!’ he protested, stung by her sharp rebuke."
+    }
+  },
+  {
+    "id": "456",
+    "word": "deprecatory",
+    "word_meaning": "expressing disapproval or belittlement",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her deprecatory remarks offended him.",
+      "25": "‘Your deprecatory remarks are unfair!’ he retorted, hurt by her disdain."
+    }
+  },
+  {
+    "id": "457",
+    "word": "didactic",
+    "word_meaning": "intended to teach, often overly moralistic",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His didactic lecture bored students.",
+      "25": "His didactic lecture, overly preachy, bored students in the quiet classroom."
+    }
+  },
+  {
+    "id": "460",
+    "word": "expurgate",
+    "word_meaning": "to remove objectionable parts from",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "They expurgated the controversial text.",
+      "25": "They expurgated the controversial text, stripping offensive parts before publication."
+    }
+  },
+  {
+    "id": "461",
+    "word": "fatuous",
+    "word_meaning": "silly and pointless",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His fatuous comment drew laughter.",
+      "25": "‘Your fatuous comment is absurd!’ she giggled at his foolish remark."
+    }
+  },
+  {
+    "id": "462",
+    "word": "fulminate",
+    "word_meaning": "to express vehement protest",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "He fulminated against the policy.",
+      "25": "‘I fulminate against this injustice!’ he roared at the unfair ruling."
+    }
+  },
+  {
+    "id": "463",
+    "word": "ignominious",
+    "word_meaning": "deserving or causing public disgrace",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His ignominious defeat humiliated him.",
+      "25": "His ignominious defeat, widely mocked, humiliated him in the public arena."
+    }
+  },
+  {
+    "id": "464",
+    "word": "importunate",
+    "word_meaning": "persistent, especially to the point of annoyance",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her importunate demands exhausted him.",
+      "25": "‘Your importunate demands are draining!’ he groaned at her relentless requests."
+    }
+  },
+  {
+    "id": "467",
+    "word": "mellifluous",
+    "word_meaning": "sweet or musical; pleasant to hear",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her mellifluous voice charmed audiences.",
+      "25": "Her mellifluous voice, sweetly soothing, charmed audiences in the quiet hall."
+    }
+  },
+  {
+    "id": "470",
+    "word": "parsimonious",
+    "word_meaning": "excessively frugal or stingy",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His parsimonious habits annoyed friends.",
+      "25": "‘Your parsimonious ways are ridiculous!’ she teased the overly thrifty host."
+    }
+  },
+  {
+    "id": "471",
+    "word": "pellucid",
+    "word_meaning": "transparently clear in style or meaning",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her pellucid writing impressed scholars.",
+      "25": "Her pellucid writing, strikingly clear, impressed scholars at the academic conference."
+    }
+  },
+  {
+    "id": "473",
+    "word": "propitiate",
+    "word_meaning": "to win or regain favor",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "He tried to propitiate her.",
+      "25": "‘I’ll propitiate her with an apology,’ he planned, hoping to regain favor."
+    }
+  },
+  {
+    "id": "474",
+    "word": "reprobate",
+    "word_meaning": "an unprincipled or depraved person",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The reprobate ignored all warnings.",
+      "25": "The reprobate, utterly shameless, ignored all warnings from the concerned elders."
+    }
+  },
+  {
+    "id": "477",
+    "word": "spurious",
+    "word_meaning": "false or not genuine",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The spurious document fooled many.",
+      "25": "The spurious document, cleverly forged, fooled many until experts intervened."
+    }
+  },
+  {
+    "id": "479",
+    "word": "temerity",
+    "word_meaning": "excessive confidence or boldness",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her temerity shocked the elders.",
+      "25": "‘Your temerity is astounding!’ they gasped at her bold defiance."
+    }
   }
 ]
