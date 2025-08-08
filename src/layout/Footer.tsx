@@ -1,6 +1,12 @@
+import SocialLink from "@/components/links/SocialLink";
 import SiteTitleText from "@/components/text/SiteTitleText";
 import { Separator } from "@/components/ui/separator";
 import { SITE_TITLE } from "@/data/constants";
+import {
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
 import { Link } from "react-router";
 
 const navItems = [
@@ -10,11 +16,32 @@ const navItems = [
   { name: "Bookmarks", href: "/bookmarks" },
 ];
 
+const socialLinks = [
+  {
+    id: "1",
+    title: "Instagram",
+    link: "https://instagram.com/vocabsaga",
+    icon: InstagramLogoIcon,
+  },
+  {
+    id: "2",
+    title: "Twitter/X",
+    link: "https://x.com/vocabsaga",
+    icon: TwitterLogoIcon,
+  },
+  {
+    id: "3",
+    title: "GitHub",
+    link: "https://github.com/Sumansourabh14/vocabsaga",
+    icon: GitHubLogoIcon,
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="border-t bg-zinc-100 dark:bg-black text-gray-600 dark:text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-10">
-        <div className="flex flex-row justify-between items-center mb-2">
+        <div className="flex flex-row justify-between items-center mb-6">
           <SiteTitleText />
           {/* Links */}
           <nav className="flex space-x-6 text-sm">
@@ -29,10 +56,22 @@ export default function Footer() {
             ))}
           </nav>
         </div>
-        <section className="pt-4 text-center">
-          <Separator />
-          <div className="text-sm font-light text-muted-foreground mt-4">
+
+        <Separator />
+
+        <section className="flex justify-between items-center mt-6">
+          <div className="text-xs font-light text-muted-foreground">
             © {new Date().getFullYear()} {SITE_TITLE}. All Rights Reserved
+          </div>
+          <div className="flex space-x-4 text-xl">
+            {socialLinks.map((item) => (
+              <SocialLink
+                key={item.id}
+                icon={item.icon}
+                link={item.link}
+                title={item.link}
+              />
+            ))}
           </div>
         </section>
         <div className="text-center pb-8">
