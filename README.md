@@ -50,3 +50,5 @@ Offline mode for learning anywhere. -->
 Master words with Vocabsaga. The new age of learning vocabulary. Reading books still remain first!
 
 ### Made for readers, writers, and lifelong learners.
+
+![alt text](<Frame 3.png>)
