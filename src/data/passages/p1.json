@@ -3848,5 +3848,255 @@
       "10": "Her temerity shocked the elders.",
       "25": "‘Your temerity is astounding!’ they gasped at her bold defiance."
     }
+  },
+  {
+    "id": "498",
+    "word": "mendicant",
+    "word_meaning": "a beggar or one who lives by charity",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The mendicant roamed the streets.",
+      "25": "‘That mendicant begs daily!’ she whispered, watching him wander the busy market."
+    }
+  },
+  {
+    "id": "499",
+    "word": "objurgate",
+    "word_meaning": "to scold or rebuke sharply",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "She objurgated the careless worker.",
+      "25": "‘I objurgate your negligence!’ she shouted, furious at the worker’s sloppy errors."
+    }
+  },
+  {
+    "id": "500",
+    "word": "panoply",
+    "word_meaning": "a splendid or impressive array",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The panoply dazzled the crowd.",
+      "25": "The panoply of costumes, vividly splendid, dazzled the crowd at the festival."
+    }
+  },
+  {
+    "id": "501",
+    "word": "peroration",
+    "word_meaning": "the concluding part of a speech",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His peroration inspired the audience.",
+      "25": "‘Your peroration was brilliant!’ she cheered, moved by his closing remarks."
+    }
+  },
+  {
+    "id": "502",
+    "word": "phlegmatic",
+    "word_meaning": "having an unemotional or stolid demeanor",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His phlegmatic response surprised her.",
+      "25": "‘Your phlegmatic attitude is unnerving!’ she snapped at his emotionless reply."
+    }
+  },
+  {
+    "id": "503",
+    "word": "prolixity",
+    "word_meaning": "excessive wordiness in speech or writing",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her prolixity bored the listeners.",
+      "25": "Her prolixity, endlessly verbose, bored listeners at the long-winded seminar."
+    }
+  },
+  {
+    "id": "504",
+    "word": "propinquity",
+    "word_meaning": "proximity or close kinship",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Their propinquity strengthened their bond.",
+      "25": "Their propinquity, living so near, strengthened their bond in the village."
+    }
+  },
+  {
+    "id": "505",
+    "word": "quixotic",
+    "word_meaning": "unrealistically optimistic or impractical",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His quixotic venture failed quickly.",
+      "25": "‘Your quixotic venture is doomed!’ she warned, doubting his impractical scheme."
+    }
+  },
+  {
+    "id": "506",
+    "word": "recrudescence",
+    "word_meaning": "the revival of something unpleasant",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The recrudescence alarmed the town.",
+      "25": "The recrudescence of old conflicts alarmed the town’s weary residents."
+    }
+  },
+  {
+    "id": "507",
+    "word": "susurrus",
+    "word_meaning": "a soft, whispering or rustling sound",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The susurrus soothed her nerves.",
+      "25": "The susurrus of leaves, softly rustling, soothed her during the quiet walk."
+    }
+  },
+  {
+    "id": "508",
+    "word": "tatterdemalion",
+    "word_meaning": "a person in tattered clothing",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The tatterdemalion begged for coins.",
+      "25": "‘That tatterdemalion needs help!’ she said, seeing his ragged clothes."
+    }
+  },
+  {
+    "id": "509",
+    "word": "thaumaturgy",
+    "word_meaning": "the working of miracles or magic",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His thaumaturgy awed the villagers.",
+      "25": "His thaumaturgy, seemingly miraculous, awed villagers at the mysterious gathering."
+    }
+  },
+  {
+    "id": "510",
+    "word": "ululation",
+    "word_meaning": "a howling or wailing sound",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The ululation echoed through hills.",
+      "25": "The ululation, eerie and mournful, echoed through hills during the ritual."
+    }
+  },
+  {
+    "id": "511",
+    "word": "vicissitudinous",
+    "word_meaning": "full of unexpected changes",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her vicissitudinous life exhausted her.",
+      "25": "‘Your vicissitudinous life is chaotic!’ he remarked, noting her constant changes."
+    }
+  },
+  {
+    "id": "512",
+    "word": "welter",
+    "word_meaning": "a confused mass or turmoil",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The welter overwhelmed the planners.",
+      "25": "The welter of ideas, chaotically jumbled, overwhelmed planners at the meeting."
+    }
+  },
+  {
+    "id": "513",
+    "word": "antediluvian",
+    "word_meaning": "extremely old-fashioned or antiquated",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His antediluvian ideas shocked peers.",
+      "25": "‘Your antediluvian ideas belong in a museum!’ she scoffed, dismissing his outdated views during the heated debate at the conference."
+    }
+  },
+  {
+    "id": "514",
+    "word": "cabalistic",
+    "word_meaning": "having a secret or hidden meaning",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The cabalistic text baffled scholars.",
+      "25": "The cabalistic text, etched in cryptic symbols, baffled scholars who studied it in the dim, dusty archive of the ancient monastery."
+    }
+  },
+  {
+    "id": "515",
+    "word": "contumelious",
+    "word_meaning": "scornfully insulting or abusive",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her contumelious remarks offended guests.",
+      "25": "‘Your contumelious remarks are outrageous!’ he snapped, stung by her scornful insults at the formal gathering in the grand hall."
+    }
+  },
+  {
+    "id": "516",
+    "word": "disquisition",
+    "word_meaning": "a long or elaborate discourse",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His disquisition exhausted the audience.",
+      "25": "His disquisition on obscure philosophy dragged on, exhausting the audience packed into the lecture hall under flickering lights late at night."
+    }
+  },
+  {
+    "id": "517",
+    "word": "excoriation",
+    "word_meaning": "harsh criticism or verbal attack",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her excoriation silenced the critic.",
+      "25": "‘Your excoriation is too brutal!’ he protested, reeling from her fierce verbal attack during the tense editorial meeting in the office."
+    }
+  },
+  {
+    "id": "518",
+    "word": "flummery",
+    "word_meaning": "empty compliments or nonsense",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His flummery fooled no one.",
+      "25": "‘Enough with your flummery!’ she interrupted, seeing through his hollow compliments at the crowded reception in the opulent mansion."
+    }
+  },
+  {
+    "id": "519",
+    "word": "gasconade",
+    "word_meaning": "extravagant boasting or bravado",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her gasconade irritated the crew.",
+      "25": "Her gasconade about her exploits, wildly exaggerated, irritated the crew gathered around the campfire on the rugged expedition."
+    }
+  },
+  {
+    "id": "520",
+    "word": "imprecatory",
+    "word_meaning": "expressing a curse or ill will",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His imprecatory outburst shocked onlookers.",
+      "25": "‘Your imprecatory outburst is chilling!’ she gasped, alarmed by his cursed words shouted in the stormy village square at midnight."
+    }
+  },
+  {
+    "id": "521",
+    "word": "perspicuous",
+    "word_meaning": "clearly expressed and easy to understand",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her perspicuous argument won applause.",
+      "25": "Her perspicuous argument, sharply articulated, won applause from the skeptical crowd packed into the debate hall under bright spotlights."
+    }
+  },
+  {
+    "id": "522",
+    "word": "sesquipedalian",
+    "word_meaning": "using or containing excessively long words",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His sesquipedalian speech confused listeners.",
+      "25": "‘Your sesquipedalian speech is impenetrable!’ she groaned, lost in his verbose lecture delivered to the bewildered audience in the auditorium."
+    }
   }
 ]
