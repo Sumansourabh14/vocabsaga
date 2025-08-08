@@ -3568,5 +3568,305 @@
       "10": "The vexatious delay irritated passengers.",
       "25": "The vexatious delay, endlessly frustrating, irritated passengers waiting at the station."
     }
+  },
+  {
+    "id": "391",
+    "word": "abstruse",
+    "word_meaning": "difficult to understand; obscure",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His abstruse lecture baffled students.",
+      "25": "His abstruse lecture, filled with jargon, baffled students eager for clear explanations."
+    }
+  },
+  {
+    "id": "392",
+    "word": "ameliorate",
+    "word_meaning": "to make something better",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "‘We must ameliorate this plan!’ she urged.",
+      "25": "‘We must ameliorate this plan!’ she urged, suggesting changes to improve the flawed strategy."
+    }
+  },
+  {
+    "id": "393",
+    "word": "cacophony",
+    "word_meaning": "a harsh, discordant mixture of sounds",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The cacophony disrupted their talk.",
+      "25": "The cacophony of horns and shouts disrupted their talk in the bustling market."
+    }
+  },
+  {
+    "id": "394",
+    "word": "capricious",
+    "word_meaning": "given to sudden changes of mood",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her capricious decisions confused us.",
+      "25": "‘Your capricious decisions confuse us!’ he exclaimed, frustrated by her unpredictable choices."
+    }
+  },
+  {
+    "id": "395",
+    "word": "deleterious",
+    "word_meaning": "causing harm or damage",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The deleterious policy hurt progress.",
+      "25": "The deleterious policy, poorly planned, hurt progress and sparked widespread criticism."
+    }
+  },
+  {
+    "id": "396",
+    "word": "demagogue",
+    "word_meaning": "a leader who seeks support by appealing to popular desires",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The demagogue swayed the crowd.",
+      "25": "‘That demagogue sways the crowd with lies!’ she warned, pointing at the speaker."
+    }
+  },
+  {
+    "id": "397",
+    "word": "effulgent",
+    "word_meaning": "shining brightly; radiant",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her effulgent smile lit the room.",
+      "25": "Her effulgent smile, radiant and warm, lit the room during the somber event."
+    }
+  },
+  {
+    "id": "398",
+    "word": "epiphany",
+    "word_meaning": "a sudden realization or insight",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "‘I had an epiphany!’ he shouted.",
+      "25": "‘I had an epiphany!’ he shouted, realizing the solution to the complex puzzle."
+    }
+  },
+  {
+    "id": "399",
+    "word": "fractious",
+    "word_meaning": "irritable and quarrelsome",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The fractious debate exhausted everyone.",
+      "25": "The fractious debate, full of quarrels, exhausted everyone in the tense meeting."
+    }
+  },
+  {
+    "id": "400",
+    "word": "grandiloquent",
+    "word_meaning": "pompous or extravagant in language",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His grandiloquent speech bored listeners.",
+      "25": "‘Your grandiloquent speech bores us!’ she muttered, tired of his pompous words."
+    }
+  },
+  {
+    "id": "401",
+    "word": "hubris",
+    "word_meaning": "excessive pride or self-confidence",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His hubris led to failure.",
+      "25": "His hubris, blinding him to flaws, led to failure in the ambitious project."
+    }
+  },
+  {
+    "id": "402",
+    "word": "impecunious",
+    "word_meaning": "having little or no money",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The impecunious artist struggled daily.",
+      "25": "‘I’m impecunious!’ the artist sighed, struggling to afford supplies for her work."
+    }
+  },
+  {
+    "id": "403",
+    "word": "labyrinthine",
+    "word_meaning": "complicated or tortuous, like a maze",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The labyrinthine rules confused her.",
+      "25": "The labyrinthine rules, twisting and complex, confused her during the legal process."
+    }
+  },
+  {
+    "id": "404",
+    "word": "mendacious",
+    "word_meaning": "untruthful or lying",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His mendacious claims fooled many.",
+      "25": "‘Your mendacious claims won’t fool me!’ she snapped, exposing his lies."
+    }
+  },
+  {
+    "id": "405",
+    "word": "obfuscate",
+    "word_meaning": "to render unclear or obscure",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "He tried to obfuscate facts.",
+      "25": "He tried to obfuscate facts, muddying the truth during the critical investigation."
+    }
+  },
+  {
+    "id": "406",
+    "word": "ostentatious",
+    "word_meaning": "characterized by pretentious display",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her ostentatious dress drew stares.",
+      "25": "Her ostentatious dress, flashy and bold, drew stares at the modest gathering."
+    }
+  },
+  {
+    "id": "407",
+    "word": "perfunctory",
+    "word_meaning": "done with minimal effort or care",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His perfunctory apology lacked sincerity.",
+      "25": "‘Your perfunctory apology lacks heart!’ she said, hurt by his careless words."
+    }
+  },
+  {
+    "id": "408",
+    "word": "propinquity",
+    "word_meaning": "proximity or kinship",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Their propinquity fostered close bonds.",
+      "25": "Their propinquity, living so near, fostered close bonds among the tight-knit neighbors."
+    }
+  },
+  {
+    "id": "409",
+    "word": "quixotic",
+    "word_meaning": "unrealistically optimistic or impractical",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His quixotic dreams amused friends.",
+      "25": "‘Your quixotic dreams won’t work!’ she warned, doubting his impractical plans."
+    }
+  },
+  {
+    "id": "410",
+    "word": "recalcitrant",
+    "word_meaning": "resisting authority or control",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The recalcitrant student defied rules.",
+      "25": "The recalcitrant student, stubbornly defiant, challenged rules during the strict class."
+    }
+  },
+  {
+    "id": "411",
+    "word": "soporific",
+    "word_meaning": "tending to induce sleep",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His soporific lecture lulled listeners.",
+      "25": "His soporific lecture, droning endlessly, lulled listeners into a sleepy haze."
+    }
+  },
+  {
+    "id": "412",
+    "word": "supercilious",
+    "word_meaning": "arrogantly disdainful",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her supercilious smirk annoyed everyone.",
+      "25": "‘Your supercilious smirk is rude!’ he snapped, angered by her haughty attitude."
+    }
+  },
+  {
+    "id": "413",
+    "word": "turgid",
+    "word_meaning": "excessively ornate or swollen",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His turgid prose lost readers.",
+      "25": "His turgid prose, overly complex, lost readers seeking clear and concise writing."
+    }
+  },
+  {
+    "id": "414",
+    "word": "ubiquitous",
+    "word_meaning": "present or found everywhere",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Smartphones are ubiquitous now.",
+      "25": "‘Smartphones are ubiquitous now,’ she noted, seeing them in everyone’s hands."
+    }
+  },
+  {
+    "id": "415",
+    "word": "venerable",
+    "word_meaning": "commanding respect due to age or dignity",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "The venerable elder shared wisdom.",
+      "25": "The venerable elder, wise and respected, shared wisdom with the attentive villagers."
+    }
+  },
+  {
+    "id": "416",
+    "word": "vicissitude",
+    "word_meaning": "a change of circumstances or fortune",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "She endured life’s vicissitudes bravely.",
+      "25": "‘Life’s vicissitudes won’t break me,’ she declared, facing yet another challenge."
+    }
+  },
+  {
+    "id": "417",
+    "word": "vituperative",
+    "word_meaning": "bitter and abusive",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "His vituperative rant shocked listeners.",
+      "25": "His vituperative rant, harsh and bitter, shocked listeners at the public forum."
+    }
+  },
+  {
+    "id": "418",
+    "word": "voluble",
+    "word_meaning": "speaking fluently or talkative",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her voluble speech engaged audiences.",
+      "25": "Her voluble speech, flowing effortlessly, engaged audiences at the lively conference."
+    }
+  },
+  {
+    "id": "419",
+    "word": "wistful",
+    "word_meaning": "having a feeling of vague longing",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "‘I feel wistful,’ she sighed.",
+      "25": "‘I feel wistful,’ she sighed, longing for childhood days by the serene lake."
+    }
+  },
+  {
+    "id": "420",
+    "word": "zenith",
+    "word_meaning": "the highest point or peak",
+    "difficulty_level": "hard",
+    "passages": {
+      "10": "Her career reached its zenith.",
+      "25": "Her career reached its zenith, celebrated for achievements at the grand ceremony."
+    }
   }
 ]
