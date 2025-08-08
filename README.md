@@ -1,50 +1,52 @@
-# 📘 VocabSaga
+# [Vocabsaga](https://www.vocabsaga.space/)
 
-**Build your own vocabulary — one word at a time.**
+![alt text](image.png)
 
-VocabSaga is a minimal, distraction-free app that helps you remember the words you care about — not the ones an app throws at you.
+A platform to boost your vocabulary.
 
----
+No boring flashcards. Just immersive stories.
 
-## ✨ What Can You Do?
+## Why Vocabsaga?
 
-- 🧠 **Add words that matter to you**  
-  Heard a new word in a book or podcast? Add it to your personal list.
+**Because context matters.**
 
-- 📆 **Track your vocabulary streak**  
-  Stay consistent and keep learning one word a day.
+Humans crave stories, not dry definitions.
 
-- 🎯 **No distractions, no signups**  
-  Just you and your words. No ads, no accounts, no noise.
+A word sticks when it’s part of a narrative.
 
----
+Think about it:
+Random flashcard or gripping story?
 
-## 🔤 Why VocabSaga?
+Which sparks your memory?
 
-Unlike other apps, **you control the learning**. Add the words you’re actually encountering. No random flashcards. No artificial difficulty.
+Vocabsaga chooses stories. Every time.
 
-It’s your personal dictionary — growing with your life.
+## Key Features
 
----
+- **Short passages:** Learn words through sentences instead memorizing a single word.  
+- **Bookmark & Review:** Save words. Revisit them anytime. 
+- **300+ Passages:** Dive into a growing library of stories.
+- **Built-in Dictionary:** Instant meanings, no interruptions.  
+- **Sleek UI:** Minimal design. Dark mode included.
 
-## 🌿 The Vibe
+## Get Started
 
-- Minimalistic  
-- Vintage-inspired  
-- Offline-friendly  
-- Calming to use  
+1. Visit [vocabsaga.space](https://www.vocabsaga.space/).  
+2. Pick a story. Any story.  
+3. Read, learn, bookmark words.  
+4. Come back and review.
+5. Keep growing!
 
----
+## Community
 
-## 🚀 Getting Started
+Share your journey with #vocabsaga.
+<!-- Follow us on X. -->
 
-1. Open the app.
-2. Type a new word you’ve learned.
-3. See it added to your list instantly.
-4. Come back tomorrow and add another.
+<!-- ## What’s Next?
+Quizzes to test your skills.
+Personalized story picks.
+Offline mode for learning anywhere. -->
 
-That’s it.
+Master words with Vocabsaga. The new age of learning vocabulary. Reading books still remain first!
 
----
-
-## 🤍 Made for readers, writers, and lifelong learners.
+### Made for readers, writers, and lifelong learners.
