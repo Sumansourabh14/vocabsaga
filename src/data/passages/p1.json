@@ -510,16 +510,6 @@
     }
   },
   {
-    "id": "65",
-    "word": "serene",
-    "word_meaning": "calm, peaceful, and untroubled",
-    "difficulty_level": "easy",
-    "passages": {
-      "10": "The serene meadow invited quiet reflection.",
-      "25": "The serene meadow, with its calm beauty, invited quiet reflection and peaceful thoughts."
-    }
-  },
-  {
     "id": "67",
     "word": "nimble",
     "word_meaning": "quick and light in movement or action",
@@ -587,16 +577,6 @@
     "passages": {
       "10": "Her tenacious spirit led to success.",
       "25": "Her tenacious spirit, unwavering despite challenges, ultimately led to her remarkable success."
-    }
-  },
-  {
-    "id": "74",
-    "word": "eloquent",
-    "word_meaning": "fluent or persuasive in speaking or writing",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "His eloquent speech inspired the audience.",
-      "25": "His eloquent speech, delivered with passion, inspired the audience to take action."
     }
   },
   {
@@ -1080,16 +1060,6 @@
     }
   },
   {
-    "id": "126",
-    "word": "winsome",
-    "word_meaning": "attractive or appealing in a fresh way",
-    "difficulty_level": "easy",
-    "passages": {
-      "10": "Her winsome smile won hearts.",
-      "25": "Her winsome smile, fresh and charming, won the hearts of everyone she met."
-    }
-  },
-  {
     "id": "127",
     "word": "blithe",
     "word_meaning": "cheerful and carefree",
@@ -1277,16 +1247,6 @@
     "passages": {
       "10": "Her vituperative critique shocked the team.",
       "25": "Her vituperative critique, bitter and harsh, shocked the team and strained their collaboration."
-    }
-  },
-  {
-    "id": "151",
-    "word": "jovial",
-    "word_meaning": "cheerful and friendly in manner",
-    "difficulty_level": "easy",
-    "passages": {
-      "10": "His jovial laugh warmed the gathering.",
-      "25": "His jovial laugh, warm and friendly, brought cheer to the festive gathering."
     }
   },
   {
@@ -1910,16 +1870,6 @@
     }
   },
   {
-    "id": "223",
-    "word": "lithe",
-    "word_meaning": "flexible and graceful in movement",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "The lithe gymnast performed flawlessly.",
-      "25": "The lithe gymnast, graceful and flexible, performed flawlessly to the audience’s delight."
-    }
-  },
-  {
     "id": "224",
     "word": "pliant",
     "word_meaning": "adaptable or easily influenced",
@@ -1947,16 +1897,6 @@
     "passages": {
       "10": "Her assiduous effort perfected the design.",
       "25": "Her assiduous effort, careful and diligent, perfected the design for the new project."
-    }
-  },
-  {
-    "id": "228",
-    "word": "ebullient",
-    "word_meaning": "full of cheerful energy",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "His ebullient greeting warmed hearts.",
-      "25": "His ebullient greeting, bursting with energy, warmed hearts at the lively reunion."
     }
   },
   {
@@ -4097,6 +4037,86 @@
     "passages": {
       "10": "His sesquipedalian speech confused listeners.",
       "25": "‘Your sesquipedalian speech is impenetrable!’ she groaned, lost in his verbose lecture delivered to the bewildered audience in the auditorium."
+    }
+  },
+  {
+    "id": "533",
+    "word": "affable",
+    "word_meaning": "friendly and easy to talk to",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "His affable manner welcomed strangers.",
+      "25": "His affable manner, warm and open, welcomed strangers to the cozy café during the bustling morning rush under bright sunlight."
+    }
+  },
+  {
+    "id": "535",
+    "word": "cordial",
+    "word_meaning": "warm and sincere",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "His cordial greeting eased tensions.",
+      "25": "His cordial greeting, heartfelt and warm, eased tensions at the family reunion held in the vibrant garden on a warm afternoon."
+    }
+  },
+  {
+    "id": "537",
+    "word": "eloquent",
+    "word_meaning": "fluent or persuasive in speaking",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "His eloquent speech inspired all.",
+      "25": "‘Your eloquent speech moved us!’ she applauded, touched by his words at the community gathering in the packed hall."
+    }
+  },
+  {
+    "id": "538",
+    "word": "genial",
+    "word_meaning": "friendly and cheerful",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "Her genial laugh warmed hearts.",
+      "25": "Her genial laugh, bright and friendly, warmed hearts at the cozy book club meeting in the quiet library on a rainy evening."
+    }
+  },
+  {
+    "id": "539",
+    "word": "jovial",
+    "word_meaning": "cheerful and friendly",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "His jovial banter amused friends.",
+      "25": "His jovial banter, lively and warm, amused friends at the cheerful barbecue in the sunny park on a breezy afternoon."
+    }
+  },
+  {
+    "id": "540",
+    "word": "lithe",
+    "word_meaning": "flexible or graceful in movement",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her lithe movements captivated audiences.",
+      "25": "Her lithe movements, gracefully fluid, captivated audiences at the dance recital held in the elegant theater under soft golden lights."
+    }
+  },
+  {
+    "id": "541",
+    "word": "serene",
+    "word_meaning": "calm and peaceful",
+    "difficulty_level": "easy",
+    "passages": {
+      "10": "The serene meadow calmed her.",
+      "25": "The serene meadow, tranquil and quiet, calmed her during a reflective walk under the clear sky on a warm morning."
+    }
+  },
+  {
+    "id": "542",
+    "word": "winsome",
+    "word_meaning": "attractive or appealing in a fresh way",
+    "difficulty_level": "medium",
+    "passages": {
+      "10": "Her winsome charm drew smiles.",
+      "25": "‘Your winsome charm is irresistible!’ he laughed, enchanted by her at the lively market festival under colorful banners and bright sun."
     }
   }
 ]
