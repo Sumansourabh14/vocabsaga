@@ -41,10 +41,10 @@ export default function Footer() {
   return (
     <footer className="border-t bg-zinc-100 dark:bg-black text-gray-600 dark:text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-10">
-        <div className="flex flex-row justify-between items-center mb-6">
+        <div className="flex justify-between items-baseline mb-6">
           <SiteTitleText />
           {/* Links */}
-          <nav className="flex space-x-6 text-sm">
+          <nav className="flex space-x-6 text-sm items-center">
             {navItems.map((link, index) => (
               <Link
                 key={index}

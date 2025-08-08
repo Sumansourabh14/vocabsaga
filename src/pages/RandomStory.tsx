@@ -166,10 +166,12 @@ const RandomStory = () => {
     <FullScreen handle={handle} className="random-story">
       <section className="max-w-[1300px] mx-auto px-8 min-h-[75vh] flex items-center justify-center">
         <section className="max-w-5xl mx-auto text-center space-y-4">
-          <section className="flex justify-center gap-4">
-            <Badge className={`${getBadgeColor(data.difficulty_level)}`}>
-              {data.difficulty_level.toUpperCase()}
-            </Badge>
+          <section className="flex justify-center items-center gap-4">
+            <div>
+              <Badge className={`${getBadgeColor(data.difficulty_level)}`}>
+                {data.difficulty_level.toUpperCase()}
+              </Badge>
+            </div>
 
             <ToggleGroup
               type="single"
