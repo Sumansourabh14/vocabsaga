@@ -40,7 +40,9 @@ const getBadgeColor = (level: string) => {
 
 const RandomStory = () => {
   const [bookmarks, setBookmarks] = useState<BookmarkWordProps[]>([]);
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(
+    Math.floor(Math.random() * passages.length)
+  );
   const [wordLimit, setWordLimit] = useState("10");
   const data = passages[current];
   const handle = useFullScreenHandle();
