@@ -1760,16 +1760,6 @@
     }
   },
   {
-    "id": "205",
-    "word": "obstreperous",
-    "word_meaning": "noisy and difficult to control",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "The obstreperous children disrupted the class.",
-      "25": "The obstreperous children, loud and unruly, disrupted the class despite the teacher’s efforts."
-    }
-  },
-  {
     "id": "206",
     "word": "pernicious",
     "word_meaning": "having a harmful effect in a subtle way",
@@ -3190,16 +3180,6 @@
     }
   },
   {
-    "id": "353",
-    "word": "obstreperous",
-    "word_meaning": "noisy and difficult to control",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "The obstreperous crowd disrupted order.",
-      "25": "His obstreperous protests drowned out the speaker at the rally."
-    }
-  },
-  {
     "id": "354",
     "word": "recondite",
     "word_meaning": "obscure and little-known",
@@ -3750,76 +3730,6 @@
     }
   },
   {
-    "id": "409",
-    "word": "quixotic",
-    "word_meaning": "unrealistically optimistic or impractical",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His quixotic dreams amused friends.",
-      "25": "‘Your quixotic dreams won’t work!’ she warned, doubting his impractical plans."
-    }
-  },
-  {
-    "id": "410",
-    "word": "recalcitrant",
-    "word_meaning": "resisting authority or control",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "The recalcitrant student defied rules.",
-      "25": "The recalcitrant student, stubbornly defiant, challenged rules during the strict class."
-    }
-  },
-  {
-    "id": "411",
-    "word": "soporific",
-    "word_meaning": "tending to induce sleep",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His soporific lecture lulled listeners.",
-      "25": "His soporific lecture, droning endlessly, lulled listeners into a sleepy haze."
-    }
-  },
-  {
-    "id": "412",
-    "word": "supercilious",
-    "word_meaning": "arrogantly disdainful",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "Her supercilious smirk annoyed everyone.",
-      "25": "‘Your supercilious smirk is rude!’ he snapped, angered by her haughty attitude."
-    }
-  },
-  {
-    "id": "413",
-    "word": "turgid",
-    "word_meaning": "excessively ornate or swollen",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His turgid prose lost readers.",
-      "25": "His turgid prose, overly complex, lost readers seeking clear and concise writing."
-    }
-  },
-  {
-    "id": "414",
-    "word": "ubiquitous",
-    "word_meaning": "present or found everywhere",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "Smartphones are ubiquitous now.",
-      "25": "‘Smartphones are ubiquitous now,’ she noted, seeing them in everyone’s hands."
-    }
-  },
-  {
-    "id": "415",
-    "word": "venerable",
-    "word_meaning": "commanding respect due to age or dignity",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "The venerable elder shared wisdom.",
-      "25": "The venerable elder, wise and respected, shared wisdom with the attentive villagers."
-    }
-  },
-  {
     "id": "416",
     "word": "vicissitude",
     "word_meaning": "a change of circumstances or fortune",
@@ -3830,36 +3740,6 @@
     }
   },
   {
-    "id": "417",
-    "word": "vituperative",
-    "word_meaning": "bitter and abusive",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His vituperative rant shocked listeners.",
-      "25": "His vituperative rant, harsh and bitter, shocked listeners at the public forum."
-    }
-  },
-  {
-    "id": "418",
-    "word": "voluble",
-    "word_meaning": "speaking fluently or talkative",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "Her voluble speech engaged audiences.",
-      "25": "Her voluble speech, flowing effortlessly, engaged audiences at the lively conference."
-    }
-  },
-  {
-    "id": "419",
-    "word": "wistful",
-    "word_meaning": "having a feeling of vague longing",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "‘I feel wistful,’ she sighed.",
-      "25": "‘I feel wistful,’ she sighed, longing for childhood days by the serene lake."
-    }
-  },
-  {
     "id": "420",
     "word": "zenith",
     "word_meaning": "the highest point or peak",
@@ -3867,26 +3747,6 @@
     "passages": {
       "10": "Her career reached its zenith.",
       "25": "Her career reached its zenith, celebrated for achievements at the grand ceremony."
-    }
-  },
-  {
-    "id": "421",
-    "word": "anachronistic",
-    "word_meaning": "belonging to a period other than that portrayed",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "Her anachronistic dress startled guests.",
-      "25": "Her anachronistic dress, from another era, startled guests at the modern gala."
-    }
-  },
-  {
-    "id": "422",
-    "word": "antediluvian",
-    "word_meaning": "extremely old-fashioned or primitive",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His antediluvian views shocked peers.",
-      "25": "‘Your antediluvian views are absurd!’ she snapped at the outdated scholar."
     }
   },
   {
@@ -3950,16 +3810,6 @@
     }
   },
   {
-    "id": "429",
-    "word": "contumacious",
-    "word_meaning": "stubbornly disobedient or rebellious",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "The contumacious child defied orders.",
-      "25": "The contumacious child, boldly defiant, ignored orders from the stern teacher."
-    }
-  },
-  {
     "id": "430",
     "word": "denouement",
     "word_meaning": "the final resolution of a plot",
@@ -3967,16 +3817,6 @@
     "passages": {
       "10": "The denouement surprised the audience.",
       "25": "‘What a denouement!’ he gasped, stunned by the play’s final twist."
-    }
-  },
-  {
-    "id": "431",
-    "word": "diaphanous",
-    "word_meaning": "light, delicate, and translucent",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "Her diaphanous veil fluttered gently.",
-      "25": "Her diaphanous veil, nearly transparent, fluttered gently in the warm breeze."
     }
   },
   {
@@ -3997,16 +3837,6 @@
     "passages": {
       "10": "Her effrontery shocked the council.",
       "25": "‘Such effrontery!’ he exclaimed, appalled by her bold demand in court."
-    }
-  },
-  {
-    "id": "434",
-    "word": "ersatz",
-    "word_meaning": "an inferior substitute or imitation",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "The ersatz coffee tasted awful.",
-      "25": "The ersatz coffee, a cheap imitation, tasted awful to the discerning guests."
     }
   },
   {
@@ -4050,16 +3880,6 @@
     }
   },
   {
-    "id": "439",
-    "word": "inchoate",
-    "word_meaning": "just begun and not fully formed",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "The inchoate plan needed work.",
-      "25": "The inchoate plan, barely outlined, needed work before the critical deadline."
-    }
-  },
-  {
     "id": "440",
     "word": "jeremiad",
     "word_meaning": "a prolonged lament or complaint",
@@ -4067,16 +3887,6 @@
     "passages": {
       "10": "His jeremiad exhausted the listeners.",
       "25": "‘Enough with your jeremiad!’ she groaned, tired of his endless complaints."
-    }
-  },
-  {
-    "id": "441",
-    "word": "limpid",
-    "word_meaning": "clear, transparent, or serene",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "Her limpid eyes captivated him.",
-      "25": "Her limpid eyes, serene and clear, captivated him during their quiet talk."
     }
   },
   {
@@ -4090,16 +3900,6 @@
     }
   },
   {
-    "id": "443",
-    "word": "obstreperous",
-    "word_meaning": "noisy and difficult to control",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "The obstreperous crowd disrupted order.",
-      "25": "The obstreperous crowd, shouting wildly, disrupted order at the public rally."
-    }
-  },
-  {
     "id": "444",
     "word": "panegyric",
     "word_meaning": "a public speech of praise",
@@ -4107,16 +3907,6 @@
     "passages": {
       "10": "Her panegyric honored the hero.",
       "25": "Her panegyric, eloquent and grand, honored the hero at the ceremony."
-    }
-  },
-  {
-    "id": "445",
-    "word": "perspicuous",
-    "word_meaning": "clearly expressed and easy to understand",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His perspicuous argument won support.",
-      "25": "His perspicuous argument, clearly stated, won support in the heated discussion."
     }
   },
   {
@@ -4147,26 +3937,6 @@
     "passages": {
       "10": "Her syllogism convinced the jury.",
       "25": "Her syllogism, logically sound, convinced the jury during the intense trial."
-    }
-  },
-  {
-    "id": "449",
-    "word": "truculent",
-    "word_meaning": "fiercely aggressive or belligerent",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His truculent glare intimidated opponents.",
-      "25": "His truculent glare, fiercely hostile, intimidated opponents in the tense standoff."
-    }
-  },
-  {
-    "id": "450",
-    "word": "vitiate",
-    "word_meaning": "to impair the quality or effectiveness of",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "Errors vitiated the research findings.",
-      "25": "Errors vitiated the research findings, undermining their credibility in the study."
     }
   },
   {
