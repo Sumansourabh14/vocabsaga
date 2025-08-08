@@ -1690,16 +1690,6 @@
     }
   },
   {
-    "id": "198",
-    "word": "winsome",
-    "word_meaning": "charming in a childlike or naive way",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "Her winsome charm disarmed critics.",
-      "25": "Her winsome charm, naive yet captivating, disarmed critics at the public event."
-    }
-  },
-  {
     "id": "199",
     "word": "acerbic",
     "word_meaning": "sharp and forthright, often sarcastic",
@@ -3070,16 +3060,6 @@
     }
   },
   {
-    "id": "342",
-    "word": "winsome",
-    "word_meaning": "charming in a naive way",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "Her winsome smile disarmed critics.",
-      "25": "The winsome child’s innocence charmed everyone at the family reunion."
-    }
-  },
-  {
     "id": "343",
     "word": "zeal",
     "word_meaning": "great enthusiasm or passion",
@@ -3110,16 +3090,6 @@
     }
   },
   {
-    "id": "346",
-    "word": "abstruse",
-    "word_meaning": "difficult to understand; obscure",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "The abstruse theory puzzled students.",
-      "25": "Her abstruse lecture on metaphysics left the audience deeply confused."
-    }
-  },
-  {
     "id": "347",
     "word": "bellicose",
     "word_meaning": "aggressively eager to fight",
@@ -3137,16 +3107,6 @@
     "passages": {
       "10": "His churlish reply offended guests.",
       "25": "Her churlish behavior at the dinner soured the festive atmosphere."
-    }
-  },
-  {
-    "id": "349",
-    "word": "epiphany",
-    "word_meaning": "sudden realization or insight",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "Her epiphany changed her perspective.",
-      "25": "An epiphany during meditation revealed the solution to her dilemma."
     }
   },
   {
@@ -3227,16 +3187,6 @@
     "passages": {
       "10": "The vapid speech bored everyone.",
       "25": "His vapid presentation, dull and uninspired, lost the audience’s attention."
-    }
-  },
-  {
-    "id": "359",
-    "word": "winsome",
-    "word_meaning": "charming in a naive way",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "Her winsome charm won hearts.",
-      "25": "The winsome poet’s simple verses captivated the literary crowd."
     }
   },
   {
@@ -3400,16 +3350,6 @@
     }
   },
   {
-    "id": "376",
-    "word": "incisive",
-    "word_meaning": "sharp and penetrating in insight",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "His incisive comment clarified issues.",
-      "25": "His incisive comment, sharp and clear, clarified complex issues during the debate."
-    }
-  },
-  {
     "id": "377",
     "word": "judicious",
     "word_meaning": "showing wise judgment",
@@ -3417,26 +3357,6 @@
     "passages": {
       "10": "Her judicious advice guided them.",
       "25": "Her judicious advice, wisely considered, guided them through the challenging decision."
-    }
-  },
-  {
-    "id": "378",
-    "word": "luminous",
-    "word_meaning": "emitting or reflecting light",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "The luminous sky inspired awe.",
-      "25": "The luminous sky, glowing with stars, inspired awe in the quiet observers."
-    }
-  },
-  {
-    "id": "379",
-    "word": "resolute",
-    "word_meaning": "firmly determined in purpose",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "His resolute stance won respect.",
-      "25": "His resolute stance, unwavering and firm, won respect from the opposing team."
     }
   },
   {
@@ -3500,16 +3420,6 @@
     }
   },
   {
-    "id": "386",
-    "word": "florid",
-    "word_meaning": "excessively ornate or elaborate",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His florid prose overwhelmed readers.",
-      "25": "His florid prose, overly elaborate, overwhelmed readers with its ornate descriptions."
-    }
-  },
-  {
     "id": "387",
     "word": "inscrutable",
     "word_meaning": "impossible to understand or interpret",
@@ -3550,16 +3460,6 @@
     }
   },
   {
-    "id": "391",
-    "word": "abstruse",
-    "word_meaning": "difficult to understand; obscure",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His abstruse lecture baffled students.",
-      "25": "His abstruse lecture, filled with jargon, baffled students eager for clear explanations."
-    }
-  },
-  {
     "id": "392",
     "word": "ameliorate",
     "word_meaning": "to make something better",
@@ -3577,26 +3477,6 @@
     "passages": {
       "10": "The cacophony disrupted their talk.",
       "25": "The cacophony of horns and shouts disrupted their talk in the bustling market."
-    }
-  },
-  {
-    "id": "394",
-    "word": "capricious",
-    "word_meaning": "given to sudden changes of mood",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "Her capricious decisions confused us.",
-      "25": "‘Your capricious decisions confuse us!’ he exclaimed, frustrated by her unpredictable choices."
-    }
-  },
-  {
-    "id": "395",
-    "word": "deleterious",
-    "word_meaning": "causing harm or damage",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "The deleterious policy hurt progress.",
-      "25": "The deleterious policy, poorly planned, hurt progress and sparked widespread criticism."
     }
   },
   {
@@ -3620,16 +3500,6 @@
     }
   },
   {
-    "id": "398",
-    "word": "epiphany",
-    "word_meaning": "a sudden realization or insight",
-    "difficulty_level": "medium",
-    "passages": {
-      "10": "‘I had an epiphany!’ he shouted.",
-      "25": "‘I had an epiphany!’ he shouted, realizing the solution to the complex puzzle."
-    }
-  },
-  {
     "id": "399",
     "word": "fractious",
     "word_meaning": "irritable and quarrelsome",
@@ -3650,16 +3520,6 @@
     }
   },
   {
-    "id": "401",
-    "word": "hubris",
-    "word_meaning": "excessive pride or self-confidence",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His hubris led to failure.",
-      "25": "His hubris, blinding him to flaws, led to failure in the ambitious project."
-    }
-  },
-  {
     "id": "402",
     "word": "impecunious",
     "word_meaning": "having little or no money",
@@ -3677,16 +3537,6 @@
     "passages": {
       "10": "The labyrinthine rules confused her.",
       "25": "The labyrinthine rules, twisting and complex, confused her during the legal process."
-    }
-  },
-  {
-    "id": "404",
-    "word": "mendacious",
-    "word_meaning": "untruthful or lying",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "His mendacious claims fooled many.",
-      "25": "‘Your mendacious claims won’t fool me!’ she snapped, exposing his lies."
     }
   },
   {
@@ -3717,16 +3567,6 @@
     "passages": {
       "10": "His perfunctory apology lacked sincerity.",
       "25": "‘Your perfunctory apology lacks heart!’ she said, hurt by his careless words."
-    }
-  },
-  {
-    "id": "408",
-    "word": "propinquity",
-    "word_meaning": "proximity or kinship",
-    "difficulty_level": "hard",
-    "passages": {
-      "10": "Their propinquity fostered close bonds.",
-      "25": "Their propinquity, living so near, fostered close bonds among the tight-knit neighbors."
     }
   },
   {
