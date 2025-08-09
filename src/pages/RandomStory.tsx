@@ -163,7 +163,7 @@ const RandomStory = () => {
   };
 
   return (
-    <FullScreen handle={handle} className="random-story">
+    <FullScreen handle={handle} className="random-story flex items-center">
       <section className="max-w-[1300px] mx-auto px-8 min-h-[75vh] flex items-center justify-center">
         <section className="max-w-5xl mx-auto text-center space-y-4">
           <section className="flex justify-center items-center gap-4">
