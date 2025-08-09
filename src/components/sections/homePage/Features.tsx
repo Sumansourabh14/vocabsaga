@@ -27,7 +27,7 @@ const features = [
     name: "Built-in Dictionary",
     description: "Find any word for instant definitions.",
     href: "/find",
-    cta: "Learn more",
+    cta: "Find a word",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -41,7 +41,6 @@ const features = [
     name: "Minimal UI",
     description: "Focus on the content, not clutter.",
     href: "/",
-    cta: "Learn more",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -55,7 +54,6 @@ const features = [
     name: "Dark Mode",
     description: "A soothing experience day or night.",
     href: "/",
-    cta: "Learn more",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
