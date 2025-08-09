@@ -53,7 +53,7 @@ const RandomQuote = () => {
 
   return (
     <FullScreen handle={handle} className="random-story flex items-center">
-      <section className="max-w-[1300px] mx-auto px-8 py-32 flex items-center justify-center">
+      <section className="max-w-[1300px] mx-auto px-8 py-32 2xl:py-40 flex items-center justify-center">
         <section className="max-w-5xl mx-auto text-center space-y-4">
           <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl playfair-display-normal">
             &quot;{data.quote}&quot;
