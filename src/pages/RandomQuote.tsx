@@ -11,6 +11,7 @@ import type { Quote } from "@/types";
 import { Maximize, Minimize, Shuffle } from "lucide-react";
 import { useState } from "react";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import { motion } from "motion/react";
 
 const firstQuote: Quote = {
   _id: "6640a798e14c6532bcfb00c6",
@@ -37,9 +38,15 @@ const RandomQuote = () => {
     <FullScreen handle={handle} className="random-story flex items-center">
       <section className="max-w-[1300px] mx-auto px-8 py-32 2xl:py-40 flex items-center justify-center">
         <section className="max-w-5xl mx-auto text-center space-y-4">
-          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl playfair-display-normal">
+          <motion.h1
+            className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl playfair-display-normal"
+            key={data.quote}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
             &quot;{data.quote}&quot;
-          </h1>
+          </motion.h1>
 
           {(data.book || data.author) && (
             <p className="text-sm text-muted-foreground">
