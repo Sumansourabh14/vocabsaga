@@ -14,7 +14,12 @@ const features = [
     description: "Understand how words are used in real sentences.",
     href: "/story",
     cta: "Read passage",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: (
+      <img
+        className="absolute -right-20 -top-20 opacity-60"
+        alt="Sample feature image"
+      />
+    ),
     className: "col-span-3 md:col-span-2",
   },
   {
@@ -22,8 +27,13 @@ const features = [
     name: "Built-in Dictionary",
     description: "Find any word for instant definitions.",
     href: "/find",
-    cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    cta: "Find a word",
+    background: (
+      <img
+        className="absolute -right-20 -top-20 opacity-60"
+        alt="Sample feature image"
+      />
+    ),
     className: "col-span-3 md:col-span-1",
   },
   {
@@ -31,8 +41,12 @@ const features = [
     name: "Minimal UI",
     description: "Focus on the content, not clutter.",
     href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: (
+      <img
+        className="absolute -right-20 -top-20 opacity-60"
+        alt="Sample feature image"
+      />
+    ),
     className: "col-span-3 md:col-span-1",
   },
   {
@@ -40,8 +54,12 @@ const features = [
     name: "Dark Mode",
     description: "A soothing experience day or night.",
     href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: (
+      <img
+        className="absolute -right-20 -top-20 opacity-60"
+        alt="Sample feature image"
+      />
+    ),
     className: "col-span-3 md:col-span-2",
   },
 ];
