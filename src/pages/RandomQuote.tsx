@@ -9,7 +9,7 @@ import usePageTitle from "@/hooks/usePageTitle";
 import { fetchRandomQuote } from "@/services/fetchQuotes";
 import type { Quote } from "@/types";
 import { Maximize, Minimize, Shuffle } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
 const firstQuote: Quote = {
@@ -32,24 +32,6 @@ const RandomQuote = () => {
       setData(res);
     }
   };
-
-  useEffect(() => {
-    let mounted = true;
-
-    async function getRandomQuote() {
-      const res = await fetchRandomQuote();
-
-      if (mounted) {
-        setData(res);
-      }
-    }
-
-    getRandomQuote();
-
-    return () => {
-      mounted = false;
-    };
-  }, []);
 
   return (
     <FullScreen handle={handle} className="random-story flex items-center">
