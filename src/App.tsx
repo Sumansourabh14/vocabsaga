@@ -11,6 +11,7 @@ import RandomStory from "./pages/RandomStory";
 import Bookmarks from "./pages/Bookmarks";
 import { Toaster } from "./components/ui/sonner";
 import { Analytics } from "@vercel/analytics/react";
+import RandomQuote from "./pages/RandomQuote";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "story",
         element: <RandomStory />,
+      },
+      {
+        path: "quote",
+        element: <RandomQuote />,
       },
       {
         path: "input",

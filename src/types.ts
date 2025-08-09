@@ -9,6 +9,12 @@ export interface WordPassage {
     [key: string]: string;
   };
 }
+export interface Quote {
+  _id: string;
+  quote: string;
+  book: string;
+  author: string;
+}
 
 export type BookmarkWordProps = {
   id: string;
