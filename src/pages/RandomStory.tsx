@@ -22,6 +22,7 @@ import { Bookmark, Eye, Maximize, Minimize, Shuffle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import { toast } from "sonner";
+import { motion } from "motion/react";
 
 const passages: WordPassage[] = rawPassages;
 
@@ -212,9 +213,15 @@ const RandomStory = () => {
             </ToggleGroup>
           </section>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl playfair-display-normal">
+          <motion.h1
+            className="text-4xl sm:text-5xl lg:text-6xl playfair-display-normal"
+            key={data.word}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
             {highlightWordInPassage(data.passages[wordLimit], data.word)}
-          </h1>
+          </motion.h1>
 
           {(data.source_book || data.source_author) && (
             <p className="text-sm text-gray-400 italic">
