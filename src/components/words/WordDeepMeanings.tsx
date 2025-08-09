@@ -28,7 +28,7 @@ const WordDeepMeanings = ({
   meanings,
 }: WordDeepMeaningsProps) => {
   return (
-    <div className="space-y-6 my-6">
+    <div className="space-y-6 my-12 max-w-2xl mx-auto">
       {/* Phonetic */}
       {phonetic && (
         <p className="text-muted-foreground text-lg">/{phonetic}/</p>

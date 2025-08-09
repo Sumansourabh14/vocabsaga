@@ -11,8 +11,9 @@ import { Link } from "react-router";
 
 const navItems = [
   { name: "Story", href: "/story" },
+  { name: "Quote", href: "/quote" },
   // { name: "Input", href: "/input" },
-  { name: "Find", href: "/find" },
+  { name: "Find Word", href: "/find" },
   { name: "Bookmarks", href: "/bookmarks" },
 ];
 
