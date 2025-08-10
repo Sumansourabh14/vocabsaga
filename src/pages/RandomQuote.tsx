@@ -41,9 +41,9 @@ const RandomQuote = () => {
           <motion.h1
             className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl playfair-display-normal"
             key={data.quote}
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0.5, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
           >
             &quot;{data.quote}&quot;
           </motion.h1>
