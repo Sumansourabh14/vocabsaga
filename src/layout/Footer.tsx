@@ -42,7 +42,10 @@ export default function Footer() {
   return (
     <footer className="border-t bg-zinc-100 dark:bg-black text-gray-600 dark:text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-10">
-        <div className="flex justify-between items-baseline mb-6">
+        <div
+          className="flex justify-between items-baseline mb-6 gap-4 flex-wrap
+        "
+        >
           <SiteTitleText />
           {/* Links */}
           <nav className="flex space-x-6 text-sm items-center">
@@ -75,7 +78,7 @@ export default function Footer() {
             ))}
           </div>
         </section>
-        <div className="text-center pb-8">
+        <div className="text-center pb-8 mt-14">
           <p
             className="playfair-display-bold font-bold tracking-tighter text-7xl sm:text-9xl lg:text-[11rem] xl:text-[14rem]"
             style={{ lineHeight: 1 }}
