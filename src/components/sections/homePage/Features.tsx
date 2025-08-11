@@ -1,15 +1,19 @@
-import { CalendarIcon, InputIcon, QuoteIcon } from "@radix-ui/react-icons";
+import {
+  MagnifyingGlassIcon,
+  MobileIcon,
+  QuoteIcon,
+} from "@radix-ui/react-icons";
 
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { BookIcon } from "lucide-react";
 
 const features = [
   {
-    Icon: InputIcon,
+    Icon: MagnifyingGlassIcon,
     name: "Contextual Learning",
     description: "Understand how words are used in real sentences.",
     href: "/story",
-    cta: "Read passage",
+    cta: "Read passages",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -33,7 +37,7 @@ const features = [
     className: "col-span-3 md:col-span-1",
   },
   {
-    Icon: CalendarIcon,
+    Icon: MobileIcon,
     name: "Minimal UI",
     description: "Focus on the content, not clutter.",
     href: "/",
