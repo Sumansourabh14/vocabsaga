@@ -1,11 +1,7 @@
-import {
-  BellIcon,
-  CalendarIcon,
-  GlobeIcon,
-  InputIcon,
-} from "@radix-ui/react-icons";
+import { CalendarIcon, InputIcon, QuoteIcon } from "@radix-ui/react-icons";
 
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
+import { BookIcon } from "lucide-react";
 
 const features = [
   {
@@ -23,7 +19,7 @@ const features = [
     className: "col-span-3 md:col-span-2",
   },
   {
-    Icon: GlobeIcon,
+    Icon: BookIcon,
     name: "Built-in Dictionary",
     description: "Find any word for instant definitions.",
     href: "/find",
@@ -50,10 +46,11 @@ const features = [
     className: "col-span-3 md:col-span-1",
   },
   {
-    Icon: BellIcon,
-    name: "Dark Mode",
-    description: "A soothing experience day or night.",
-    href: "/",
+    Icon: QuoteIcon,
+    name: "Quotes from popular books",
+    description: "Read famous book quotes at random, founded just for you.",
+    href: "/quote",
+    cta: "Read quotes",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"

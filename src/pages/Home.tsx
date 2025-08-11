@@ -13,6 +13,10 @@ const Home = () => {
           <Why />
 
           <section className="max-w-[1000px] mx-auto px-8 py-30">
+            <h2 className="scroll-m-20 pb-2 mb-12 text-3xl md:text-4xl font-bold tracking-tight text-center">
+              <span className="text-[#1b7a1b]">Love words?</span> You&apos;re at
+              the right place
+            </h2>
             <Features />
           </section>
 
@@ -60,13 +64,14 @@ const Home = () => {
           {/* CTA Section */}
           <section className="px-6 py-30 text-center max-w-2xl mx-auto space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to upgrade your vocabulary?
+              Ready to <span className="text-[#1b7a1b]">upgrade</span> your
+              vocabulary?
             </h2>
             <Link
               to="/story"
               className="inline-block px-6 py-3 mt-4 bg-[#1b7a1b] text-white text-lg font-semibold rounded-lg hover:bg-green-800 transition"
             >
-              Try your first story
+              Read your first sentence!
             </Link>
           </section>
         </section>
