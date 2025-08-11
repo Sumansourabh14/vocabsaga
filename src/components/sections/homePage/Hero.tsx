@@ -8,12 +8,12 @@ const Hero = () => {
       <h1 className="max-w-3xl text-5xl md:text-7xl xl:text-8xl font-bold tracking-tight mx-auto">
         Not your average <span className="text-[#1b7a1b]">vocabulary</span> app
       </h1>
-      <p className="text-xl mt-4 text-muted-foreground">
+      <p className="text-md md:text-xl mt-4 text-muted-foreground max-w-xs md:max-w-sm">
         Learn words through passages, not with single words.
       </p>
       <a
         href="/story"
-        className="inline-block px-6 py-3 mt-4 mb-8 bg-[#1b7a1b] text-white text-lg font-semibold rounded-lg hover:bg-green-800 transition"
+        className="inline-block px-6 py-3 mt-4 mb-8 bg-[#1b7a1b] text-white text-md md:text-lg font-semibold rounded-lg hover:bg-green-800 transition"
       >
         Start Learning
       </a>
