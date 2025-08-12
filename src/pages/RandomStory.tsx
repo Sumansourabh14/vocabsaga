@@ -18,11 +18,10 @@ import { SITE_TITLE } from "@/data/constants";
 import rawPassages from "@/data/passages/p1.json";
 import usePageTitle from "@/hooks/usePageTitle";
 import type { BookmarkWordProps, WordPassage } from "@/types";
-import { Bookmark, Eye, Maximize, Minimize, Shuffle } from "lucide-react";
-import { useEffect, useState } from "react";
-import { FullScreen, useFullScreenHandle } from "react-full-screen";
-import { toast } from "sonner";
+import { Bookmark, Eye, Shuffle } from "lucide-react";
 import { motion } from "motion/react";
+import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 const passages: WordPassage[] = rawPassages;
 
@@ -46,7 +45,6 @@ const RandomStory = () => {
   );
   const [wordLimit, setWordLimit] = useState("10");
   const data = passages[current];
-  const handle = useFullScreenHandle();
   usePageTitle(`Story | ${SITE_TITLE}`);
 
   const handleRandom = () => {
@@ -164,74 +162,73 @@ const RandomStory = () => {
   };
 
   return (
-    <FullScreen handle={handle} className="random-story flex items-center">
-      <section className="max-w-[1300px] mx-auto px-8 min-h-[75vh] flex items-center justify-center">
-        <section className="max-w-5xl mx-auto text-center space-y-4">
-          <section className="flex justify-center items-center gap-4">
-            <div>
-              <Badge className={`${getBadgeColor(data.difficulty_level)}`}>
-                {data.difficulty_level.toUpperCase()}
-              </Badge>
-            </div>
+    <section className="max-w-[1300px] mx-auto px-8 min-h-[75vh] flex items-center justify-center">
+      <section className="max-w-5xl mx-auto text-center space-y-4">
+        <section className="flex justify-center items-center gap-4">
+          <div>
+            <Badge className={`${getBadgeColor(data.difficulty_level)}`}>
+              {data.difficulty_level.toUpperCase()}
+            </Badge>
+          </div>
 
-            <ToggleGroup
-              type="single"
-              variant="outline"
-              value={wordLimit}
-              onValueChange={(value) => {
-                if (value) setWordLimit(value);
-              }}
-            >
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <ToggleGroupItem
-                    value={"10"}
-                    aria-label="Toggle 10"
-                    className="cursor-pointer"
-                  >
-                    10
-                  </ToggleGroupItem>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Max words: 10</p>
-                </TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <ToggleGroupItem
-                    value={"25"}
-                    aria-label="Toggle 25"
-                    className="cursor-pointer"
-                  >
-                    20
-                  </ToggleGroupItem>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Max words: 20</p>
-                </TooltipContent>
-              </Tooltip>
-            </ToggleGroup>
-          </section>
-
-          <motion.h1
-            className="text-4xl sm:text-5xl lg:text-6xl playfair-display-normal"
-            key={data.word}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+          <ToggleGroup
+            type="single"
+            variant="outline"
+            value={wordLimit}
+            onValueChange={(value) => {
+              if (value) setWordLimit(value);
+            }}
           >
-            {highlightWordInPassage(data.passages[wordLimit], data.word)}
-          </motion.h1>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <ToggleGroupItem
+                  value={"10"}
+                  aria-label="Toggle 10"
+                  className="cursor-pointer"
+                >
+                  10
+                </ToggleGroupItem>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Max words: 10</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <ToggleGroupItem
+                  value={"25"}
+                  aria-label="Toggle 25"
+                  className="cursor-pointer"
+                >
+                  20
+                </ToggleGroupItem>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Max words: 20</p>
+              </TooltipContent>
+            </Tooltip>
+          </ToggleGroup>
+        </section>
 
-          {(data.source_book || data.source_author) && (
-            <p className="text-sm text-gray-400 italic">
-              — {data.source_book}
-              {data.source_author ? ` by ${data.source_author}` : ""}
-            </p>
-          )}
+        <motion.h1
+          className="text-4xl sm:text-5xl lg:text-6xl playfair-display-normal"
+          key={data.word}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          {highlightWordInPassage(data.passages[wordLimit], data.word)}
+        </motion.h1>
 
-          <section className="flex gap-4 justify-center mt-8">
-            {/* <Button
+        {(data.source_book || data.source_author) && (
+          <p className="text-sm text-gray-400 italic">
+            — {data.source_book}
+            {data.source_author ? ` by ${data.source_author}` : ""}
+          </p>
+        )}
+
+        <section className="flex gap-4 justify-center mt-8">
+          {/* <Button
             variant={"outline"}
             onClick={handlePrevious}
             className="cursor-pointer"
@@ -239,38 +236,38 @@ const RandomStory = () => {
             Previous
           </Button> */}
 
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button
-                  variant={"outline"}
-                  onClick={handleRandom}
-                  className="cursor-pointer"
-                >
-                  <Shuffle />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Shuffle passage</p>
-              </TooltipContent>
-            </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant={"outline"}
+                onClick={handleRandom}
+                className="cursor-pointer"
+              >
+                <Shuffle />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Shuffle passage</p>
+            </TooltipContent>
+          </Tooltip>
 
-            <Drawer>
-              <DrawerTrigger asChild>
-                <Button variant="default" className="cursor-pointer">
-                  <Eye /> Show Meaning
-                </Button>
-              </DrawerTrigger>
-              <DrawerContent>
-                <DrawerHeader>
-                  <DrawerTitle className="text-3xl">{data.word}</DrawerTitle>
-                  <DrawerDescription className="text-xl">
-                    {data.word_meaning}
-                  </DrawerDescription>
-                </DrawerHeader>
-              </DrawerContent>
-            </Drawer>
+          <Drawer>
+            <DrawerTrigger asChild>
+              <Button variant="default" className="cursor-pointer">
+                <Eye /> Show Meaning
+              </Button>
+            </DrawerTrigger>
+            <DrawerContent>
+              <DrawerHeader>
+                <DrawerTitle className="text-3xl">{data.word}</DrawerTitle>
+                <DrawerDescription className="text-xl">
+                  {data.word_meaning}
+                </DrawerDescription>
+              </DrawerHeader>
+            </DrawerContent>
+          </Drawer>
 
-            {/* <Button
+          {/* <Button
             variant={"outline"}
             onClick={handleNext}
             className="cursor-pointer"
@@ -278,38 +275,23 @@ const RandomStory = () => {
             Next
           </Button> */}
 
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button
-                  variant={"outline"}
-                  onClick={handleSaveWord}
-                  className="cursor-pointer"
-                >
-                  <Bookmark />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Add word to bookmark</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button
-                  variant={"outline"}
-                  onClick={handle.active ? handle.exit : handle.enter}
-                  className="cursor-pointer"
-                >
-                  {handle.active ? <Minimize /> : <Maximize />}
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>
-                {handle.active ? "Exit fullscreen" : "Enter fullscreen"}
-              </TooltipContent>
-            </Tooltip>
-          </section>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant={"outline"}
+                onClick={handleSaveWord}
+                className="cursor-pointer"
+              >
+                <Bookmark />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Add word to bookmark</p>
+            </TooltipContent>
+          </Tooltip>
         </section>
       </section>
-    </FullScreen>
+    </section>
   );
 };
 
