@@ -10,13 +10,13 @@ export default function AuthPage() {
   return (
     <section className="min-h-[80vh] flex">
       {/* Left - Form */}
-      <div className="w-1/2 flex items-center justify-center p-8">
+      <div className="w-full md:w-1/2 flex items-center justify-center p-8 border-r-0 md:border-r-[1px]">
         <div className="w-full max-w-sm space-y-6">
-          <h1 className="text-2xl font-semibold tracking-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-center">
             {isSignIn ? "Sign In" : "Sign Up"}
           </h1>
 
-          <form className="space-y-4">
+          <form className="space-y-4 mt-8">
             {!isSignIn && (
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
