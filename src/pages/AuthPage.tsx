@@ -1,11 +1,45 @@
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { supabase } from "@/supabase/supabase-client";
+import { useEffect, useState, type FormEvent } from "react";
 import { Link, useLocation } from "react-router";
 
 export default function AuthPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const location = useLocation();
   const isSignIn = location.pathname === "/sign-in";
+
+  useEffect(() => {
+    document.title = isSignIn ? "Sign In | Vocabsaga" : "Sign Up | Vocabsaga";
+  }, [isSignIn]);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (isSignIn) {
+      const { error: signInError } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (signInError) {
+        console.error("Error signing in: ", signInError.message);
+      }
+    } else {
+      const { data, error: signUpError } = await supabase.auth.signUp({
+        email,
+        password,
+      });
+
+      console.log({ data });
+
+      if (signUpError) {
+        console.error("Error signing up: ", signUpError.message);
+      }
+    }
+  };
 
   return (
     <section className="min-h-[80vh] flex">
@@ -16,7 +50,7 @@ export default function AuthPage() {
             {isSignIn ? "Sign In" : "Sign Up"}
           </h1>
 
-          <form className="space-y-4 mt-8">
+          <form className="space-y-4 mt-8" onSubmit={handleSubmit}>
             {!isSignIn && (
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
@@ -26,12 +60,24 @@ export default function AuthPage() {
 
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" placeholder="you@example.com" />
+              <Input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
 
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
-              <Input id="password" type="password" placeholder="********" />
+              <Input
+                id="password"
+                type="password"
+                placeholder="********"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
 
             {!isSignIn && (
@@ -45,7 +91,7 @@ export default function AuthPage() {
               </div>
             )}
 
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full cursor-pointer">
               {isSignIn ? "Sign In" : "Sign Up"}
             </Button>
           </form>
