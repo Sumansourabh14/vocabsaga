@@ -3,12 +3,16 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { AuthContext } from "@/context/AuthContext";
 import { supabase } from "@/supabase/supabase-client";
+import { Loader2 } from "lucide-react";
 import { useContext, useEffect, useState, type FormEvent } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 
 export default function AuthPage() {
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const { session } = useContext(AuthContext);
 
   const location = useLocation();
@@ -25,7 +29,15 @@ export default function AuthPage() {
     }
   }, [session]);
 
+  const clearStates = () => {
+    setLoading(false);
+    setEmail("");
+    setPassword("");
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    setLoading(true);
+    setErrorMessage("");
     e.preventDefault();
 
     if (isSignIn) {
@@ -44,19 +56,45 @@ export default function AuthPage() {
 
       if (signInError) {
         console.error("Error signing in: ", signInError.message);
+        setErrorMessage(signInError.message);
+        clearStates();
         return;
       }
     } else {
-      const { error: signUpError } = await supabase.auth.signUp({
-        email,
-        password,
-      });
+      const { data: signUpData, error: signUpError } =
+        await supabase.auth.signUp({
+          email,
+          password,
+        });
+
+      console.log({ signUpData, session });
 
       if (signUpError) {
         console.error("Error signing up: ", signUpError.message);
+        setErrorMessage(signUpError.message);
+        clearStates();
         return;
       }
+
+      const { error: insertError } = await supabase.from("profiles").insert([
+        {
+          user_id: signUpData.user?.id,
+          name,
+          email,
+        },
+      ]);
+
+      if (insertError) {
+        console.error("Error storing user: ", insertError.message);
+        setErrorMessage(insertError.message);
+        clearStates();
+        return;
+      }
+
+      navigate(`/sign-in`);
     }
+
+    clearStates();
   };
 
   if (session) return null;
@@ -71,10 +109,19 @@ export default function AuthPage() {
           </h1>
 
           <form className="space-y-4 mt-8" onSubmit={handleSubmit}>
+            {errorMessage && (
+              <p className="text-center text-red-400">Error: {errorMessage}</p>
+            )}
             {!isSignIn && (
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
-                <Input id="name" type="text" placeholder="Your name" />
+                <Input
+                  id="name"
+                  type="text"
+                  placeholder="Your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
               </div>
             )}
 
@@ -94,24 +141,18 @@ export default function AuthPage() {
               <Input
                 id="password"
                 type="password"
-                placeholder="********"
+                placeholder="something strong"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
 
-            {!isSignIn && (
-              <div className="space-y-2">
-                <Label htmlFor="confirm-password">Confirm Password</Label>
-                <Input
-                  id="confirm-password"
-                  type="password"
-                  placeholder="********"
-                />
-              </div>
-            )}
-
-            <Button type="submit" className="w-full cursor-pointer">
+            <Button
+              type="submit"
+              className="w-full cursor-pointer"
+              disabled={email.length === 0 || password.length === 0 || loading}
+            >
+              {loading && <Loader2 className="animate-spin" />}
               {isSignIn ? "Sign In" : "Sign Up"}
             </Button>
           </form>
