@@ -47,9 +47,6 @@ export default function AuthPage() {
           password,
         });
 
-      console.log({ signInData });
-      console.log({ session });
-
       if (signInData?.session) {
         navigate(`/story`);
       }
@@ -67,8 +64,6 @@ export default function AuthPage() {
           password,
         });
 
-      console.log({ signUpData, session });
-
       if (signUpError) {
         console.error("Error signing up: ", signUpError.message);
         setErrorMessage(signUpError.message);
@@ -76,24 +71,32 @@ export default function AuthPage() {
         return;
       }
 
-      const { error: insertError } = await supabase.from("profiles").insert([
-        {
-          user_id: signUpData.user?.id,
-          name,
-          email,
-        },
-      ]);
+      if (signUpData.user) {
+        const { data, error: insertError } = await supabase
+          .from("profiles")
+          .insert([
+            {
+              id: signUpData.user.id,
+              name,
+              email,
+            },
+          ])
+          .select()
+          .single();
 
-      if (insertError) {
-        console.error("Error storing user: ", insertError.message);
-        setErrorMessage(insertError.message);
-        clearStates();
-        return;
+        if (data) {
+          navigate(`/sign-in`);
+          clearStates();
+        }
+
+        if (insertError) {
+          console.error("Error storing user: ", insertError.message);
+          setErrorMessage(insertError.message);
+          clearStates();
+          return;
+        }
       }
-
-      navigate(`/sign-in`);
     }
-
     clearStates();
   };
 

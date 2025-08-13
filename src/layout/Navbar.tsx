@@ -1,6 +1,13 @@
 import SiteTitleText from "@/components/text/SiteTitleText";
 import { ModeToggle } from "@/components/theme/ModeToggle";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -28,7 +35,7 @@ const navItems = [
 ];
 
 export default function Navbar() {
-  const { session, logout } = useContext(AuthContext);
+  const { session, logout, profile } = useContext(AuthContext);
 
   return (
     <header className="w-full">
@@ -53,18 +60,24 @@ export default function Navbar() {
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
-          {session ? (
-            <Button
-              onClick={logout}
-              variant={"destructive"}
-              className="cursor-pointer"
-            >
-              Logout
-            </Button>
+          {session && profile ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger className="font-bold text-sm cursor-pointer text-muted-foreground">
+                <Avatar>
+                  {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
+                  <AvatarFallback>{profile.name.slice(0, 1)}</AvatarFallback>
+                </Avatar>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem onClick={logout} className="cursor-pointer">
+                  Logout
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           ) : (
             <Link
               to={`/sign-in`}
-              className="border-[1px] px-6 py-1.5 font-semibold text-sm"
+              className="border-[1px] px-6 py-1.5 font-semibold text-sm rounded-md"
             >
               Sign in
             </Link>
