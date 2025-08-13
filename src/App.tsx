@@ -1,17 +1,19 @@
+import { Analytics } from "@vercel/analytics/react";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import "./App.css";
-import WordInput from "./components/WordInput";
-import RootLayout from "./layout/RootLayout";
-import Home from "./pages/Home";
-import NotFound from "./layout/NotFound";
-import { ThemeProvider } from "./context/theme-provider";
-import Word from "./pages/Word";
-import FindWord from "./pages/FindWord";
-import RandomStory from "./pages/RandomStory";
-import Bookmarks from "./pages/Bookmarks";
 import { Toaster } from "./components/ui/sonner";
-import { Analytics } from "@vercel/analytics/react";
+import WordInput from "./components/WordInput";
+import { ThemeProvider } from "./context/theme-provider";
+import NotFound from "./layout/NotFound";
+import RootLayout from "./layout/RootLayout";
+import AuthPage from "./pages/AuthPage";
+import Bookmarks from "./pages/Bookmarks";
+import FindWord from "./pages/FindWord";
+import Home from "./pages/Home";
 import RandomQuote from "./pages/RandomQuote";
+import RandomStory from "./pages/RandomStory";
+import Word from "./pages/Word";
+import AuthLayout from "./layout/AuthLayout";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +47,24 @@ const router = createBrowserRouter([
       {
         path: "word/:title",
         element: <Word />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: <AuthLayout />,
+    children: [
+      {
+        path: "sign-in",
+        element: <AuthPage />,
+      },
+      {
+        path: "sign-up",
+        element: <AuthPage />,
       },
       {
         path: "*",
