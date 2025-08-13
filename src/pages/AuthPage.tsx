@@ -1,45 +1,65 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { AuthContext } from "@/context/AuthContext";
 import { supabase } from "@/supabase/supabase-client";
-import { useEffect, useState, type FormEvent } from "react";
-import { Link, useLocation } from "react-router";
+import { useContext, useEffect, useState, type FormEvent } from "react";
+import { Link, useLocation, useNavigate } from "react-router";
 
 export default function AuthPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { session } = useContext(AuthContext);
+
   const location = useLocation();
+  const navigate = useNavigate();
   const isSignIn = location.pathname === "/sign-in";
 
   useEffect(() => {
     document.title = isSignIn ? "Sign In | Vocabsaga" : "Sign Up | Vocabsaga";
   }, [isSignIn]);
 
+  useEffect(() => {
+    if (session) {
+      navigate("/story", { replace: true });
+    }
+  }, [session]);
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (isSignIn) {
-      const { error: signInError } = await supabase.auth.signInWithPassword({
-        email,
-        password,
-      });
+      const { data: signInData, error: signInError } =
+        await supabase.auth.signInWithPassword({
+          email,
+          password,
+        });
+
+      console.log({ signInData });
+      console.log({ session });
+
+      if (signInData?.session) {
+        navigate(`/story`);
+      }
 
       if (signInError) {
         console.error("Error signing in: ", signInError.message);
+        return;
       }
     } else {
-      const { data, error: signUpError } = await supabase.auth.signUp({
+      const { error: signUpError } = await supabase.auth.signUp({
         email,
         password,
       });
 
-      console.log({ data });
-
       if (signUpError) {
         console.error("Error signing up: ", signUpError.message);
+        return;
       }
     }
   };
+
+  if (session) return null;
 
   return (
     <section className="min-h-[80vh] flex">

@@ -14,6 +14,7 @@ import RandomQuote from "./pages/RandomQuote";
 import RandomStory from "./pages/RandomStory";
 import Word from "./pages/Word";
 import AuthLayout from "./layout/AuthLayout";
+import { AuthProvider } from "./context/AuthContext";
 
 const router = createBrowserRouter([
   {
@@ -77,9 +78,11 @@ const router = createBrowserRouter([
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <RouterProvider router={router} />
-      <Toaster />
-      <Analytics />
+      <AuthProvider>
+        <RouterProvider router={router} />
+        <Toaster />
+        <Analytics />
+      </AuthProvider>
     </ThemeProvider>
   );
 }

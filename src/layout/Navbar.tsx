@@ -14,7 +14,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { AuthContext } from "@/context/AuthContext";
 import { Menu } from "lucide-react";
+import { useContext } from "react";
 import { Link } from "react-router";
 
 const navItems = [
@@ -26,6 +28,8 @@ const navItems = [
 ];
 
 export default function Navbar() {
+  const { session, logout } = useContext(AuthContext);
+
   return (
     <header className="w-full">
       <div className="mx-auto flex h-16 max-w-[1330px] items-center justify-between px-4">
@@ -49,6 +53,22 @@ export default function Navbar() {
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
+          {session ? (
+            <Button
+              onClick={logout}
+              variant={"destructive"}
+              className="cursor-pointer"
+            >
+              Logout
+            </Button>
+          ) : (
+            <Link
+              to={`/sign-in`}
+              className="border-[1px] px-6 py-1.5 font-semibold text-sm"
+            >
+              Sign in
+            </Link>
+          )}
         </NavigationMenu>
 
         {/* Mobile Menu */}
