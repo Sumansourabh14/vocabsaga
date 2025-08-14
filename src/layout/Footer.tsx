@@ -43,7 +43,7 @@ const socialLinks = [
 export default function Footer() {
   const { session, profile } = useContext(AuthContext);
   return (
-    <footer className="border-t bg-zinc-100 dark:bg-black text-gray-600 dark:text-gray-300">
+    <footer className="border-t bg-zinc-50 dark:bg-black text-gray-600 dark:text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-10">
         <div
           className="flex justify-between items-baseline mb-6 gap-4 flex-wrap
