@@ -121,9 +121,14 @@ export default function AuthPage() {
       {/* Left - Form */}
       <div className="w-full md:w-1/2 flex items-center justify-center p-8 border-r-0 md:border-r-[1px]">
         <div className="w-full max-w-sm space-y-6">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-center text-[#1b7a1b]">
             {isSignIn ? "Sign In" : "Sign Up"}
           </h1>
+
+          <p className="text-muted-foreground text-center">
+            Sign {isSignIn ? "in" : "up"} to back up your saved words and access
+            them on any device
+          </p>
 
           <form className="space-y-4 mt-8" onSubmit={handleSubmit}>
             {errorMessage && (
