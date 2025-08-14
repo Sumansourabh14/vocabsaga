@@ -5,7 +5,7 @@ import { Outlet } from "react-router";
 export default function AuthLayout() {
   return (
     <div className="flex flex-col max-w-[1300px] mx-auto">
-      <div className="flex justify-between items-center mt-8">
+      <div className="flex justify-between items-center mt-8 px-6">
         <div>
           <SiteTitleText />
         </div>
