@@ -18,7 +18,7 @@ type WordItem = {
 
 const Bookmarks = () => {
   const [words, setWords] = useState<WordItem[]>([]);
-  const { profile } = useContext(AuthContext);
+  const { session, profile } = useContext(AuthContext);
   usePageTitle(`Bookmarks | ${SITE_TITLE}`);
 
   const updateWords = (updatedWords: WordItem[]) => {
@@ -27,7 +27,7 @@ const Bookmarks = () => {
   };
 
   const removeItem = async (id: number) => {
-    if (profile) {
+    if (session && profile) {
       const { error } = await supabase
         .from("bookmarks")
         .delete()
@@ -44,7 +44,7 @@ const Bookmarks = () => {
   };
 
   const removeAllItems = async () => {
-    if (profile) {
+    if (session && profile) {
       const { error } = await supabase
         .from("bookmarks")
         .delete()
@@ -60,7 +60,7 @@ const Bookmarks = () => {
   };
 
   const fetchBookmarks = async () => {
-    if (profile) {
+    if (session && profile) {
       const { data, error } = await supabase
         .from("bookmarks")
         .select("id, word, created_at")
@@ -88,7 +88,7 @@ const Bookmarks = () => {
 
   useEffect(() => {
     fetchBookmarks();
-  }, [profile]);
+  }, [session, profile]);
 
   return (
     <main className="max-w-[1300px] mx-auto min-h-[75vh]">
