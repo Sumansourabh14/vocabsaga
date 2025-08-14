@@ -20,3 +20,7 @@ export function handleRemovedSuccessMessage() {
 export function addBookmarksToLocalStorage(bookmarks: BookmarkWordProps[]) {
   localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
 }
+
+export function handleCustomSuccessMessage(message: string) {
+  toast.success(message);
+}

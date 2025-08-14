@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { AuthContext } from "@/context/AuthContext";
+import { syncLocalBookmarksToDb } from "@/services/bookmarksDb";
 import { supabase } from "@/supabase/supabase-client";
 import type { Quote } from "@/types";
 import { Eye, EyeOff, Loader2 } from "lucide-react";
@@ -56,15 +57,19 @@ export default function AuthPage() {
           password,
         });
 
-      if (signInData?.session) {
-        navigate(`/story`);
-      }
-
       if (signInError) {
         console.error("Error signing in: ", signInError.message);
         setErrorMessage(signInError.message);
         clearStates();
         return;
+      }
+
+      if (signInData?.session) {
+        const {
+          user: { id },
+        } = signInData;
+
+        await syncLocalBookmarksToDb(id);
       }
     } else {
       const { data: signUpData, error: signUpError } =

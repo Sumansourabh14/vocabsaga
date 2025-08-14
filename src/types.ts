@@ -26,5 +26,5 @@ export type BookmarkWordDbProps = {
   id: string;
   user_id: string;
   word: string;
-  added_at: string;
+  created_at: string;
 };

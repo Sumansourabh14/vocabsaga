@@ -1,6 +1,8 @@
 import { supabase } from "@/supabase/supabase-client";
 import type { BookmarkWordDbProps, BookmarkWordProps } from "@/types";
 
+const bookMarksTable = "bookmarks";
+
 export const syncLocalBookmarksToDb = async (userId: string) => {
   const localBookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
 
@@ -29,6 +31,7 @@ export const syncLocalBookmarksToDb = async (userId: string) => {
     newBookmarks.map((item: BookmarkWordDbProps) => ({
       user_id: userId,
       word: item.word,
+      created_at: new Date().toISOString(),
     }))
   );
 
@@ -39,4 +42,19 @@ export const syncLocalBookmarksToDb = async (userId: string) => {
     // Optional: Clear localStorage after sync
     localStorage.removeItem("bookmarks");
   }
+};
+
+export const fetchBookmarksFromDb = async (userId: string) => {
+  const { data, error: fetchError } = await supabase
+    .from(bookMarksTable)
+    .select()
+    .eq("user_id", userId);
+
+  if (fetchError) {
+    console.error("Error fetching bookmarks from Db:", fetchError);
+    return;
+  }
+
+  console.log({ data });
+  return data;
 };
