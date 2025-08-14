@@ -1,12 +1,14 @@
 import SocialLink from "@/components/links/SocialLink";
 import SiteTitleText from "@/components/text/SiteTitleText";
 import { Separator } from "@/components/ui/separator";
+import { AuthContext } from "@/context/AuthContext";
 import { SITE_TITLE } from "@/data/constants";
 import {
   GitHubLogoIcon,
   InstagramLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
+import { useContext } from "react";
 import { Link } from "react-router";
 
 const navItems = [
@@ -39,8 +41,9 @@ const socialLinks = [
 ];
 
 export default function Footer() {
+  const { session, profile } = useContext(AuthContext);
   return (
-    <footer className="border-t bg-zinc-100 dark:bg-black text-gray-600 dark:text-gray-300">
+    <footer className="border-t bg-zinc-50 dark:bg-black text-gray-600 dark:text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-10">
         <div
           className="flex justify-between items-baseline mb-6 gap-4 flex-wrap
@@ -58,6 +61,14 @@ export default function Footer() {
                 {link.name}
               </Link>
             ))}
+            {!(session && profile) && (
+              <Link
+                to={`/sign-up`}
+                className="border-[1px] px-6 py-1.5 font-semibold text-sm rounded-md"
+              >
+                Sign up
+              </Link>
+            )}
           </nav>
         </div>
 

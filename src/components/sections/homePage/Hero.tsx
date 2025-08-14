@@ -4,7 +4,7 @@ const Hero = () => {
   const { theme } = useTheme();
 
   return (
-    <section className="max-w-4xl px-4 py-20 md:py-28 text-center mx-auto space-y-4 flex flex-col items-center">
+    <section className="max-w-4xl px-4 py-20 md:py-24 text-center mx-auto space-y-4 flex flex-col items-center">
       <h1 className="max-w-3xl text-4xl sm:text-5xl md:text-7xl xl:text-8xl font-bold tracking-tight mx-auto">
         Not your average <span className="text-[#1b7a1b]">vocabulary</span> app
       </h1>

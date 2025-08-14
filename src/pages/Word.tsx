@@ -2,8 +2,10 @@ import BookmarkIconButton from "@/components/buttons/iconButtons/BookmarkIconBut
 import WordDataLoading from "@/components/loading/WordDataLoading";
 import MeaningNotFound from "@/components/text/MeaningNotFound";
 import WordDeepMeanings from "@/components/words/WordDeepMeanings";
+import { AuthContext } from "@/context/AuthContext";
 import { SITE_TITLE } from "@/data/constants";
 import useFetchWordMeaning from "@/hooks/useFetchWordMeaning";
+import { supabase } from "@/supabase/supabase-client";
 import type { BookmarkWordProps } from "@/types";
 import {
   addBookmarksToLocalStorage,
@@ -11,7 +13,7 @@ import {
   handleRemovedSuccessMessage,
   handleSuccessMessage,
 } from "@/utils/bookmarkFunctions";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 
 const Word = () => {
@@ -19,6 +21,7 @@ const Word = () => {
   const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
   const { title } = useParams();
   const { data, isFetching } = useFetchWordMeaning(title ?? "");
+  const { session, profile } = useContext(AuthContext);
 
   useEffect(() => {
     document.title = `${title} | ${SITE_TITLE}`;
@@ -52,8 +55,45 @@ const Word = () => {
     setBookmarks(newBookmarks);
   };
 
-  const handleBookmarking = () => {
-    if (title) {
+  const handleBookmarking = async () => {
+    if (!title) {
+      handleFailureMessage();
+      setIsBookmarked(false);
+      return;
+    }
+
+    if (session && profile) {
+      try {
+        if (isBookmarked) {
+          const { error } = await supabase
+            .from("bookmarks")
+            .delete()
+            .eq("user_id", profile.id)
+            .eq("word", title);
+
+          if (error) throw error;
+
+          setIsBookmarked(false);
+          handleRemovedSuccessMessage();
+        } else {
+          const { error } = await supabase.from("bookmarks").insert([
+            {
+              user_id: profile.id,
+              word: title,
+              created_at: new Date().toISOString(),
+            },
+          ]);
+
+          if (error) throw error;
+
+          setIsBookmarked(true);
+          handleSuccessMessage();
+        }
+      } catch (error) {
+        console.error("Error updating bookmark in DB:", error);
+        handleFailureMessage();
+      }
+    } else {
       const find = bookmarks.find((item) => item.word.toLowerCase() === title);
 
       if (find) {
@@ -84,10 +124,6 @@ const Word = () => {
         setIsBookmarked(false);
         handleFailureMessage();
       }
-    } else {
-      handleFailureMessage();
-      setIsBookmarked(false);
-      return;
     }
   };
 

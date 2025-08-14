@@ -2,10 +2,13 @@ import DeleteIconButton from "@/components/buttons/iconButtons/DeleteIconButton"
 import WordPopup from "@/components/popups/WordPopup";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import { AuthContext } from "@/context/AuthContext";
 import { SITE_TITLE } from "@/data/constants";
 import usePageTitle from "@/hooks/usePageTitle";
+import { supabase } from "@/supabase/supabase-client";
+import { handleCustomSuccessMessage } from "@/utils/bookmarkFunctions";
 import { displayFormatedDate } from "@/utils/displayFormatedDate";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 type WordItem = {
   id: number;
@@ -15,6 +18,7 @@ type WordItem = {
 
 const Bookmarks = () => {
   const [words, setWords] = useState<WordItem[]>([]);
+  const { session, profile } = useContext(AuthContext);
   usePageTitle(`Bookmarks | ${SITE_TITLE}`);
 
   const updateWords = (updatedWords: WordItem[]) => {
@@ -22,22 +26,69 @@ const Bookmarks = () => {
     localStorage.setItem("bookmarks", JSON.stringify(updatedWords));
   };
 
-  const removeItem = (id: number) => {
-    const filteredWords = words.filter((item) => item.id !== id);
-    updateWords(filteredWords);
+  const removeItem = async (id: number) => {
+    if (session && profile) {
+      const { error } = await supabase
+        .from("bookmarks")
+        .delete()
+        .eq("id", id)
+        .eq("user_id", profile.id);
+      if (!error) {
+        handleCustomSuccessMessage("Word deleted successfully");
+        setWords(words.filter((item) => item.id !== id));
+      }
+    } else {
+      const filteredWords = words.filter((item) => item.id !== id);
+      updateWords(filteredWords);
+    }
   };
 
-  const removeAllItems = () => {
-    const filteredWords = words.filter(() => false);
-    updateWords(filteredWords);
+  const removeAllItems = async () => {
+    if (session && profile) {
+      const { error } = await supabase
+        .from("bookmarks")
+        .delete()
+        .eq("user_id", profile.id);
+      if (!error) {
+        handleCustomSuccessMessage("Words deleted successfully");
+        setWords([]);
+      }
+    } else {
+      const filteredWords = words.filter(() => false);
+      updateWords(filteredWords);
+    }
+  };
+
+  const fetchBookmarks = async () => {
+    if (session && profile) {
+      const { data, error } = await supabase
+        .from("bookmarks")
+        .select("id, word, created_at")
+        .eq("user_id", profile.id)
+        .order("created_at", { ascending: false });
+
+      if (error) {
+        console.error("Error fetching bookmarks from Supabase:", error);
+      } else {
+        setWords(
+          data.map((item) => ({
+            id: item.id,
+            word: item.word,
+            addedAt: item.created_at,
+          }))
+        );
+      }
+    } else {
+      const stored = localStorage.getItem("bookmarks");
+      if (stored) {
+        setWords(JSON.parse(stored));
+      }
+    }
   };
 
   useEffect(() => {
-    const stored = localStorage.getItem("bookmarks");
-    if (stored) {
-      setWords(JSON.parse(stored));
-    }
-  }, []);
+    fetchBookmarks();
+  }, [session, profile]);
 
   return (
     <main className="max-w-[1300px] mx-auto min-h-[75vh]">

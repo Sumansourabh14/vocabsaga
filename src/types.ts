@@ -21,3 +21,10 @@ export type BookmarkWordProps = {
   word: string;
   addedAt: string;
 };
+
+export type BookmarkWordDbProps = {
+  id: string;
+  user_id: string;
+  word: string;
+  created_at: string;
+};

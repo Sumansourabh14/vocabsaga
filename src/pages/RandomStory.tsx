@@ -14,13 +14,19 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { AuthContext } from "@/context/AuthContext";
 import { SITE_TITLE } from "@/data/constants";
 import rawPassages from "@/data/passages/p1.json";
 import usePageTitle from "@/hooks/usePageTitle";
+import { supabase } from "@/supabase/supabase-client";
 import type { BookmarkWordProps, WordPassage } from "@/types";
+import {
+  handleFailureMessage,
+  handleSuccessMessage,
+} from "@/utils/bookmarkFunctions";
 import { Bookmark, Eye, Shuffle } from "lucide-react";
 import { motion } from "motion/react";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { toast } from "sonner";
 
 const passages: WordPassage[] = rawPassages;
@@ -44,6 +50,7 @@ const RandomStory = () => {
     Math.floor(Math.random() * passages.length)
   );
   const [wordLimit, setWordLimit] = useState("10");
+  const { session, profile } = useContext(AuthContext);
   const data = passages[current];
   usePageTitle(`Story | ${SITE_TITLE}`);
 
@@ -103,32 +110,55 @@ const RandomStory = () => {
     }
   }, []);
 
-  const handleSaveWord = () => {
-    const find = bookmarks.find(
-      (item) => item.word.toLowerCase() === data.word.toLowerCase()
-    );
-
-    if (find) {
-      toast.error("Word is already bookmarked.");
+  const handleSaveWord = async () => {
+    if (!data.word) {
+      handleFailureMessage();
       return;
     }
 
-    const newBookmarks = [
-      ...bookmarks,
-      {
-        id: Date.now().toString(),
-        word: data.word,
-        addedAt: new Date().toISOString(),
-      },
-    ];
+    if (session && profile) {
+      try {
+        const { error } = await supabase.from("bookmarks").insert([
+          {
+            user_id: profile.id,
+            word: data.word,
+            created_at: new Date().toISOString(),
+          },
+        ]);
 
-    try {
-      localStorage.setItem("bookmarks", JSON.stringify(newBookmarks));
-      setBookmarks(newBookmarks);
-      toast.success("Word added to bookmarks.");
-    } catch (error) {
-      console.error("Error saving bookmarks:", error);
-      toast.error("Failed to save bookmark.");
+        if (error) throw error;
+        handleSuccessMessage();
+      } catch (error) {
+        console.error("Error updating bookmark in DB:", error);
+        handleFailureMessage();
+      }
+    } else {
+      const find = bookmarks.find(
+        (item) => item.word.toLowerCase() === data.word
+      );
+
+      if (find) {
+        toast.error("Word is already bookmarked.");
+        return;
+      }
+
+      const newBookmarks = [
+        ...bookmarks,
+        {
+          id: Date.now().toString(),
+          word: data.word,
+          addedAt: new Date().toISOString(),
+        },
+      ];
+
+      try {
+        localStorage.setItem("bookmarks", JSON.stringify(newBookmarks));
+        setBookmarks(newBookmarks);
+        handleSuccessMessage();
+      } catch (error) {
+        console.error("Error saving bookmarks:", error);
+        handleFailureMessage();
+      }
     }
   };
 

@@ -1,6 +1,13 @@
 import SiteTitleText from "@/components/text/SiteTitleText";
 import { ModeToggle } from "@/components/theme/ModeToggle";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -14,7 +21,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { AuthContext } from "@/context/AuthContext";
 import { Menu } from "lucide-react";
+import { useContext } from "react";
 import { Link } from "react-router";
 
 const navItems = [
@@ -26,6 +35,8 @@ const navItems = [
 ];
 
 export default function Navbar() {
+  const { session, logout, profile } = useContext(AuthContext);
+
   return (
     <header className="w-full">
       <div className="mx-auto flex h-16 max-w-[1330px] items-center justify-between px-4">
@@ -49,6 +60,28 @@ export default function Navbar() {
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
+          {session && profile ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger className="font-bold text-sm cursor-pointer text-muted-foreground">
+                <Avatar>
+                  {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
+                  <AvatarFallback>{profile.name.slice(0, 1)}</AvatarFallback>
+                </Avatar>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem onClick={logout} className="cursor-pointer">
+                  Logout
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ) : (
+            <Link
+              to={`/sign-in`}
+              className="border-[1px] px-6 py-1.5 font-semibold text-sm rounded-md"
+            >
+              Sign in
+            </Link>
+          )}
         </NavigationMenu>
 
         {/* Mobile Menu */}
