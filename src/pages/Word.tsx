@@ -23,8 +23,6 @@ const Word = () => {
   const { data, isFetching } = useFetchWordMeaning(title ?? "");
   const { session, profile } = useContext(AuthContext);
 
-  console.log({ session, profile });
-
   useEffect(() => {
     document.title = `${title} | ${SITE_TITLE}`;
   }, [title]);
