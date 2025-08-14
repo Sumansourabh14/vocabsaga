@@ -3,9 +3,17 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { AuthContext } from "@/context/AuthContext";
 import { supabase } from "@/supabase/supabase-client";
+import type { Quote } from "@/types";
 import { Loader2 } from "lucide-react";
 import { useContext, useEffect, useState, type FormEvent } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
+
+const data: Quote = {
+  _id: "6640a798e14c6532bcfb00c6",
+  quote: "People in their right minds never take pride in their talents.",
+  book: "To Kill a Mockingbird",
+  author: "Harper Lee",
+};
 
 export default function AuthPage() {
   const [email, setEmail] = useState("");
@@ -170,11 +178,18 @@ export default function AuthPage() {
       </div>
 
       {/* Right - Quote */}
-      <div className="w-1/2 hidden md:flex items-center justify-center p-8">
-        <blockquote className="text-3xl text-center playfair-display-normal">
-          “It is our choices, Harry, that show what we truly are, far more than
-          our abilities.”
-        </blockquote>
+      <div className="w-1/2 hidden md:flex items-center justify-center p-8 ">
+        <div className="flex flex-col gap-8 items-center">
+          <blockquote className="text-3xl text-center playfair-display-normal">
+            “{data.quote}”
+          </blockquote>
+          {(data.book || data.author) && (
+            <p className="text-sm text-muted-foreground">
+              — <strong>{data.book}</strong>
+              {data.author ? `, ${data.author}` : ""}
+            </p>
+          )}
+        </div>
       </div>
     </section>
   );
