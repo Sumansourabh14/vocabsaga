@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/tooltip";
 import { AuthContext } from "@/context/AuthContext";
 import { SITE_TITLE } from "@/data/constants";
-import rawPassages from "@/data/passages/p1.json";
+import rawPassages from "@/data/passages/p2.json";
 import usePageTitle from "@/hooks/usePageTitle";
 import { supabase } from "@/supabase/supabase-client";
 import type { BookmarkWordProps, WordPassage } from "@/types";
@@ -49,7 +49,7 @@ const RandomStory = () => {
   const [current, setCurrent] = useState(
     Math.floor(Math.random() * passages.length)
   );
-  const [wordLimit, setWordLimit] = useState("10");
+  const [wordLimit, setWordLimit] = useState("15");
   const { session, profile } = useContext(AuthContext);
   const data = passages[current];
   usePageTitle(`Story | ${SITE_TITLE}`);
@@ -80,7 +80,7 @@ const RandomStory = () => {
   //     "word_meaning",
   //     "difficulty_level",
   //     "passages": {
-  //       "10",
+  //       "  ",
   //       "25"
   //     }
   //   }
@@ -212,36 +212,36 @@ const RandomStory = () => {
             <Tooltip>
               <TooltipTrigger asChild>
                 <ToggleGroupItem
-                  value={"10"}
-                  aria-label="Toggle 10"
-                  className="cursor-pointer"
+                  value={"15"}
+                  aria-label="Toggle 15"
+                  className="cursor-pointer px-4"
                 >
-                  10
+                  Short
                 </ToggleGroupItem>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Max words: 10</p>
+                <p>15 words</p>
               </TooltipContent>
             </Tooltip>
             <Tooltip>
               <TooltipTrigger asChild>
                 <ToggleGroupItem
-                  value={"25"}
-                  aria-label="Toggle 25"
-                  className="cursor-pointer"
+                  value={"30"}
+                  aria-label="Toggle 30"
+                  className="cursor-pointer px-4"
                 >
-                  20
+                  Detailed
                 </ToggleGroupItem>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Max words: 20</p>
+                <p>30 words</p>
               </TooltipContent>
             </Tooltip>
           </ToggleGroup>
         </section>
 
         <motion.h1
-          className="text-4xl sm:text-5xl lg:text-6xl playfair-display-normal"
+          className="text-3xl sm:text-4xl lg:text-5xl playfair-display-normal"
           key={data.word}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
