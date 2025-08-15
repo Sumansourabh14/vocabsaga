@@ -61,42 +61,6 @@ const RandomStory = () => {
     setCurrent(randomIndex);
   };
 
-  // const handlePrevious = () => {
-  //   setCurrent((prev) => (prev === 0 ? passages.length - 1 : prev - 1));
-  // };
-
-  // const handleNext = () => {
-  //   setCurrent((prev) => (prev === passages.length - 1 ? 0 : prev + 1));
-  // };
-
-  // const fetchGeminiData = async () => {
-  //   const content = `Give me a passage in Engligh for vocabulary. It should have a focused word.
-  //   difficulty_level can be either easy, medium or hard. You decide.
-
-  //   Give me the data in this format:
-  //   {
-  //     "id",
-  //     "word",
-  //     "word_meaning",
-  //     "difficulty_level",
-  //     "passages": {
-  //       "  ",
-  //       "25"
-  //     }
-  //   }
-
-  //   10 means, limit: 10 words
-  //   25 means, limit: 25 words
-  //   Don't bold the word. Keep it normal. Give me the JSON object only. I will parse it with JSON.parse() method. No other text in response, please.
-
-  //   `;
-
-  //   const res = (await geminiAI(content)) || "";
-  //   console.log(res, JSON.parse(res));
-
-  //   return res;
-  // };
-
   useEffect(() => {
     const savedBookmarks = localStorage.getItem("bookmarks");
 
@@ -258,14 +222,6 @@ const RandomStory = () => {
         )}
 
         <section className="flex gap-4 justify-center mt-8">
-          {/* <Button
-            variant={"outline"}
-            onClick={handlePrevious}
-            className="cursor-pointer"
-          >
-            Previous
-          </Button> */}
-
           <Tooltip>
             <TooltipTrigger asChild>
               <Button
@@ -296,14 +252,6 @@ const RandomStory = () => {
               </DrawerHeader>
             </DrawerContent>
           </Drawer>
-
-          {/* <Button
-            variant={"outline"}
-            onClick={handleNext}
-            className="cursor-pointer"
-          >
-            Next
-          </Button> */}
 
           <Tooltip>
             <TooltipTrigger asChild>
