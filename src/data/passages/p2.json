@@ -340,16 +340,6 @@
     }
   },
   {
-    "id": "37",
-    "word": "audacious",
-    "word_meaning": "showing bold or daring confidence, often recklessly",
-    "difficulty_level": "hard",
-    "passages": {
-      "15": "Her audacious plan to climb the peak alone stunned her cautious friends.",
-      "30": "With an audacious grin, she outlined her solo ascent of the treacherous peak, ignoring warnings, her eyes gleaming with the thrill of defying both nature and doubt."
-    }
-  },
-  {
     "id": "38",
     "word": "pensive",
     "word_meaning": "engaged in deep or serious thought",
@@ -1037,6 +1027,376 @@
     "passages": {
       "15": "The gymnast moved with lithe elegance, captivating the audience.",
       "30": "On the arena floor, the gymnast’s lithe form twisted gracefully, each fluid motion drawing gasps from the crowd, who watched her defy gravity with effortless poise."
+    }
+  },
+  {
+    "id": "111",
+    "word": "blissful",
+    "word_meaning": "extremely happy and peaceful",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "The couple enjoyed a blissful evening watching stars by the lake.",
+      "30": "Under a velvet sky, their blissful picnic by the lake felt timeless, as they shared blissful moments, laughing softly while fireflies danced around their cozy blanket."
+    }
+  },
+  {
+    "id": "112",
+    "word": "sardonic",
+    "word_meaning": "grimly mocking or cynical",
+    "difficulty_level": "hard",
+    "passages": {
+      "15": "His sardonic remark about the plan drew uneasy laughs from the team.",
+      "30": "With a sardonic smirk, he critiqued the flawed proposal, his sharp words laced with sardonic humor, making colleagues shift uncomfortably while secretly agreeing with his biting wit."
+    }
+  },
+  {
+    "id": "113",
+    "word": "clever",
+    "word_meaning": "quick to understand, learn, or devise solutions",
+    "difficulty_level": "easy",
+    "passages": {
+      "15": "Her clever solution fixed the machine in minutes, surprising everyone.",
+      "30": "Faced with a broken engine, she devised a clever fix, using spare parts, her clever ingenuity saving the day as the machine roared back to life."
+    }
+  },
+  {
+    "id": "114",
+    "word": "wayward",
+    "word_meaning": "difficult to control or predict; disobedient",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "The wayward kite soared wildly, ignoring the child’s desperate tugs.",
+      "30": "High above the festival, the wayward kite danced unpredictably, pulling against the string, its wayward path thrilling onlookers as it dipped and twirled in the gusty breeze."
+    }
+  },
+  {
+    "id": "115",
+    "word": "pristine",
+    "word_meaning": "clean, fresh, or unspoiled",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "The pristine snow blanketed the valley, untouched by human footsteps.",
+      "30": "After the storm, the valley lay under pristine snow, its flawless sparkle untouched, reflecting sunlight in a pristine glow that hushed the explorers in quiet awe."
+    }
+  },
+  {
+    "id": "116",
+    "word": "zealous",
+    "word_meaning": "having or showing great enthusiasm or devotion",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "His zealous support for the project motivated the entire team.",
+      "30": "With zealous energy, he championed the charity drive, his tireless efforts and zealous speeches inspiring volunteers to work harder, transforming the community with newfound hope."
+    }
+  },
+  {
+    "id": "117",
+    "word": "arcane",
+    "word_meaning": "mysterious or secret; understood by few",
+    "difficulty_level": "hard",
+    "passages": {
+      "15": "The book’s arcane knowledge fascinated only a few dedicated scholars.",
+      "30": "Hidden in the library, the tome held arcane secrets, its arcane symbols deciphered only by a select few, who pored over its pages under flickering candlelight."
+    }
+  },
+  {
+    "id": "118",
+    "word": "spry",
+    "word_meaning": "active and lively, especially in an older person",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "The spry elder amazed everyone, jogging daily with youthful vigor.",
+      "30": "At the town race, the spry grandfather outran younger competitors, his spry steps defying age, as he crossed the finish line with a grin and a cheer."
+    }
+  },
+  {
+    "id": "119",
+    "word": "evocative",
+    "word_meaning": "bringing strong images, memories, or feelings to mind",
+    "difficulty_level": "hard",
+    "passages": {
+      "15": "The poem’s evocative imagery transported readers to a distant shore.",
+      "30": "Her evocative verses painted a seaside village, their vivid words so evocative that readers felt the salty breeze and heard the waves crashing in their minds."
+    }
+  },
+  {
+    "id": "120",
+    "word": "sprightly",
+    "word_meaning": "lively and full of energy, especially in an older person",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "The sprightly retiree led the dance with surprising energy.",
+      "30": "At the community ball, the retiree’s sprightly twirls stole the show, her sprightly energy outshining younger dancers as she glided across the floor with infectious joy."
+    }
+  },
+  {
+    "id": "121",
+    "word": "jocular",
+    "word_meaning": "fond of or characterized by joking; humorous or playful",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "His jocular banter at the party kept everyone laughing all night.",
+      "30": "With jocular wit, he entertained guests, his playful jocular remarks about the host’s quirky hat sparking laughter as the room buzzed with warmth and good cheer."
+    }
+  },
+  {
+    "id": "122",
+    "word": "forbidding",
+    "word_meaning": "unfriendly or threatening in appearance",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "The castle’s forbidding walls deterred even the bravest adventurers.",
+      "30": "Looming over the misty valley, the castle’s forbidding gates, tall and iron-clad, cast a forbidding shadow, warning travelers to steer clear of its ancient, guarded secrets."
+    }
+  },
+  {
+    "id": "123",
+    "word": "nimble",
+    "word_meaning": "quick and light in movement or action",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "Her nimble fingers wove the intricate pattern into the fabric.",
+      "30": "With nimble hands, she crafted a delicate tapestry, her nimble fingers threading vibrant colors, creating a masterpiece that captivated everyone at the village fair."
+    }
+  },
+  {
+    "id": "124",
+    "word": "erratic",
+    "word_meaning": "unpredictable or inconsistent in movement or behavior",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "The erratic flight of the butterfly confused the eager children.",
+      "30": "Chasing the butterfly’s erratic path through the meadow, children giggled, its erratic zigzags eluding their nets, as it danced freely in the warm afternoon breeze."
+    }
+  },
+  {
+    "id": "125",
+    "word": "pastoral",
+    "word_meaning": "relating to the peaceful, simple life of the countryside",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "The pastoral scene of grazing sheep calmed the weary travelers.",
+      "30": "In the pastoral valley, sheep grazed lazily, their soft bleats blending with the pastoral breeze, offering travelers a moment of peace amidst rolling hills and wildflowers."
+    }
+  },
+  {
+    "id": "126",
+    "word": "vehement",
+    "word_meaning": "showing strong feeling; forceful or intense",
+    "difficulty_level": "hard",
+    "passages": {
+      "15": "Her vehement protest against the decision shook the quiet meeting.",
+      "30": "With a vehement cry, she opposed the unfair policy, her vehement passion igniting the crowd, who rose in support, their cheers echoing through the town hall."
+    }
+  },
+  {
+    "id": "127",
+    "word": "oblique",
+    "word_meaning": "indirect or evasive; not straightforward",
+    "difficulty_level": "hard",
+    "passages": {
+      "15": "His oblique reply to the question left everyone puzzled.",
+      "30": "When pressed for details, his oblique response, veiled in vague hints, and his oblique smile only deepened the mystery, frustrating colleagues seeking clear answers."
+    }
+  },
+  {
+    "id": "128",
+    "word": "cheerful",
+    "word_meaning": "noticeably happy and optimistic",
+    "difficulty_level": "easy",
+    "passages": {
+      "15": "Her cheerful greeting brightened the mood of the rainy morning.",
+      "30": "Entering the café with a cheerful wave, she spread cheerful warmth, her bright smile lifting spirits as customers forgot the dreary rain pattering against the windows."
+    }
+  },
+  {
+    "id": "129",
+    "word": "wistful",
+    "word_meaning": "having or showing a feeling of vague or regretful longing",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "She gazed with wistful eyes at her childhood home.",
+      "30": "Standing before her old house, her wistful gaze lingered on faded shutters, memories of wistful summers flooding back, now distant in the quiet autumn light."
+    }
+  },
+  {
+    "id": "130",
+    "word": "debonair",
+    "word_meaning": "confident, stylish, and charming",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "His debonair charm captivated everyone at the elegant gala.",
+      "30": "Strolling through the gala, his debonair style, from tailored suit to easy smile, and debonair wit won over guests, who admired his effortless grace and charm."
+    }
+  },
+  {
+    "id": "131",
+    "word": "radiant",
+    "word_meaning": "emitting light or heat; shining brightly",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "Her radiant smile brightened the gloomy room, lifting everyone’s mood.",
+      "30": "Amid the festival, her radiant grin outshone the lanterns, drawing friends to join her dance as music filled the night with joy and vibrant energy."
+    }
+  },
+  {
+    "id": "132",
+    "word": "stoic",
+    "word_meaning": "enduring pain or hardship without showing emotion",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "His stoic demeanor during the crisis calmed the panicked team.",
+      "30": "Facing the storm’s destruction, his stoic resolve steadied the group, as he quietly organized supplies and led them to safety without a hint of fear."
+    }
+  },
+  {
+    "id": "133",
+    "word": "vivid",
+    "word_meaning": "producing strong, clear images in the mind",
+    "difficulty_level": "easy",
+    "passages": {
+      "15": "Her vivid story of the adventure captivated the entire classroom.",
+      "30": "She shared a vivid tale of climbing snowy peaks, painting scenes of icy cliffs and starlit skies that held her classmates spellbound in the quiet room."
+    }
+  },
+  {
+    "id": "134",
+    "word": "querulous",
+    "word_meaning": "complaining in a whining or petulant manner",
+    "difficulty_level": "hard",
+    "passages": {
+      "15": "His querulous tone annoyed the shopkeeper, who ignored his complaints.",
+      "30": "The customer’s querulous voice echoed through the store, grumbling about prices, testing the clerk’s patience as others exchanged glances in the crowded, bustling shop."
+    }
+  },
+  {
+    "id": "135",
+    "word": "exuberant",
+    "word_meaning": "filled with lively energy and excitement",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "The puppy’s exuberant leaps made the children giggle with delight.",
+      "30": "Chasing a ball, the puppy’s exuberant energy filled the park, its playful bounds and eager barks sparking joy among kids playing under the sunny sky."
+    }
+  },
+  {
+    "id": "136",
+    "word": "ebullient",
+    "word_meaning": "overflowing with enthusiasm or excitement",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "Her ebullient cheers, ebullient spirit, rallied the tired runners.",
+      "30": "With ebullient shouts, her ebullient enthusiasm lifted the marathon runners, their weary steps quickening as she waved banners and cheered from the vibrant sidelines."
+    }
+  },
+  {
+    "id": "137",
+    "word": "pungent",
+    "word_meaning": "having a sharp, strong taste or smell",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "The pungent, pungent aroma of spices filled the bustling kitchen.",
+      "30": "In the market, pungent spices released a pungent scent, drawing cooks to stalls where vibrant powders promised bold flavors for dishes simmering in nearby homes."
+    }
+  },
+  {
+    "id": "138",
+    "word": "resolute",
+    "word_meaning": "determined and unwavering in purpose",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "With resolute, resolute focus, she trained daily for the competition.",
+      "30": "Her resolute determination shone as she trained, resolute in her goal, ignoring blisters and fatigue to perfect each move for the championship under the stadium lights."
+    }
+  },
+  {
+    "id": "139",
+    "word": "ephemeral",
+    "word_meaning": "lasting for a very short time",
+    "difficulty_level": "hard",
+    "passages": {
+      "15": "The ephemeral, ephemeral beauty of the meteor shower awed them.",
+      "30": "Under the starry sky, the ephemeral meteor shower’s ephemeral streaks dazzled the campers, who watched in silence, knowing the fleeting spectacle would soon vanish forever."
+    }
+  },
+  {
+    "id": "140",
+    "word": "serendipitous",
+    "word_meaning": "occurring by fortunate chance in a delightful way",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "A serendipitous, serendipitous find led her to a rare painting.",
+      "30": "In the dusty shop, a serendipitous discovery of a serendipitous artwork, hidden behind crates, thrilled her, its vibrant colors sparking joy and a sense of destiny."
+    }
+  },
+  {
+    "id": "141",
+    "word": "charming",
+    "word_meaning": "pleasantly attractive or delightful in manner",
+    "difficulty_level": "easy",
+    "passages": {
+      "15": "You should’ve seen Tom’s charming smile; it won over the whole café!",
+      "30": "So, Tom walks into the café with this charming grin, and honestly, everyone just melts; even the grumpy barista starts chatting with him like they’re old pals."
+    }
+  },
+  {
+    "id": "142",
+    "word": "perplexing",
+    "word_meaning": "completely baffling or puzzling",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "That riddle was so perplexing, we gave up after an hour.",
+      "30": "Okay, we sat around the campfire trying to solve this perplexing riddle, but after an hour of arguing, we just laughed and toasted marshmallows instead."
+    }
+  },
+  {
+    "id": "143",
+    "word": "lively",
+    "word_meaning": "full of energy and enthusiasm",
+    "difficulty_level": "easy",
+    "passages": {
+      "15": "Her lively stories about Paris kept us glued to our seats.",
+      "30": "You should’ve heard Sarah’s lively tales about her Paris trip; she had us laughing and gasping, totally forgetting the boring office meeting we’d just left."
+    }
+  },
+  {
+    "id": "145",
+    "word": "cozy",
+    "word_meaning": "giving a feeling of comfort, warmth, and relaxation",
+    "difficulty_level": "easy",
+    "passages": {
+      "15": "That little bookstore felt so cozy, I stayed for hours.",
+      "30": "You’d love this cozy bookstore I found; it’s got soft chairs, warm lights, and the smell of old books that just makes you want to stay forever."
+    }
+  },
+  {
+    "id": "146",
+    "word": "facetious",
+    "word_meaning": "treating serious issues with deliberately inappropriate humor",
+    "difficulty_level": "hard",
+    "passages": {
+      "15": "His facetious, facetious joke about the deadline annoyed the boss.",
+      "30": "So, Mike drops this facetious quip about missing the deadline, and his facetious grin just makes the boss fume, while we’re all trying not to laugh."
+    }
+  },
+  {
+    "id": "148",
+    "word": "audacious",
+    "word_meaning": "showing bold or daring confidence, often recklessly",
+    "difficulty_level": "hard",
+    "passages": {
+      "15": "Her audacious, audacious plan to crash the gala shocked us.",
+      "30": "Okay, Lisa’s audacious idea to sneak into the fancy gala was wild; her audacious confidence had us all giggling nervously as she strutted in like she owned the place."
+    }
+  },
+  {
+    "id": "149",
+    "word": "wry",
+    "word_meaning": "using or expressing dry, mocking humor",
+    "difficulty_level": "medium",
+    "passages": {
+      "15": "His wry, wry comment about my cooking made everyone chuckle.",
+      "30": "So, I burn the pie, and he gives this wry smirk, tossing a wry jab about my cooking skills, which had the whole table laughing despite the smoky kitchen."
     }
   }
 ]
