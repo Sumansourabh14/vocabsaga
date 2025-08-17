@@ -31,13 +31,13 @@ const FindWord = () => {
   return (
     <main className="max-w-[1300px] mx-auto min-h-[75vh]">
       <section className="py-20">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-center">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-center">
           Find a word...
         </h1>
         <form onSubmit={handleSubmit}>
-          <section className="flex gap-2 max-w-[600px] mx-auto py-8">
+          <section className="flex gap-2 max-w-[600px] mx-auto py-16">
             <Input
-              placeholder="Type a word..."
+              placeholder="Which word are you looking for?"
               value={searchWord}
               onChange={(e) => setSearchWord(e.target.value)}
               style={{ fontSize: "90%" }}
