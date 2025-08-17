@@ -106,6 +106,14 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
+              <div>
+                <Link
+                  to={`/sign-in`}
+                  className="border-[1px] px-6 py-1.5 font-semibold text-sm rounded-md"
+                >
+                  Sign in
+                </Link>
+              </div>
               {/* <Button className="mt-2 w-full">Login</Button> */}
             </nav>
           </SheetContent>
