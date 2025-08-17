@@ -51,7 +51,7 @@ export default function Footer() {
         >
           <SiteTitleText />
           {/* Links */}
-          <nav className="flex space-x-6 text-sm items-center">
+          <nav className="flex space-x-6 text-sm items-center flex-wrap gap-4 md:gap-1">
             {navItems.map((link, index) => (
               <Link
                 key={index}
