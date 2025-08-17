@@ -92,14 +92,14 @@ const Bookmarks = () => {
 
   return (
     <main className="max-w-[1300px] mx-auto min-h-[75vh]">
-      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-center">
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-center">
         Bookmarks
       </h1>
 
       <section
         className={`${
           words.length > 0 ? "text-left" : "text-center"
-        } mb-2 flex justify-between`}
+        } mb-2 flex justify-between mt-8`}
       >
         {words.length > 0 && (
           <p className="font-bold text-xl">
