@@ -8,6 +8,7 @@ const Hero = () => {
       <h1 className="max-w-3xl text-4xl sm:text-5xl md:text-7xl xl:text-8xl font-bold tracking-tight mx-auto">
         Not your average <span className="text-[#1b7a1b]">vocabulary</span> app
       </h1>
+
       <p className="text-md md:text-xl mt-4 text-muted-foreground max-w-xs md:max-w-sm">
         Learn words through passages, not with random single words.
       </p>
