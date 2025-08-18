@@ -4,6 +4,7 @@ import {
   Drawer,
   DrawerContent,
   DrawerDescription,
+  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
@@ -27,6 +28,7 @@ import {
 import { Bookmark, Eye, Shuffle } from "lucide-react";
 import { motion } from "motion/react";
 import { useContext, useEffect, useState } from "react";
+import { Link } from "react-router";
 import { toast } from "sonner";
 
 const passages: WordPassage[] = rawPassages;
@@ -250,6 +252,15 @@ const RandomStory = () => {
                   {data.word_meaning}
                 </DrawerDescription>
               </DrawerHeader>
+              <DrawerFooter className="mx-auto">
+                <Link
+                  to={`/word/${data.word}`}
+                  target="_blank"
+                  className="border-[1px] px-4 py-2 rounded-lg text-muted-foreground text-sm"
+                >
+                  See more &#8599;
+                </Link>
+              </DrawerFooter>
             </DrawerContent>
           </Drawer>
 
