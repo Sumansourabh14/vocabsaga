@@ -1310,23 +1310,13 @@
     }
   },
   {
-    "id": "139",
-    "word": "ephemeral",
-    "word_meaning": "lasting for a very short time",
-    "difficulty_level": "hard",
-    "passages": {
-      "15": "The ephemeral, ephemeral beauty of the meteor shower awed them.",
-      "30": "Under the starry sky, the ephemeral meteor shower’s ephemeral streaks dazzled the campers, who watched in silence, knowing the fleeting spectacle would soon vanish forever."
-    }
-  },
-  {
     "id": "140",
     "word": "serendipitous",
     "word_meaning": "occurring by fortunate chance in a delightful way",
     "difficulty_level": "medium",
     "passages": {
-      "15": "A serendipitous, serendipitous find led her to a rare painting.",
-      "30": "In the dusty shop, a serendipitous discovery of a serendipitous artwork, hidden behind crates, thrilled her, its vibrant colors sparking joy and a sense of destiny."
+      "15": "A serendipitous find led her to a rare painting.",
+      "30": "In the dusty shop, a discovery of a serendipitous artwork, hidden behind crates, thrilled her, its vibrant colors sparking joy and a sense of destiny."
     }
   },
   {
