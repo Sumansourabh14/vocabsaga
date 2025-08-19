@@ -27,28 +27,46 @@ const Word = () => {
     document.title = `${title} | ${SITE_TITLE}`;
   }, [title]);
 
+  const fetchBookmarksOnMount = async () => {
+    const { error } = await supabase
+      .from("bookmarks")
+      .select()
+      .eq("word", title)
+      .eq("user_id", profile?.id);
+
+    if (error) {
+      setIsBookmarked(false);
+    } else {
+      setIsBookmarked(true);
+    }
+  };
+
   useEffect(() => {
-    const savedBookmarks = localStorage.getItem("bookmarks");
+    if (session && profile) {
+      fetchBookmarksOnMount();
+    } else {
+      const savedBookmarks = localStorage.getItem("bookmarks");
 
-    if (savedBookmarks) {
-      try {
-        setBookmarks(JSON.parse(savedBookmarks));
+      if (savedBookmarks) {
+        try {
+          setBookmarks(JSON.parse(savedBookmarks));
 
-        const find = JSON.parse(savedBookmarks).find(
-          (item: BookmarkWordProps) => item.word.toLowerCase() === title
-        );
+          const find = JSON.parse(savedBookmarks).find(
+            (item: BookmarkWordProps) => item.word.toLowerCase() === title
+          );
 
-        if (find) {
-          setIsBookmarked(true);
-        } else {
-          setIsBookmarked(false);
+          if (find) {
+            setIsBookmarked(true);
+          } else {
+            setIsBookmarked(false);
+          }
+        } catch (error) {
+          console.error("Error parsing bookmarks:", error);
+          setBookmarks([]);
         }
-      } catch (error) {
-        console.error("Error parsing bookmarks:", error);
-        setBookmarks([]);
       }
     }
-  }, []);
+  }, [session, profile]);
 
   const handleSetLocalStorage = (newBookmarks: BookmarkWordProps[]) => {
     addBookmarksToLocalStorage(newBookmarks);
