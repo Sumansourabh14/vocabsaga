@@ -15,6 +15,7 @@ import RandomStory from "./pages/RandomStory";
 import Word from "./pages/Word";
 import AuthLayout from "./layout/AuthLayout";
 import { AuthProvider } from "./context/AuthContext";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "story",
         element: <RandomStory />,
+      },
+      {
+        path: "privacy-policy",
+        element: <PrivacyPolicy />,
       },
       {
         path: "quote",
