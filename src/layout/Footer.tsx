@@ -89,6 +89,15 @@ export default function Footer() {
             ))}
           </div>
         </section>
+
+        <section className="my-4">
+          <Link
+            to={`privacy-policy`}
+            className="text-sm font-light text-muted-foreground hover:text-black dark:text-gray-300 dark:hover:text-white"
+          >
+            Privacy Policy
+          </Link>
+        </section>
         <div className="text-center pb-8 mt-14">
           <p
             className="playfair-display-bold font-bold tracking-tighter text-7xl sm:text-9xl lg:text-[11rem] xl:text-[14rem]"
