@@ -1,4 +1,5 @@
 import { MagicCard } from "@/components/magicui/magic-card";
+import AndroidEarlyAccess from "@/components/sections/AndroidEarlyAccess";
 import { Features } from "@/components/sections/homePage/Features";
 import Hero from "@/components/sections/homePage/Hero";
 import Why from "@/components/sections/homePage/Why";
@@ -9,7 +10,10 @@ const Home = () => {
     <>
       <main className="max-w-[1300px] mx-auto">
         <section>
-          <Hero />
+          <section className="flex flex-col md:flex-row items-center gap-12">
+            <Hero />
+            <AndroidEarlyAccess />
+          </section>
           <Why />
 
           <section className="max-w-[1000px] mx-auto px-8 py-30">
