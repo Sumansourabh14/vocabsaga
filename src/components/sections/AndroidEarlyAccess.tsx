@@ -17,7 +17,7 @@ const AndroidEarlyAccess = () => {
             className="bg-[#1b7a1b] hover:bg-green-800 text-white text-lg font-semibold px-6 py-3 rounded-lg transition-colors"
           >
             <a
-              href="https://forms.gle/example"
+              href="https://forms.gle/77ruopQFjrVaQtcdA"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Sign up for Vocabsaga Android app early access"
