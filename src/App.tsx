@@ -16,6 +16,7 @@ import Word from "./pages/Word";
 import AuthLayout from "./layout/AuthLayout";
 import { AuthProvider } from "./context/AuthContext";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import WordOfTheDay from "./pages/WordOfTheDay";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "word/:title",
         element: <Word />,
+      },
+      {
+        path: "word-of-the-day",
+        element: <WordOfTheDay />,
       },
       {
         path: "*",

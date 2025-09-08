@@ -17,6 +17,7 @@ const navItems = [
   // { name: "Input", href: "/input" },
   { name: "Find Word", href: "/find" },
   { name: "Bookmarks", href: "/bookmarks" },
+  { name: "Word of the day", href: "/word-of-the-day" },
 ];
 
 const socialLinks = [

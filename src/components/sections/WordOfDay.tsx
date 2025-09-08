@@ -6,19 +6,12 @@ import WordDeepMeanings from "../words/WordDeepMeanings";
 
 const WordOfDay = () => {
   const word = getWordOfTheDay();
-  console.log({ word });
 
   const { data, isFetching } = useFetchWordMeaning(word);
-  console.log({ data, isFetching });
 
   return (
-    <section className="max-w-[1300px] mx-auto py-20">
-      <h2 className="text-center text-3xl sm:text-5xl lg:text-6xl font-extralight mb-10">
-        Word of the Day
-      </h2>
-      <h3 className="text-center text-2xl sm:text-4xl lg:text-5xl font-bold">
-        {word}
-      </h3>
+    <section className="max-w-[1300px] mx-auto py-8">
+      <h2 className="text-center text-2xl sm:text-4xl lg:text-5xl">{word}</h2>
 
       {isFetching ? (
         <WordDataLoading />
