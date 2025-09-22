@@ -1,5 +1,5 @@
 import { MagicCard } from "@/components/magicui/magic-card";
-import AndroidEarlyAccess from "@/components/sections/AndroidEarlyAccess";
+import DownloadAndroidApp from "@/components/sections/DownloadAndroidApp";
 import { Features } from "@/components/sections/homePage/Features";
 import Hero from "@/components/sections/homePage/Hero";
 import Why from "@/components/sections/homePage/Why";
@@ -12,7 +12,7 @@ const Home = () => {
         <section>
           <section className="flex flex-col md:flex-row items-center gap-12">
             <Hero />
-            <AndroidEarlyAccess />
+            <DownloadAndroidApp />
           </section>
           <Why />
 
