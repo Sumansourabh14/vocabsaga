@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 const DownloadAndroidApp = () => {
   return (
     <section className="py-12 px-4 sm:px-6 lg:px-8">
@@ -10,20 +8,20 @@ const DownloadAndroidApp = () => {
             alt="Vocabsaga android mockup Samsung Galaxy S24 Ultra"
             className="w-[300px] mx-auto"
           />
-          <h2 className="text-2xl md:text-3xl">Now on Android</h2>
-          <Button
-            asChild
-            className="bg-[#1b7a1b] hover:bg-green-800 text-white text-lg font-semibold px-6 py-3 rounded-lg transition-colors"
+          <h2 className="text-2xl md:text-3xl mb-4">Now on Android</h2>
+
+          <a
+            href="https://play.google.com/store/apps/details?id=com.sumsourabh14.vocabsaga"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Vocabsaga Android app on Google Play Store"
           >
-            <a
-              href="https://play.google.com/store/apps/details?id=com.sumsourabh14.vocabsaga"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download Vocabsaga Android app on Google Play Store"
-            >
-              Download
-            </a>
-          </Button>
+            <img
+              src="./images/GetItOnGooglePlay_Badge_Web_color_English.png"
+              alt="Get Vocabsaga Android app on Google Play Store badge"
+              className="w-[150px] mx-auto"
+            />
+          </a>
         </section>
       </div>
     </section>
