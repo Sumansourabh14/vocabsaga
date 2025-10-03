@@ -8,7 +8,7 @@ const DownloadAndroidApp = () => {
             alt="Vocabsaga android mockup Samsung Galaxy S24 Ultra"
             className="w-[300px] mx-auto"
           />
-          <h2 className="text-2xl md:text-3xl mb-4">Now on Android</h2>
+          {/* <h2 className="text-2xl md:text-3xl mb-4">Now on Android</h2>
 
           <a
             href="https://play.google.com/store/apps/details?id=com.sumsourabh14.vocabsaga"
@@ -21,7 +21,7 @@ const DownloadAndroidApp = () => {
               alt="Get Vocabsaga Android app on Google Play Store badge"
               className="w-[150px] mx-auto"
             />
-          </a>
+          </a> */}
         </section>
       </div>
     </section>

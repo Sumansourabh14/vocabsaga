@@ -3,11 +3,7 @@ import SiteTitleText from "@/components/text/SiteTitleText";
 import { Separator } from "@/components/ui/separator";
 import { AuthContext } from "@/context/AuthContext";
 import { SITE_TITLE } from "@/data/constants";
-import {
-  GitHubLogoIcon,
-  InstagramLogoIcon,
-  TwitterLogoIcon,
-} from "@radix-ui/react-icons";
+import { GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
 import { useContext } from "react";
 import { Link } from "react-router";
 
@@ -27,12 +23,12 @@ const socialLinks = [
     link: "https://instagram.com/vocabsaga",
     icon: InstagramLogoIcon,
   },
-  {
-    id: "2",
-    title: "Twitter/X",
-    link: "https://x.com/vocabsaga",
-    icon: TwitterLogoIcon,
-  },
+  // {
+  //   id: "2",
+  //   title: "Twitter/X",
+  //   link: "https://x.com/vocabsaga",
+  //   icon: TwitterLogoIcon,
+  // },
   {
     id: "3",
     title: "GitHub",
